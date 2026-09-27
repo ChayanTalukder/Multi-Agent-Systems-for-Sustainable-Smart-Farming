@@ -334,7 +334,7 @@ The exact search string, database, search date, search fields, and retrieved rec
 
 ## 10. Screening Strategy
 
-If the initial **deduplicated corpus exceeds approximately 500 records**, the search will be refined to the closest available equivalents of:
+If the initial **deduplicated corpus exceeds approximately 100 records**, the search will be refined to the closest available equivalents of:
 
 ```text
 Title
