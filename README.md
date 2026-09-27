@@ -561,8 +561,9 @@ sustainable-smart-farming-mas-review/
 │
 ├── protocol/
 │   ├── research_questions.md
-│   ├── inclusion_exclusion.md
-│   └── quality_assessment.md
+|   ├── inclusion_exclusion.md
+|   ├── quality_assessment.md
+|   └── protocol_notes.md
 │
 ├── searches/
 │   ├── scopus/
