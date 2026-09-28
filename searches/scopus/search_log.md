@@ -3,6 +3,6 @@
 | Stage | Records |
 |---|---:|
 | Unfiltered V0.1 search | 1,558 |
-| After year filter | TBD |
+| After 2010–2026 year filter | 1,389 |
 | After English-language filter | TBD |
 | After document-type filter | TBD |
