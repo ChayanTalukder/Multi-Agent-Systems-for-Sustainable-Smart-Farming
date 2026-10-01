@@ -37,6 +37,28 @@ Supplementary discovery may use:
 
 ---
 
+## ACM Digital Library Search Decision
+
+ACM Digital Library was originally planned as a primary database.
+
+During search execution, the available ACM Digital Library account provided access to the basic search interface but did not permit the advanced query editing required to reproduce the frozen V0.3c Boolean strategy using title- and abstract-specific field combinations.
+
+A preliminary title-only syntax test was possible, but the restricted interface did not support the reproducible multi-field Boolean construction required for the review protocol.
+
+ACM Digital Library was therefore removed from the primary database set rather than using a simplified search that would not be methodologically comparable with the Scopus, Web of Science, and IEEE Xplore implementations.
+
+The final primary database set is:
+
+- Scopus
+- Web of Science Core Collection
+- IEEE Xplore
+- ScienceDirect
+- SpringerLink
+
+Relevant ACM-published studies may still be identified through overlapping indexing in Scopus or Web of Science and through supplementary backward/forward citation searching.
+
+This change is recorded as a protocol deviation caused by database-access and search-interface limitations.
+
 ## Screening Threshold
 
 The initial search will aim to maximise reasonable coverage while maintaining relevance. If the **deduplicated corpus exceeds approximately 100 records**, indicating that the search may be too broad for the scope and timeline of this single-reviewer SLR, the search will be refined to the closest available equivalents of:
