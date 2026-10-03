@@ -2,9 +2,9 @@
 
 ## Version
 
-**Version:** 0.1 — Pre-pilot  
+**Version:** 1.0 — Frozen  
 **Date:** 3 October 2026  
-**Status:** Candidate extraction schema for pilot testing on three included studies
+**Status:** Final extraction schema following three-study pilot testing
 
 ---
 
@@ -277,7 +277,8 @@ RQ4 captures how each MAS is evaluated and what methodological, technical, and p
 | `Data_Source` | Multi-value categorical/text | Origin of evaluation data, such as synthetic data, simulation-generated data, real sensor data, farm data, public datasets, historical data, surveys, or mixed sources. |
 | `Experimental_Scenarios` | Multi-value text | Scenarios or conditions evaluated, such as normal operation, drought, scarcity, changing demand, uncertain environments, heat stress, different resource levels, or alternative management strategies. |
 | `Baselines_Comparators` | Multi-value text | Algorithms, policies, existing practices, non-MAS approaches, control strategies, or other baselines used for comparison. |
-| `Evaluation_Metrics` | Multi-value text | Metrics used to assess performance, such as water use, cost, yield, reward, energy consumption, task completion, fairness, emissions, welfare, computational performance, or prediction accuracy. |
+| `Evaluation_Metrics` | Multi-value text | Metrics used to assess system or algorithm performance, such as accuracy, reward, latency, task success, computational performance, or other reported evaluation measures. |
+| `Evaluation_Results` | Structured text | Key qualitative or quantitative MAS/system-evaluation results, including algorithmic performance, baseline comparisons, or ablation findings that are not agricultural, livestock, resource-efficiency, or environmental outcomes. 
 | `Evaluation_Scale` | Short text | Scale of evaluation where reported, such as number of agents, farms, fields, animals, tasks, resources, simulation duration, geographical extent, or number of scenarios. |
 | `Real_World_Deployment` | Categorical | Whether the system was evaluated in an actual operational or field setting rather than solely through simulation or synthetic experiments. |
 | `Code_Available` | Categorical | Whether implementation/source code is publicly available or explicitly provided. |
@@ -406,39 +407,35 @@ The extraction procedure will be conducted as follows:
 
 1. verify bibliographic metadata and assign permanent `Study_ID` values to all 34 included publications;
 2. complete `extraction_codebook.md` to define controlled values and field-specific coding rules;
-3. pilot this schema on three deliberately different included publications;
-4. examine the pilot for ambiguous, redundant, missing, or impractical fields;
-5. document any justified schema changes;
-6. freeze the extraction schema as **Version 1.0**;
-7. extract all included publications using the same frozen schema;
+3. pilot the schema on three deliberately different included publications;
+4. review ambiguous, redundant, missing, or impractical fields identified during the pilot;
+5. document justified schema/codebook changes;
+6. freeze the extraction schema and codebook as **Version 1.0**;
+7. extract all 34 included publications using the frozen Version 1.0 framework;
 8. perform the QA1–QA7 quality assessment;
 9. check the completed datasets for missing values, inconsistent coding, and related-publication overlap;
 10. proceed to RQ0–RQ4 synthesis only after the extraction dataset has been validated.
 
 ---
 
-# Pilot Rule
+# # Pilot Testing
 
-The schema will initially be tested on **three included publications representing different types of MAS applications and evaluation approaches**.
+The extraction framework was pilot-tested on three deliberately different included publications:
 
-The pilot should, where possible, cover substantially different areas such as:
+1. **Heterogeneous multi-agent resource allocation through multi-bidding with applications to precision agriculture** — resource allocation, irrigation, distributed optimisation, and multi-bidding.
+2. **Assessing Adaptive Irrigation Impacts on Water Scarcity in Nonstationary Environments—A Multi-Agent Reinforcement Learning Approach** — adaptive RL agents, shared water scarcity, and coupled human-water modelling.
+3. **CowNet-AI: A Multi-Agent Decision Support Framework for Social Network–Driven Welfare Insights in Dairy Cattle** — LLM-based agents, livestock welfare, explainability, and decision support.
 
-- resource negotiation/allocation;
-- technical control, optimisation, or MARL;
-- livestock, environmental, or integrated-farming applications.
+The pilot confirmed that the overall RQ0–RQ4 extraction structure was suitable.
 
-Pilot publications are not excluded from the final dataset.
-
-After the schema is frozen, their extraction will be retained if it already conforms to the final codebook; otherwise the pilot publications will be re-extracted using the final Version 1.0 rules.
-
+Minor revisions identified during pilot testing were incorporated before freezing Version 1.0.
 ---
 
 # Schema Stability
 
-Once Version 1.0 is frozen after the pilot, the extraction fields and coding rules should remain stable throughout extraction.
+Version 1.0 is frozen following completion of the three-study pilot. The extraction fields and coding rules should remain stable throughout extraction of the 34 included publications.
 
 If an unforeseen issue requires a substantive change after extraction has begun:
-
 1. the reason for the change must be documented;
 2. the schema/codebook version must be updated;
 3. previously extracted studies must be reviewed against the new rule;
@@ -452,14 +449,18 @@ This avoids applying different extraction criteria to different publications.
 
 | Date | Version | Change | Reason |
 |---|---|---|---|
-| 3 Oct 2026 | 0.1 | Initial pre-pilot data-extraction schema created and aligned with RQ0–RQ4 and the final 34-publication full-text corpus. | Establish a consistent extraction framework before beginning full data extraction. |
-
+| 3 Oct 2026 | 0.1 | Initial pre-pilot schema aligned with RQ0–RQ4 and the 34-publication corpus. | Establish the candidate extraction framework. |
+| 3 Oct 2026 | 1.0 | Schema frozen after three-study pilot; added `Evaluation_Results`. | Separate system/algorithm evaluation findings from agricultural and sustainability outcomes. |
 ---
+
+# Current Status
 
 # Current Status
 
 **Full-text screening:** Complete  
 **Included publications:** 34  
 **Corpus verification:** Complete  
-**Data-extraction schema:** Version 0.1 prepared  
-**Next step:** Develop `extraction_codebook.md` and then perform the three-publication extraction pilot.
+**Three-study extraction pilot:** Complete  
+**Data-extraction schema:** Version 1.0 — Frozen  
+**Extraction codebook:** Version 1.0 — Frozen  
+**Next step:** Create the final extraction dataset and begin structured extraction of all 34 included publications.
