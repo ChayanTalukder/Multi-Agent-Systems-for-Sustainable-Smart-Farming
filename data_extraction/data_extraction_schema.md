@@ -390,7 +390,7 @@ Quality scores therefore must not be inserted into the main data-extraction fiel
 QA1–QA7 will be recorded separately in:
 
 ```text
-data_extraction/quality_assessment.csv
+data_extraction/quality_assessment_updated6(final).csv
 ```
 
 according to:
