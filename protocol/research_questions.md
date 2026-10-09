@@ -217,3 +217,4 @@ RQ0 — Overall MAS use in sustainable smart farming
         ├── RQ3 — Agricultural and environmental outcomes
         │
         └── RQ4 — Evaluation, limitations, and research gaps
+```
