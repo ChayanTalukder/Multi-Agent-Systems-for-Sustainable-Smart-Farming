@@ -7,9 +7,6 @@ This log records a one-generation supplementary citation search from the 34 publ
 
 The candidate records were subsequently deduplicated against the complete 102-record post-deduplication Rayyan screening corpus. No citation-search candidate matched an existing primary-search record, so all 24 records were confirmed as genuinely new supplementary-search records.
 
-
-### Important: These candidate records were subsequently deduplicated against the complete 102-record post-deduplication Rayyan screening corpus. No citation-search candidate matched an existing primary-search record, so all 24 records were confirmed as genuinely new supplementary-search records.
-
 ## First-pass status
 - Formal citation-linked candidates logged: 24
 - Advance to full-text assessment: 20
