@@ -1,47 +1,85 @@
 # Citation-Chasing Screening — Final Summary
 
-## Identification
+## Scope
 
-- New records identified through citation searching: **24**
-- Duplicates against the original 102-record Rayyan set: **0**
+A one-generation supplementary backward and forward citation search was conducted after completion of the initial primary database-screening pathway. The citation search started from the **34 publications initially included** through the database-search pathway.
 
-## Screening
+Backward searching used reference lists of included publications. Forward searching used publicly accessible citation-index, publisher, and web citation information.
 
-- Citation-search records screened: **24**
-- Excluded before full-text assessment: **3**
-- Reports sought/assessed at full text: **21**
-- Full-text exclusions: **1**
-- Newly included publications from citation searching: **20**
+The same frozen inclusion and exclusion criteria used for the primary database corpus were applied to all supplementary records.
 
-## Final citation-search flow
+Pre-2010 records were eligible only under the predefined IC7 foundational-study exception.
+
+---
+
+## Identification and Deduplication
+
+- Citation-search candidate records identified: **24**
+- Records already present in the 102-record primary screening corpus: **0**
+- Genuinely new citation-search records: **24**
+
+After import into Rayyan, three highly similar publication pairs were flagged during duplicate detection. Manual inspection confirmed that these represented related but distinct publications, so both papers in each pair were retained.
+
+---
+
+## Title / Abstract Screening
+
+All 24 supplementary records were screened using the frozen eligibility criteria.
+
+| Decision | Records |
+|---|---:|
+| Advanced to full-text assessment | 21 |
+| Excluded | 3 |
+| **Total** | **24** |
+
+---
+
+## Full-Text Retrieval and Assessment
+
+Of the 21 reports sought for retrieval:
+
+- **20 full texts were retrieved and assessed**;
+- **1 report was not retrieved**.
+
+The report not retrieved was:
+
+**SHADOC: a multi-agent model to tackle viability of irrigated systems**
+
+This record was not treated as a substantive eligibility exclusion because its full text could not be assessed.
+
+Of the 20 reports assessed at full text:
+
+- **19 were included**;
+- **1 was excluded**.
+
+The full-text exclusion was:
+
+**A new BDI agent architecture based on the belief theory. Application to the modelling of cropping plan decision-making**
+
+Exclusion reason:
+
+**Insufficient meaningful multi-agent interaction**
+
+---
+
+## Citation-Search Flow
 
 ```text
 24 new citation-search records
         ↓
-24 title/abstract/discovery screened
+24 records screened
         ↓
-3 excluded before full text
+3 title/abstract exclusions
         ↓
-21 full texts assessed
+21 reports sought for retrieval
+        ↓
+1 report not retrieved
+        ↓
+20 reports assessed at full text
         ↓
 1 full-text exclusion
         ↓
-20 newly included publications
-```
-
-The single full-text exclusion was **B08**, because the paper evaluates individual farmer BDI decision architecture but does not substantively implement meaningful interaction/coordination among agents in that version of the work.
-
-## Corpus implication
-
-The provisional final publication corpus becomes:
-
-```text
-34 publications from the original database-search pathway
-+20 publications from citation searching
-=54 included publications
-```
-
-This is a **publication count**, not an independent-study count. Several newly included publications belong to research families already represented in the original corpus (for example MAELIA and large-scale irrigation/resource-allocation lines), and study-family relationships must be reconciled during extraction before synthesis is updated.
+19 newly included publicationsrelationships must be reconciled during extraction before synthesis is updated.
 
 ## Next step
 
