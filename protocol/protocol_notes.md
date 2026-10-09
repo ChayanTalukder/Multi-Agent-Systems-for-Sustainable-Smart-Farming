@@ -2,8 +2,8 @@
 
 ## Version
 
-**Version:** 1.1  
-**Date:** 1 October 2026
+**Version:** 1.2  
+**Date:** 9 October 2026
 
 ## Purpose
 
@@ -183,3 +183,9 @@ Any meaningful change made after Version 1.0 will be recorded below.
 | 30 Sep 2026 | 1.1 | Web of Science validation confirmed that the Dairy integrated-decision study and Resource-allocation DSS control were not found in the full WoS Core Collection, while S1 was indexed but not retrieved by V0.3c. | Absence of non-indexed controls is not treated as a query failure. The S1 result is consistent with the previously documented supplementary-seed decision and therefore did not trigger query expansion. |
 | 30 Sep 2026 | 1.1 | Raw database CSV/Excel/RIS exports designated as **private working/audit data**; the public repository will retain methodological and reproducibility documentation instead. | Database exports may contain provider-supplied or licensed metadata and abstracts that should not be redistributed unnecessarily through the public repository. |
 | 1 Oct 2026 | 1.1 | ACM Digital Library removed from the primary database set. Final planned primary sources: **Scopus, Web of Science Core Collection, IEEE Xplore, ScienceDirect, and SpringerLink**. | The available ACM Basic Edition permitted a preliminary title-only search but did not provide the advanced query-editing functionality required to reproduce the frozen V0.3c title/abstract Boolean strategy. A simplified ACM search was rejected because it would not be methodologically comparable with the other primary database implementations. Relevant ACM publications may still be recovered through overlapping indexes and citation searching. |
+| 9 Oct 2026 | 1.2 | A one-generation supplementary backward and forward citation search was conducted from the 34 publications initially included through the primary database pathway. The search identified **24 additional unique candidate records** after comparison with the 102-record post-deduplication primary screening corpus. | Citation searching was used as a supplementary recall mechanism without altering the frozen primary database-search strategy. |
+| 9 Oct 2026 | 1.2 | Supplementary citation-search screening was completed in Rayyan: **24 records screened, 3 excluded at title/abstract stage, 21 reports sought, 1 report not retrieved, 20 full texts assessed, 1 full-text exclusion, and 19 additional publications included**. | The citation-search pathway is reported separately from the primary database-search pathway for PRISMA 2020 reporting. |
+| 9 Oct 2026 | 1.2 | `SHADOC: a multi-agent model to tackle viability of irrigated systems` was classified as **report not retrieved**, rather than as a substantive full-text exclusion. | The paper appeared eligible from available bibliographic information but the full text could not be obtained; eligibility was therefore not assessed from the abstract alone. |
+| 9 Oct 2026 | 1.2 | The IC7 foundational-study exception was applied to five retrieved pre-2010 publications that directly satisfied the agricultural MAS criteria. | The primary search window remains 2010–2026; pre-2010 inclusion is limited to directly relevant foundational publications identified through backward citation searching. |
+| 9 Oct 2026 | 1.2 | The final working publication corpus increased from **34 to 53 publications**. Extraction identifiers were extended from `S01–S34` to `S01–S53`. | Nineteen additional eligible publications were identified through supplementary citation searching. |
+| 9 Oct 2026 | 1.2 | The frozen extraction schema and QA framework were retained unchanged when the corpus was extended to S53. Existing analysis outputs based on S01–S34 were marked preliminary pending extraction and QA of S35–S53. | Maintaining the frozen coding framework avoids post-hoc modification of extraction rules in response to newly identified studies. |
