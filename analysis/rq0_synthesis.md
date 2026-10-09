@@ -1,5 +1,8 @@
 # RQ0 — Overall MAS Design, Implementation, and Evaluation
 
+> **Status — Preliminary analysis of the original 34-publication corpus.**  
+> Supplementary citation searching subsequently added 19 eligible publications, increasing the working corpus to 53 publications. The numerical results below are retained as an intermediate analysis and will be recomputed after extraction and quality assessment of S35–S53. These counts should not be treated as the final review results.
+
 **RQ0:** *How have Multi-Agent Systems been designed, implemented, and evaluated for coordinated decision-making in smart agriculture, particularly for irrigation, shared-resource allocation, livestock management, and environmental sustainability?*
 
 The 34 included publications represent **27 distinct study families** and cover irrigation, livestock, farm energy, crop management, nutrient management, and agricultural task/workforce allocation. Irrigation and water management are the dominant application area, accounting for **14 publications (41.2%)**.
