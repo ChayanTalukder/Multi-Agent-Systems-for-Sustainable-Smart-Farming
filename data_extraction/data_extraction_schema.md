@@ -4,7 +4,7 @@
 
 **Version:** 1.0 — Frozen  
 **Date:** 3 October 2026  
-**Status:** Final extraction schema following three-study pilot testing
+**Extraction status:** S01–S34 complete; S35–S53 added following supplementary citation searching and pending full structured extraction.
 
 ---
 
@@ -20,7 +20,7 @@ The extraction framework follows the main analytical chain of the review:
 
 The schema will be applied consistently to all studies included after full-text screening.
 
-The current full-text corpus contains **34 included publications**.
+The current working full-text corpus contains **53 included publications**: 34 identified through the primary database-search pathway and 19 additional publications identified through supplementary citation searching.
 
 ---
 
@@ -56,7 +56,7 @@ RQ0 provides the overall synthesis framework and is supported by RQ1–RQ4.
 
 The primary unit of extraction is the **included publication**.
 
-Each of the 34 included publications will receive one row in the main extraction dataset.
+Each included publication receives one row in the main extraction dataset. The current corpus contains 53 publications.
 
 Each publication will be assigned a unique identifier:
 
@@ -65,7 +65,7 @@ S01
 S02
 S03
 ...
-S34
+S53
 ```
 
 Related publications will not automatically be merged during extraction.
@@ -172,7 +172,7 @@ These fields identify each publication and describe its agricultural context.
 
 | Field | Type | Description |
 |---|---|---|
-| `Study_ID` | Identifier | Unique SLR identifier assigned to the publication, e.g. `S01`–`S34`. |
+| `Study_ID` | Identifier | Unique SLR identifier assigned to the publication, e.g. `S01`–`S53`. |
 | `Rayyan_ID` | Identifier | Rayyan record identifier from the final included-study export. |
 | `PDF_Filename` | Text | Filename of the full-text PDF used for extraction. |
 | `Title` | Text | Full publication title. |
@@ -405,13 +405,13 @@ protocol/quality_assessment.md
 
 The extraction procedure will be conducted as follows:
 
-1. verify bibliographic metadata and assign permanent `Study_ID` values to all 34 included publications;
+1. verify bibliographic metadata and assign permanent `Study_ID` values to all 53 included publications;
 2. complete `extraction_codebook.md` to define controlled values and field-specific coding rules;
 3. pilot the schema on three deliberately different included publications;
 4. review ambiguous, redundant, missing, or impractical fields identified during the pilot;
 5. document justified schema/codebook changes;
 6. freeze the extraction schema and codebook as **Version 1.0**;
-7. extract all 34 included publications using the frozen Version 1.0 framework;
+7. extract all 53 included publications using the frozen Version 1.0 framework;
 8. perform the QA1–QA7 quality assessment;
 9. check the completed datasets for missing values, inconsistent coding, and related-publication overlap;
 10. proceed to RQ0–RQ4 synthesis only after the extraction dataset has been validated.
@@ -433,7 +433,7 @@ Minor revisions identified during pilot testing were incorporated before freezin
 
 # Schema Stability
 
-Version 1.0 is frozen following completion of the three-study pilot. The extraction fields and coding rules should remain stable throughout extraction of the 34 included publications.
+Version 1.0 is frozen following completion of the three-study pilot. The extraction fields and coding rules should remain stable throughout extraction of the 53 included publications.
 
 If an unforeseen issue requires a substantive change after extraction has begun:
 1. the reason for the change must be documented;
@@ -451,16 +451,14 @@ This avoids applying different extraction criteria to different publications.
 |---|---|---|---|
 | 3 Oct 2026 | 0.1 | Initial pre-pilot schema aligned with RQ0–RQ4 and the 34-publication corpus. | Establish the candidate extraction framework. |
 | 3 Oct 2026 | 1.0 | Schema frozen after three-study pilot; added `Evaluation_Results`. | Separate system/algorithm evaluation findings from agricultural and sustainability outcomes. |
+| 9 Oct 2026 | 1.0 | Working corpus extended from 34 to 53 included publications following supplementary citation searching. Study IDs S35–S53 were added; no extraction fields or coding rules were changed. | Preserve the frozen post-pilot schema while incorporating supplementary-search inclusions. |
 ---
 
 # Current Status
-
-# Current Status
-
 **Full-text screening:** Complete  
-**Included publications:** 34  
+**Included publications:** 53
 **Corpus verification:** Complete  
 **Three-study extraction pilot:** Complete  
 **Data-extraction schema:** Version 1.0 — Frozen  
 **Extraction codebook:** Version 1.0 — Frozen  
-**Next step:** Create the final extraction dataset and begin structured extraction of all 34 included publications.
+**Next step:** Complete extraction and quality assessment for S35–S53 using the frozen Version 1.0 schema, then reconcile study families across the complete 53-publication corpus.
