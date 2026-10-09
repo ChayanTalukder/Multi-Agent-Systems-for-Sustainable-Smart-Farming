@@ -42,7 +42,7 @@ The current working review corpus therefore contains:
 
 Structured extraction and quality assessment are complete for **S01–S34**.
 
-The 19 citation-search inclusions have been assigned **S35–S53** and added to the extraction and QA datasets. Their full extraction and quality assessment are currently in progress.
+The 19 citation-search inclusions have been assigned **S35–S53** and added to the extraction and QA datasets. Their full extraction and quality assessment are the next phase of the review.
 
 The files in `analysis/` currently contain the earlier analysis of the original 34-publication corpus and should therefore be treated as **preliminary** until the analysis is rerun using all 53 included publications.
 
