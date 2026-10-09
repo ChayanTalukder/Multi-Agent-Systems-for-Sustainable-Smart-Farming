@@ -1,5 +1,8 @@
 # RQ4 — Evaluation, Limitations, and Research Gaps
 
+> **Status — Preliminary analysis of the original 34-publication corpus.**  
+> Supplementary citation searching subsequently added 19 eligible publications, increasing the working corpus to 53 publications. The numerical results below are retained as an intermediate analysis and will be recomputed after extraction and quality assessment of S35–S53. These counts should not be treated as the final review results.
+
 **RQ4:** *How are agricultural Multi-Agent Systems evaluated, and what methodological, technical, and practical limitations or research gaps are reported?*
 
 Evaluation is dominated by simulation. **31 of 34 publications** use simulation as part of their evaluation, and 27 remain at simulation as their highest implementation maturity. Case studies occur in 21 publications, comparative evaluations in nine, and sensitivity, calibration, or validation analyses in seven. Only two studies include field or cyber-physical pilots, while just one demonstrates full real-world deployment.
