@@ -33,7 +33,10 @@ A subsequent one-generation backward and forward citation search identified **24
 - 19 additional publications were included.
 
 The current working review corpus therefore contains:
+
+```text
 34 publications from the primary database-search pathway + 19 publications identified through citation searching = 53 included publications
+```
 
 ---
 
