@@ -3,7 +3,7 @@
 > **Status — Preliminary analysis of the original 34-publication corpus.**  
 > Supplementary citation searching subsequently added 19 eligible publications, increasing the working corpus to 53 publications. The numerical results below are retained as an intermediate analysis and will be recomputed after extraction and quality assessment of S35–S53. These counts should not be treated as the final review results.
 
-The final review includes **34 publications representing 27 distinct study families**. Descriptive statistics are reported at publication level, while related publications are considered jointly when interpreting the strength of evidence to avoid over-counting overlapping research.
+The preliminary synthesis includes **34 publications representing 27 distinct study families**. Descriptive statistics are reported at publication level, while related publications are considered jointly when interpreting the strength of evidence to avoid over-counting overlapping research.
 
 ## 1. Characteristics of the Evidence Base
 
