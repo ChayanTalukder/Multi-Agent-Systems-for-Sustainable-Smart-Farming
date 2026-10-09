@@ -1,5 +1,8 @@
 # RQ3 — Agricultural, Resource, Livestock, and Environmental Outcomes
 
+> **Status — Preliminary analysis of the original 34-publication corpus.**  
+> Supplementary citation searching subsequently added 19 eligible publications, increasing the working corpus to 53 publications. The numerical results below are retained as an intermediate analysis and will be recomputed after extraction and quality assessment of S35–S53. These counts should not be treated as the final review results.
+
 **RQ3:** *What agricultural, livestock-welfare, resource-efficiency, and environmental outcomes are reported for MAS-based smart-farming approaches?*
 
 The strongest outcome evidence concerns **resource management and efficiency**. Resource-related outcomes are reported in **29 of 34 publications**, representing 23 of 27 study families. Common benefits include reduced irrigation demand, improved water-use efficiency, lower grid-energy purchases, greater renewable-energy utilisation, improved labour/task allocation, and more efficient nutrient or manure management.
