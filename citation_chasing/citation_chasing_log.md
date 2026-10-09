@@ -5,7 +5,10 @@
 ## Scope
 This log records a one-generation supplementary citation search from the 34 publications initially included through the primary database-search pathway.
 
-### Important: These records must be deduplicated against the complete 102-record Rayyan screening export before they can be counted as genuinely new citation-search records in PRISMA.
+The candidate records were subsequently deduplicated against the complete 102-record post-deduplication Rayyan screening corpus. No citation-search candidate matched an existing primary-search record, so all 24 records were confirmed as genuinely new supplementary-search records.
+
+
+### Important: These candidate records were subsequently deduplicated against the complete 102-record post-deduplication Rayyan screening corpus. No citation-search candidate matched an existing primary-search record, so all 24 records were confirmed as genuinely new supplementary-search records.
 
 ## First-pass status
 - Formal citation-linked candidates logged: 24
