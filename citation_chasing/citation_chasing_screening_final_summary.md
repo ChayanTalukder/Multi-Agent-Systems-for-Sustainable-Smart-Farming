@@ -79,14 +79,51 @@ Exclusion reason:
         ↓
 1 full-text exclusion
         ↓
-19 newly included publicationsrelationships must be reconciled during extraction before synthesis is updated.
+19 newly included publications
+```
 
-## Next step
+---
 
-1. Retrieve/archive PDFs and bibliographic records for the 20 newly included publications.
-2. Add the 20 records to the final reference library/Rayyan audit trail.
-3. Extend `extraction_template.csv` and `quality_assessment.csv`.
-4. Extract and QA the 20 new publications, preferably in batches.
-5. Reconcile study families.
-6. Re-run descriptive statistics and RQ0–RQ4 synthesis.
-7. Create the final PRISMA 2020 flow diagram using the database-search and citation-search pathways separately.
+## Foundational Studies
+
+Six pre-2010 candidate publications were identified through backward citation searching.
+
+Five were successfully retrieved, satisfied the predefined IC7 foundational-study exception, and were included in the review.
+
+The sixth pre-2010 candidate, SHADOC, could not be retrieved and therefore was not included in the final evidence corpus.
+
+The primary review search window remains **2010–2026**.
+
+---
+
+## Corpus Implication
+
+The final working publication corpus becomes:
+
+```text
+34 publications from the primary database-search pathway
++19 publications from supplementary citation searching
+=53 included publications
+```
+
+This is a publication count rather than an independent-study count.
+
+Several newly included publications are related to research families already represented in the primary corpus. Study-family relationships will therefore be reconciled before the final evidence synthesis.
+
+---
+
+## Audit Note
+
+The three batch-level full-text screening CSV files are retained as intermediate working records.
+
+B13/SHADOC was initially considered substantively eligible during the citation-screening process, but its final status was subsequently changed to **report not retrieved** when the full text could not be obtained. The final status in this document and `citation_chasing_screening_final.csv` supersedes the intermediate batch record.
+
+---
+
+## Next Steps
+
+1. Complete structured extraction and quality assessment for S35–S53.
+2. Reconcile study-family relationships across all 53 publications.
+3. Re-run descriptive statistics and RQ0–RQ4 synthesis.
+4. Regenerate final tables and figures.
+5. Produce the final PRISMA 2020 flow diagram with database and citation-search pathways reported separately.
