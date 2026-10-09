@@ -1,4 +1,7 @@
 # Citation-Chasing Deduplication Report
+
+**Status:** Completed intermediate deduplication audit. Final eligibility and retrieval outcomes are reported in `citation_chasing_screening_final_summary.md`.
+
 ## Deduplication basis
 Citation-search candidates were compared against the complete 102-record post-dedup Rayyan dataset using normalized DOI and title matching. Candidate records were also checked for duplicates within the citation-search set.
 ## Results
