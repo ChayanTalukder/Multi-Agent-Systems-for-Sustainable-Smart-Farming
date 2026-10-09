@@ -305,7 +305,7 @@ RQ4 captures how each MAS is evaluated and what methodological, technical, and p
 ```text
 Study identification and context
         │
-        └── Descriptive characteristics of the 34 included publications
+        └── Descriptive characteristics of the 53 included publications
 
 RQ0 — Overall MAS use in sustainable smart farming
         │
@@ -418,7 +418,7 @@ The extraction procedure will be conducted as follows:
 
 ---
 
-# # Pilot Testing
+# Pilot Testing
 
 The extraction framework was pilot-tested on three deliberately different included publications:
 
