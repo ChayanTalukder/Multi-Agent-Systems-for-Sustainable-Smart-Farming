@@ -82,26 +82,27 @@ AND
 
 ## Database Adaptation
 
-The conceptual query will be translated separately for:
+The conceptual strategy was implemented separately in the five final primary information sources:
 
 - Scopus
-- Web of Science
+- Web of Science Core Collection
 - IEEE Xplore
-- ACM Digital Library
 - ScienceDirect
 - SpringerLink
 
-Google Scholar and backward/forward citation searching will be used as supplementary discovery mechanisms.
-
-Database-specific adaptations may include:
+Database-specific adaptations included:
 
 - wildcard expansion;
 - field-name changes;
 - quotation syntax;
 - Boolean syntax;
-- Title/Abstract/Keyword restrictions.
+- Title/Abstract-equivalent field restrictions.
 
-All adaptations will preserve the conceptual meaning of the master strategy.
+ACM Digital Library was originally planned as a primary source but was removed because the available interface did not permit a reproducible implementation of the frozen title/abstract Boolean strategy. This protocol deviation is documented in `protocol/protocol_notes.md`.
+
+After completion of the primary database-screening pathway, one generation of supplementary backward and forward citation searching was conducted. Backward searching used reference lists from included publications. Forward searching used publicly accessible citation-index, publisher, and web citation information.
+
+Supplementary citation-search records were screened using the same frozen eligibility criteria and were reported separately from the primary database-search records.
 
 ---
 
