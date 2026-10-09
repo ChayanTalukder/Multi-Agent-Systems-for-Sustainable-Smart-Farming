@@ -278,18 +278,26 @@ The review follows a predefined and reproducible protocol and uses **PRISMA 2020
 
 Earlier foundational work may be identified through backward citation searching where relevant.
 
-### Main Databases
+### Primary Databases
 
-The planned literature search includes:
+The final primary database search was conducted using:
 
-* Scopus
-* Web of Science
-* IEEE Xplore
-* ACM Digital Library
-* ScienceDirect
-* SpringerLink
+* Scopus;
+* Web of Science Core Collection;
+* IEEE Xplore;
+* ScienceDirect;
+* SpringerLink.
 
-Google Scholar and backward/forward citation searching may also be used as supplementary snowballing mechanisms.
+ACM Digital Library was originally planned but was removed from the primary database set because the available interface did not support a reproducible implementation of the frozen title/abstract search strategy. The decision is documented in `protocol/protocol_notes.md`.
+
+### Supplementary Citation Searching
+
+After the initial database-screening phase, one generation of supplementary backward and forward citation searching was conducted from the initially included publications.
+
+Backward searching used the reference lists of included publications. Forward searching used publicly accessible citation-index, publisher, and web citation information.
+The supplementary search identified 24 new records that were screened using the same predefined eligibility criteria as the primary database records.
+
+Earlier publications outside the primary 2010–2026 search window were eligible only under the predefined IC7 foundational-study exception.
 
 ---
 
@@ -394,30 +402,42 @@ Studies may be excluded when they:
 
 ```text
 Research Questions & Protocol
-    ↓
-Database Searches
-    ↓
-Export Records
-    ↓
-Merge Records
-    ↓
-Deduplication
-    ↓
+        ↓
+Primary Database Searches
+        ↓
+Export and Merge Records in Rayyan
+        ↓
+Cross-Database Deduplication
+        ↓
 Title / Abstract Screening
-    ↓
-Full-Text Screening
-    ↓
-Quality Assessment
-    ↓
-Final Included Studies
-    ↓
-Structured Data Extraction
-    ↓
-Analysis & Evidence Synthesis
-    ↓
-Taxonomy
-    ↓
+        ↓
+Full-Text Retrieval and Screening
+        ↓
+34 Initially Included Publications
+        ↓
+One-Generation Backward / Forward Citation Searching
+        ↓
+24 New Citation-Search Records
+        ↓
+Supplementary Screening and Full-Text Assessment
+        ↓
+19 Additional Included Publications
+        ↓
+53-Publication Working Corpus
+        ↓
+Structured Data Extraction + Quality Assessment
+        ↓
+Study-Family Reconciliation
+        ↓
+Descriptive Analysis + RQ0–RQ4 Synthesis
+        ↓
+Taxonomy / Evidence Mapping
+        ↓
 Research Gaps
+        ↓
+PRISMA 2020 Reporting
+        ↓
+Final Report and Presentation
 ```
 
 ---
@@ -574,52 +594,58 @@ The project is expected to produce:
 
 ## 18. Repository Structure
 
-The repository will be organised approximately as follows:
-
 ```text
-sustainable-smart-farming-mas-review/
+Multi-Agent-Systems-for-Sustainable-Smart-Farming/
 │
 ├── README.md
 │
+├── proposal/
+│   └── Project_Proposal.pdf
+│
 ├── protocol/
+│   ├── ProjectScope_Extended.pdf
 │   ├── research_questions.md
-|   ├── inclusion_exclusion.md
-|   ├── quality_assessment.md
-|   └── protocol_notes.md
+│   ├── inclusion_exclusion.md
+│   ├── quality_assessment.md
+│   └── protocol_notes.md
 │
 ├── searches/
+│   ├── master_search_strategy.md
 │   ├── scopus/
 │   ├── web_of_science/
 │   ├── ieee_xplore/
-│   ├── acm/
-│   ├── sciencedirect/
-│   └── springer/
+│   ├── science_direct/
+│   └── springer_link/
 │
-├── screening/
-│   ├── raw_exports/
-│   ├── deduplicated/
-│   └── screening_records/
+├── rayyan/
+│   └── cross_database_deduplication.md
 │
-├── extraction/
-│   ├── data_extraction_template.csv
-│   └── extracted_studies.csv
+├── citation_chasing/
+│   ├── citation_chasing_log.md
+│   ├── citation_chasing_log.csv
+│   ├── citation_chasing_dedup_log.md
+│   ├── citation_chasing_log_deduplicated.csv
+│   ├── citation_chasing_fulltext_screening_batch1.csv
+│   ├── citation_chasing_fulltext_screening_batch2.csv
+│   ├── citation_chasing_fulltext_screening_batch3.csv
+│   ├── citation_chasing_screening_final.csv
+│   └── citation_chasing_screening_final_summary.md
 │
-├── analysis/
-│   ├── notebooks/
-│   ├── scripts/
-│   └── tables/
+├── data_extraction/
+│   ├── data_extraction_schema.md
+│   ├── extraction_codebook.md
+│   ├── extraction_template_updated6(final).csv
+│   └── quality_assessment_updated6(final).csv
 │
-├── results/
-│   ├── figures/
-│   ├── taxonomy/
-│   └── evidence_maps/
-│
-├── prisma/
-│   └── flow_diagram/
-│
-├── references/
-│
-└── report/
+└── analysis/
+    ├── descriptive_analysis.md
+    ├── rq0_synthesis.md
+    ├── rq1_synthesis.md
+    ├── rq2_synthesis.md
+    ├── rq3_synthesis.md
+    ├── rq4_synthesis.md
+    ├── integrated_results_synthesis.md
+    └── slr_descriptive_analysis.xlsx
 ```
 
 The exact repository structure may evolve as the review progresses.
