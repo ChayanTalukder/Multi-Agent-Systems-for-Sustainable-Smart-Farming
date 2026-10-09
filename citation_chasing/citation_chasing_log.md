@@ -3,8 +3,10 @@
 **Status:** Historical candidate-discovery log. The first-pass decisions recorded below were made before deduplication, full-text retrieval, and final Rayyan screening. Final citation-search outcomes are reported in `citation_chasing_screening_final_summary.md`.
 
 ## Scope
-This log records a one-generation supplementary citation search from the 34 currently included publications. Backward searching uses the reference lists of the included full texts. Forward searching uses publicly accessible citation-index/publisher/web citation information.
+This log records a one-generation supplementary citation search from the 34 publications initially included through the primary database-search pathway.
+
 ### Important: These records must be deduplicated against the complete 102-record Rayyan screening export before they can be counted as genuinely new citation-search records in PRISMA.
+
 ## First-pass status
 - Formal citation-linked candidates logged: 24
 - Advance to full-text assessment: 20
