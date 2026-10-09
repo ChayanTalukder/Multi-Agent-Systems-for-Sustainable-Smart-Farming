@@ -1,5 +1,8 @@
 # RQ2 — Communication, Coordination, and Shared-Resource Management
 
+> **Status — Preliminary analysis of the original 34-publication corpus.**  
+> Supplementary citation searching subsequently added 19 eligible publications, increasing the working corpus to 53 publications. The numerical results below are retained as an intermediate analysis and will be recomputed after extraction and quality assessment of S35–S53. These counts should not be treated as the final review results.
+
 **RQ2:** *How do agricultural agents communicate, coordinate, cooperate, or negotiate when managing shared and limited farm resources?*
 
 Coordination is a central feature of agricultural MAS. It is reported in **31 of 34 publications**, representing **24 of 27 distinct study families**. Communication occurs in 21 publications, information sharing in 17, cooperation in 11, competition in 13, task allocation in 10, and explicit negotiation in only 8 publications across five study families.
