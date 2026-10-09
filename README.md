@@ -60,8 +60,7 @@ This SLR therefore examines MAS research from an **integrated farm-level perspec
 
 ## 2. Main Research Question
 
-> **How are Multi-Agent Systems designed and used to coordinate agricultural decision-making and shared-resource allocation across crop, irrigation, and livestock systems, and to what extent do existing approaches address environmental sustainability?**
-
+> **How have Multi-Agent Systems been designed, implemented, and evaluated for coordinated decision-making in smart agriculture, particularly for irrigation, shared-resource allocation, livestock management, and environmental sustainability?**
 ---
 
 ## 3. Review Objectives
