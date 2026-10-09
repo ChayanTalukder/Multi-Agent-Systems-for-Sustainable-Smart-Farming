@@ -35,8 +35,16 @@ A subsequent one-generation backward and forward citation search identified **24
 The current working review corpus therefore contains:
 
 ```text
-34 publications from the primary database-search pathway + 19 publications identified through citation searching = 53 included publications
+34 publications from the primary database-search pathway
++ 19 publications identified through citation searching
+= 53 included publications
 ```
+
+Structured extraction and quality assessment are complete for **S01–S34**.
+
+The 19 citation-search inclusions have been assigned **S35–S53** and added to the extraction and QA datasets. Their full extraction and quality assessment are currently in progress.
+
+The files in `analysis/` currently contain the earlier analysis of the original 34-publication corpus and should therefore be treated as **preliminary** until the analysis is rerun using all 53 included publications.
 
 ---
 
@@ -650,7 +658,9 @@ Multi-Agent-Systems-for-Sustainable-Smart-Farming/
     └── slr_descriptive_analysis.xlsx
 ```
 
-The exact repository structure may evolve as the review progresses.
+`ProjectScope_Extended.pdf` is retained as a historical project-scope document. Where it differs from the current review protocol, the Markdown files in `protocol/` are authoritative.
+
+The current files in `analysis/` represent the preliminary 34-publication analysis and will be replaced after extraction and quality assessment of S35–S53 are complete.
 
 ---
 
