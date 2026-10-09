@@ -440,4 +440,4 @@ Pilot testing resulted in minor clarifications to:
 - multiple agent levels;
 - separation of RQ3 outcomes from system-level evaluation results.
 
-**Version 1.0 is now frozen and will be applied consistently to all 34 included publications.**
+**Version 1.0 remains frozen and is applied consistently to the complete working corpus. The same coding rules used for S01–S34 will be applied without modification to the citation-search inclusions S35–S53.**
