@@ -16,6 +16,28 @@ The project focuses on how autonomous and heterogeneous agents are used to suppo
 
 ---
 
+
+## Current Review Status
+
+**Last updated: 9 October 2026**
+
+The primary database-search pathway initially produced **34 included publications**.
+
+A subsequent one-generation backward and forward citation search identified **24 additional unique candidate records**. After supplementary screening:
+
+- 3 records were excluded at title/abstract screening;
+- 21 reports were sought for full-text retrieval;
+- 1 report could not be retrieved;
+- 20 reports were assessed at full text;
+- 1 report was excluded after full-text assessment;
+- 19 additional publications were included.
+
+The current working review corpus therefore contains:
+34 publications from the primary database-search pathway + 19 publications identified through citation searching = 53 included publications
+
+---
+
+
 ## 1. Background and Motivation
 
 Modern agriculture involves several interconnected decision-making processes. Crop irrigation, livestock water demand, weather variability, energy consumption, and resource availability cannot always be treated independently.
