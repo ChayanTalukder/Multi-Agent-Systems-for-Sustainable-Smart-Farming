@@ -1,5 +1,9 @@
 # Descriptive Analysis
 
+> **Status — Preliminary analysis of the original 34-publication corpus.**  
+> Supplementary citation searching subsequently added 19 eligible publications, increasing the working corpus to 53 publications. The numerical results below are retained as an intermediate analysis and will be recomputed after extraction and quality assessment of S35–S53. These counts should not be treated as the final review results.
+> The accompanying `slr_descriptive_analysis.xlsx` workbook reflects the same preliminary 34-publication dataset and will also be regenerated.
+
 The final SLR dataset contains **34 included publications**, representing **27 distinct study families** after accounting for related publications. Descriptive statistics are reported at publication level, while study-family relationships are retained to avoid over-counting overlapping evidence during synthesis.
 
 The literature spans **2010–2026**, with a strong recent increase: **16 of 34 publications (47.1%)** were published between 2023 and 2026. Journal articles account for **21 studies (61.8%)**, while 13 are conference papers.
