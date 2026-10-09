@@ -31,8 +31,8 @@ Earlier foundational studies may be included through backward citation searching
 
 Supplementary discovery may use:
 
-- Google Scholar;
-- backward and forward citation searching.
+- backward citation searching from the reference lists of included publications;
+- forward citation searching using publicly accessible citation-index, publisher, and web citation information.
 
 ---
 
