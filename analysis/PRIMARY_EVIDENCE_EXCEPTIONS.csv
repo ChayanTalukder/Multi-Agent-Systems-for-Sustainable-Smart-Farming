@@ -1,0 +1,8 @@
+Study_ID,Issue,Freeze treatment,Further confirmation
+S02,Operational deployment,Source-coded Yes; independently unconfirmed,Original deployment record / operating duration
+S04,Cattle welfare inference,Prototype/response evaluation; no measured welfare gain,Field evaluation if later claimed
+S25,Harvest outcomes,Actual teams faster execution in specific comparison; trade-off,Report comparator-year-metric together
+S33,Harvest outcomes,Separate publication and algorithms; do not transfer to S25,Maintain S33-specific baseline
+S49; S53,Duplicated performance evidence,One family SF49; simulation results,Do not pool as replications
+S42; S52,Family architecture discrepancy,Mixed Hybrid/Hierarchical source-coded labels,Family-level classification sensitivity
+All studies,Comparator strength,Text present does not imply rigorous comparator,Original sources for any strong causal claim

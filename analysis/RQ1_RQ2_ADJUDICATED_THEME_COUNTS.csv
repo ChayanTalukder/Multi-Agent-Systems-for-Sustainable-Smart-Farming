@@ -1,0 +1,14 @@
+RQ,Theme,Publications,Publication_pct,Study_families,Family_pct,Study_IDs
+RQ1,Farmer / household / agricultural producer,33,62.3,28,63.6,S01; S03; S05; S09; S10; S11; S12; S13; S14; S16; S20; S22; S26; S27; S28; S29; S32; S35; S36; S37; S38; S39; S40; S41; S42; S43; S44; S45; S46; S47; S48; S51; S52
+RQ1,Manager / regulator / coordinating actor,25,47.2,19,43.2,S02; S06; S08; S13; S15; S17; S19; S21; S22; S23; S25; S28; S33; S34; S35; S38; S41; S42; S45; S46; S48; S49; S50; S52; S53
+RQ1,Operational / field / irrigation / workforce / robot,17,32.1,13,29.5,S02; S06; S07; S08; S18; S19; S21; S23; S24; S25; S30; S31; S33; S34; S49; S50; S53
+RQ1,Specialist software / analytical / advisory,11,20.8,11,25.0,S02; S04; S05; S06; S07; S08; S09; S15; S17; S18; S24
+RQ1,Biophysical / herd / crop / environmental representation,19,35.8,17,38.6,S02; S04; S10; S12; S13; S15; S22; S26; S35; S37; S39; S40; S42; S43; S44; S45; S46; S51; S52
+RQ1,Market / bidder / trader,11,20.8,8,18.2,S03; S05; S11; S16; S20; S29; S30; S31; S35; S43; S51
+RQ2,Hierarchical / supervisory / shared-controller,25,47.2,19,43.2,S02; S04; S05; S06; S08; S11; S13; S15; S17; S18; S19; S22; S23; S24; S28; S29; S41; S42; S45; S46; S48; S49; S50; S52; S53
+RQ2,Environment- or shared-resource-mediated,20,37.7,18,40.9,S01; S03; S10; S12; S13; S14; S22; S26; S27; S32; S35; S37; S39; S40; S42; S43; S44; S45; S46; S52
+RQ2,Operational allocation / optimisation / scheduling,16,30.2,12,27.3,S02; S07; S19; S25; S28; S30; S31; S33; S34; S41; S42; S48; S49; S50; S52; S53
+RQ2,Auction / bidding / market / price exchange,15,28.3,10,22.7,S03; S05; S11; S16; S20; S25; S28; S29; S30; S31; S33; S34; S35; S43; S51
+RQ2,Peer diffusion / information exchange,13,24.5,13,29.5,S12; S14; S21; S35; S36; S37; S38; S40; S41; S43; S44; S46; S47
+RQ2,Learning-based adaptive coordination,9,17.0,8,18.2,S07; S08; S09; S11; S18; S21; S23; S26; S32
+RQ2,Direct negotiation / collective agreements,8,15.1,7,15.9,S02; S06; S16; S20; S38; S44; S45; S51
