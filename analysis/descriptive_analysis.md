@@ -1,19 +1,68 @@
 # Descriptive Analysis
 
-> **Status — Preliminary analysis of the original 34-publication corpus.**  
-> Supplementary citation searching subsequently added 19 eligible publications, increasing the working corpus to 53 publications. The numerical results below are retained as an intermediate analysis and will be recomputed after extraction and quality assessment of S35–S53. These counts should not be treated as the final review results.
-> The accompanying `slr_descriptive_analysis.xlsx` workbook reflects the same preliminary 34-publication dataset and will also be regenerated.
+## Analysis corpus
 
-The preliminary 34-publication dataset contains **34 included publications**, representing **27 distinct study families** after accounting for related publications. Descriptive statistics are reported at publication level, while study-family relationships are retained to avoid over-counting overlapping evidence during synthesis.
+The final analytical corpus contains **53 included publications**, compared with the original **34-publication primary-search corpus**.
 
-The literature spans **2010–2026**, with a strong recent increase: **16 of 34 publications (47.1%)** were published between 2023 and 2026. Journal articles account for **21 studies (61.8%)**, while 13 are conference papers.
+After study-family reconciliation, the 53 publications represent **44 distinct study families**. Publication-level statistics are therefore supplemented by study-family sensitivity checks during the RQ synthesis to reduce the risk that related publications artificially strengthen a conclusion.
 
-The largest application area is **irrigation and water management** with **14 publications (41.2%)**, followed by livestock/integrated farming and workforce/robotics/task allocation with five publications each. MAS architectures are diverse: decentralised systems are most common (10), followed by hybrid (8), centralised (7), hierarchical (7), and distributed (2).
+## Corpus-level change
 
-Most studies remain at the **simulation stage (27/34; 79.4%)**. Only one study was classified as a real-world deployment and one as a partial deployment, showing that operational validation remains limited.
+- Publications: **34 → 53** (**+19; +55.9%**).
+- Distinct study families: **27 → 44**.
+- Publication-year range: **2010–2026 → 2001–2026**.
+- Median publication year: **2022 → 2020**.
+- Mean QA score: **12.76/14 → 12.94/14**.
+- Median QA score: **13/14** in the final corpus.
 
-Sustainability is a major theme: **21 studies (61.8%)** address it directly, 11 indirectly, and only two do not address it substantively. In addition, **31 studies (91.2%)** explicitly model resource scarcity, capacity constraints, competition, or task-allocation constraints.
+The extension of the publication-year range results from the predefined IC7 foundational-study exception used during backward citation searching. The primary database searches themselves remained restricted to 2010–2026.
 
-Overall study quality is high, with a mean QA score of **12.76/14** and a median of **13/14**. The weakest quality dimension is explicit discussion of study limitations. Reproducibility remains limited, with only **3 studies providing accessible code** and **6 providing accessible data**.
+## Main comparison
 
-Overall, the corpus is recent, sustainability-oriented, and strongly focused on constrained resource coordination, but remains dominated by simulation-based evaluation with limited operational deployment and reproducibility.
+| Indicator | Original 34 | Final 53 | Change |
+|---|---:|---:|---:|
+| Journal articles | 21 (61.8%) | 37 (69.8%) | +16 |
+| Integrated-system studies | 13 (38.2%) | 27 (50.9%) | +14 |
+| Simulation maturity | 27 (79.4%) | 46 (86.8%) | +19 |
+| Direct sustainability | 21 (61.8%) | 39 (73.6%) | +18 |
+| Resource scarcity/constraint modelled | 31 (91.2%) | 50 (94.3%) | +19 |
+| Code available | 3 (8.8%) | 8 (15.1%) | +5 |
+| Data available | 6 (17.6%) | 14 (26.4%) | +8 |
+| No real-world deployment recorded | 32 (94.1%) | 51 (96.2%) | +19 |
+
+## Primary agricultural domains
+
+| Primary domain | Original 34 | Final 53 |
+|---|---:|---:|
+| Irrigation / water management | 14 (41.2%) | 24 (45.3%) |
+| Crop / farm management | 4 (11.8%) | 8 (15.1%) |
+| Livestock / integrated farming | 5 (14.7%) | 6 (11.3%) |
+| Workforce / robotics / task allocation | 5 (14.7%) | 6 (11.3%) |
+| Energy / WEF nexus | 4 (11.8%) | 5 (9.4%) |
+| Soil / nutrient / environmental management | 2 (5.9%) | 4 (7.5%) |
+
+Irrigation and water management remain the dominant primary application area after citation searching.
+
+## MAS architecture
+
+| Architecture | Original 34 | Final 53 |
+|---|---:|---:|
+| Decentralised | 10 (29.4%) | 17 (32.1%) |
+| Hybrid | 8 (23.5%) | 13 (24.5%) |
+| Hierarchical | 7 (20.6%) | 11 (20.8%) |
+| Centralised | 7 (20.6%) | 10 (18.9%) |
+| Distributed | 2 (5.9%) | 2 (3.8%) |
+
+No single architectural pattern dominates the literature, although decentralised systems form the largest individual category.
+
+## Interpretation
+
+Citation searching does not overturn the original profile of the evidence base, but it broadens it substantially.
+
+The expanded corpus contains more integrated social, economic, agronomic, hydrological, energy, and environmental modelling. It also recovers foundational socio-ecological and collective-resource studies that were outside the primary 2010–2026 database window.
+
+The largest persistent limitation is translation to practice. **51 of 53 publications record no real-world deployment**, and simulation remains the highest implementation maturity for **46 of 53 publications**.
+
+Reproducibility improves after citation searching, but accessible implementation code and datasets remain comparatively uncommon.
+
+The final corpus therefore provides broader historical and methodological coverage without materially lowering methodological quality, while remaining dominated by simulation and model-based evaluation.
