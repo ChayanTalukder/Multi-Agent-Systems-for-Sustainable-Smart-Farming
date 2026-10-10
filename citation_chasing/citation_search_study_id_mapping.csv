@@ -1,0 +1,20 @@
+﻿Study_ID,Citation_Search_ID,Rayyan_ID,PDF_Filename,Title,Year,Foundational_IC7
+S35,B01,rayyan-698556113,B01_Schreinemachers_Berger_2011.pdf,An agent-based simulation model of human–environment interactions in agricultural systems,2011,No
+S36,B02,rayyan-698556114,B02_Grovermann_et_al_2017.pdf,'Smart' policies to reduce pesticide use and avoid income trade-offs: An agent-based model applied to Thai agriculture,2017,No
+S37,B03,rayyan-698556115,B03_Quang_Schreinemachers_Berger_2014.pdf,Ex-ante assessment of soil conservation methods in the uplands of Vietnam: An agent-based modeling approach,2014,No
+S38,B04,rayyan-698556116,B04_Cai_Xiong_2017.pdf,An agent-based simulation of cooperation in the use of irrigation systems,2017,No
+S39,B05,rayyan-698556117,B05_Tamburino_DiBaldassarre_Vico_2020.pdf,"Water management for irrigation, crop yield and social attitudes: a socio-agricultural agent-based model to explore a collective action problem",2020,No
+S40,B06,rayyan-698556118,B06_Ng_Eheart_Cai_Braden_2011.pdf,An agent-based model of farmer decision-making and water quality impacts at the watershed scale under markets for carbon allowances and a second-generation biofuel crop,2011,No
+S41,B07,rayyan-698556119,B07_Ghazali_Honar_Nikoo_2018.pdf,A hybrid TOPSIS-agent-based framework for reducing the water demand requested by stakeholders with considering the agents’ characteristics and optimization of cropping pattern,2018,No
+S42,B09,rayyan-698556121,B09_Murgue_et_al_2014.pdf,Fine spatio-temporal simulation of cropping and farming systems effects on irrigation withdrawal dynamics within a river basin,2014,No
+S43,B12,rayyan-698556124,B12_Berger_2001.pdf,"Agent-based spatial models applied to agriculture: a simulation tool for technology diffusion, resource use changes and policy analysis",2001,Yes
+S44,B14,rayyan-698556126,B14_Feuillette_Bousquet_LeGoulven_2003.pdf,SINUSE: A multi-agent model to negotiate water demand management on a free access water table,2003,Yes
+S45,B15,rayyan-698556127,B15_Becu_et_al_2003.pdf,Agent based simulation of a small catchment water management in northern Thailand: Description of the CATCHSCAPE model,2003,Yes
+S46,B16,rayyan-698556128,B16_Barreteau_et_al_2004.pdf,Suitability of Multi-Agent Simulations to study irrigated system viability: application to case studies in the Senegal River Valley,2004,Yes
+S47,B17,rayyan-698556129,B17_Schreinemachers_Berger_Aune_2007.pdf,Simulating soil fertility and poverty dynamics in Uganda: A bio-economic multi-agent systems approach,2007,Yes
+S48,F01,rayyan-698556131,F01_Mahmoudian_Mahjouri_2025.pdf,An adaptive multi-agent model for water allocation under scarcity: application of bankruptcy methods,2025,No
+S49,F02,rayyan-698556132,F02_Cobbenhagen_et_al_2022.pdf,Optimal Irrigation Allocation for Large-Scale Arable Farming,2022,No
+S50,F03,rayyan-698556133,F03_Lu_et_al_2023.pdf,Multi-Robot Task Allocation in Agriculture Scenarios Based on the Improved NSGA-II Algorithm,2023,No
+S51,F04,rayyan-698556134,F04_Catarino_et_al_2021.pdf,Fostering local crop-livestock integration via legume exchanges using an innovative integrated assessment and modelling approach based on the MAELIA platform,2021,No
+S52,F05,rayyan-698556135,F05_Saint-Bois_et_al_2024.pdf,Multi-actor approach to manage the water-energy-food nexus at territory scale,2024,No
+S53,F06,rayyan-698556136,F06_Schoonen_Cobbenhagen_Heemels_2019.pdf,Optimal irrigation management for large-scale arable farming using model predictive control,2019,No
