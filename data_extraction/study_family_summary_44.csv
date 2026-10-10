@@ -1,0 +1,45 @@
+﻿Study_Family_ID,Member_Count,Member_Study_IDs,Relationship_Type,Research_Line_or_Label,Rationale
+SF01,1,S01,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF02,1,S02,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF03,1,S03,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF04,1,S04,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF05,3,S05; S11; S29,Multi-publication family,Dairy P2P energy / MAPDES,Dairy-farm peer-to-peer energy-trading publications with overlapping MAPDES system/evidence.
+SF06,1,S06,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF07,1,S07,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF08,2,S08; S23,Multi-publication family,Semi-centralized MARL irrigation,Conference/journal-style publications of the same semi-centralized MARL irrigation line.
+SF09,1,S09,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF10,1,S10,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF12,1,S12,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF13,2,S13; S22,Multi-publication family,MAELIA core/platform,Overlapping MAELIA platform papers from the same 2014 integrated-assessment project.
+SF14,1,S14,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF15,1,S15,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF16,2,S16; S20,Multi-publication family,Community irrigation negotiation,Overlapping community-irrigation negotiation studies from the same research line/team.
+SF17,1,S17,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF18,1,S18,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF19,1,S19,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF21,1,S21,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF24,1,S24,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF25,3,S25; S33; S34,Multi-publication family,Harvest workforce/task allocation,Overlapping harvest-workforce/task-allocation publications from the same research programme.
+SF26,1,S26,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF27,1,S27,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF28,1,S28,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF30,1,S30,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF31,1,S31,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF32,1,S32,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF35,1,S35,Single-publication family,MP-MAS methodology/platform overview,Kept separate despite summarising several MP-MAS applications because it spans multiple empirical studies rather than duplicating one single case.
+SF36,1,S36,Single-publication family,MP-MAS Thailand application,Distinct empirical MP-MAS application; shared platform alone is not treated as evidence duplication.
+SF37,1,S37,Single-publication family,MP-MAS Vietnam application,Distinct empirical MP-MAS application; shared platform alone is not treated as evidence duplication.
+SF38,1,S38,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF39,1,S39,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF40,1,S40,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF41,1,S41,Single-publication family,,No substantial publication-level evidence overlap identified with another included publication.
+SF42,2,S42; S52,Multi-publication family,MAELIA Aveyron application / WEF extension,S42 and S52 reuse the downstream Aveyron MAELIA case/model lineage; S52 is a later WEF/strategic extension built on the same benchmark/case data.
+SF43,1,S43,Single-publication family,MP-MAS Chile application,Distinct empirical MP-MAS application; shared platform alone is not treated as evidence duplication.
+SF44,1,S44,Single-publication family,SINUSE groundwater negotiation,Distinct model/case from SHADOC and CATCHSCAPE despite shared early companion-modelling tradition.
+SF45,1,S45,Single-publication family,CATCHSCAPE catchment-water management,Distinct model/case from SHADOC and SINUSE.
+SF46,1,S46,Single-publication family,SHADOC / Senegal River Valley irrigation,S46 is the only retrieved included SHADOC-line publication. B13 is related but not retrieved and is excluded from the final family count.
+SF47,1,S47,Single-publication family,MP-MAS Uganda application,Distinct empirical MP-MAS application; shared platform alone is not treated as evidence duplication.
+SF48,1,S48,Single-publication family,Adaptive reservoir-water allocation,"Distinct Iranian basin, authors and allocation framework; not merged with other irrigation/water studies."
+SF49,2,S49; S53,Multi-publication family,Large-scale irrigation MPC/MARA,S53 is the earlier conference irrigation-MPC/MARA study and S49 is the later journal extension using the same core model/data/research problem.
+SF50,1,S50,Single-publication family,Agricultural multi-robot task allocation,"Distinct authors, algorithm and dataset from other agricultural task-allocation publications."
+SF51,1,S51,Single-publication family,MAELIA crop-livestock integration,Distinct Vendée seven-farm crop-livestock application; not merged with the MAELIA platform or Aveyron families.
