@@ -16,12 +16,11 @@ The project focuses on how autonomous and heterogeneous agents are used to suppo
 
 ---
 
-
 ## Current Review Status
 
-**Last updated: 9 October 2026**
+**Last updated: 10 October 2026**
 
-The primary database-search pathway initially produced **34 included publications**.
+The primary database-search pathway produced **34 included publications**.
 
 A subsequent one-generation backward and forward citation search identified **24 additional unique candidate records**. After supplementary screening:
 
@@ -32,7 +31,7 @@ A subsequent one-generation backward and forward citation search identified **24
 - 1 report was excluded after full-text assessment;
 - 19 additional publications were included.
 
-The current working review corpus therefore contains:
+The final working analytical corpus therefore contains:
 
 ```text
 34 publications from the primary database-search pathway
@@ -40,14 +39,35 @@ The current working review corpus therefore contains:
 = 53 included publications
 ```
 
-Structured extraction and quality assessment are complete for **S01–S34**.
+Structured data extraction and quality assessment are complete for **all 53 publications (S01–S53)**.
 
-The 19 citation-search inclusions have been assigned **S35–S53** and added to the extraction and QA datasets. Their full extraction and quality assessment are the next phase of the review.
+Study-family reconciliation identified **44 distinct study families**, including **7 multi-publication families**. Publication-level synthesis therefore uses **n = 53**, while family-level sensitivity analyses use **n = 44** to assess whether related publications materially affect the review conclusions.
 
-The files in `analysis/` currently contain the earlier analysis of the original 34-publication corpus and should therefore be treated as **preliminary** until the analysis is rerun using all 53 included publications.
+The analytical workflow completed so far is:
+
+```text
+53-publication extraction + quality assessment       Complete
+Study-family reconciliation: 44 families             Complete
+Step 6A — Descriptive analysis                       Complete
+Step 6B — RQ0 synthesis                              Complete
+Step 6C — RQ1 synthesis                              Complete and reconciled
+Step 6D — RQ2 synthesis                              Complete and reconciled
+Step 6E — RQ3 synthesis                              Complete and reconciled
+Step 6F — RQ4 synthesis                              Complete and reconciled
+Step 6G — Integration, consistency audit,
+           adjudication and final reconciliation     Complete
+Step 6H — MAS taxonomy + evidence mapping            Next
+Step 6I — Consolidated research gaps                 Pending
+PRISMA 2020 reporting                                Pending
+Zotero finalisation                                  Pending
+Final report and presentation                        Pending
+```
+
+The Step 6G reconciliation preserves several evidence safeguards. Reported or simulated outcomes are not treated automatically as demonstrated real-world benefits; scenario comparisons are not treated automatically as rigorous external baselines; and related publications are not interpreted as independent replications.
+
+The current canonical analysis files in `analysis/` therefore represent the reconciled **53-publication / 44-study-family** evidence base and supersede the earlier preliminary 34-publication analysis.
 
 ---
-
 
 ## 1. Background and Motivation
 
@@ -72,6 +92,7 @@ This SLR therefore examines MAS research from an **integrated farm-level perspec
 ## 2. Main Research Question
 
 > **How have Multi-Agent Systems been designed, implemented, and evaluated for coordinated decision-making in smart agriculture, particularly for irrigation, shared-resource allocation, livestock management, and environmental sustainability?**
+
 ---
 
 ## 3. Review Objectives
@@ -305,9 +326,10 @@ ACM Digital Library was originally planned but was removed from the primary data
 After the initial database-screening phase, one generation of supplementary backward and forward citation searching was conducted from the initially included publications.
 
 Backward searching used the reference lists of included publications. Forward searching used publicly accessible citation-index, publisher, and web citation information.
-The supplementary search identified 24 new records that were screened using the same predefined eligibility criteria as the primary database records.
 
-Earlier publications outside the primary 2010–2026 search window were eligible only under the predefined IC7 foundational-study exception.
+The supplementary search identified **24 new unique records** that were screened using the same predefined eligibility criteria as the primary database records.
+
+Earlier publications outside the primary 2010–2026 search window were eligible only under the predefined **IC7 foundational-study exception**.
 
 ---
 
@@ -368,13 +390,13 @@ may be expanded to:
 (sustainability OR sustainable)
 ```
 
-The exact search string, database, search date, search fields, and retrieved record count will be documented for reproducibility.
+The exact search string, database, search date, search fields, and retrieved record count are documented under `searches/` for reproducibility.
 
 ---
 
 ## 10. Screening Strategy
 
-If the initial **deduplicated corpus exceeds approximately 100 records**, the search will be refined to the closest available equivalents of:
+During protocol development, the search was designed so that if the initial **deduplicated corpus exceeded approximately 100 records**, the strategy could be refined toward the closest available equivalents of:
 
 ```text
 Title
@@ -454,7 +476,7 @@ Final Report and Presentation
 
 ## 12. Reference Management and PRISMA Workflow
 
-Two complementary tools are used.
+Two complementary tools are used at different stages of the review.
 
 ### Rayyan
 
@@ -470,11 +492,11 @@ Rayyan is used for the systematic-review workflow:
 
 ### Zotero
 
-Zotero is used as the reference-management system for:
+Zotero will be finalised after the main analytical stages and will be used for:
 
-* organising included literature;
-* storing PDFs;
-* managing bibliographic metadata;
+* organising the final included literature;
+* storing and linking PDFs where permitted;
+* checking bibliographic metadata;
 * research notes and annotations;
 * citation management;
 * bibliography generation.
@@ -485,17 +507,17 @@ The main screening and deduplication record is maintained in **Rayyan** to avoid
 
 ## 13. Quality Assessment
 
-Included studies are assessed according to criteria such as:
+Included studies are assessed according to predefined criteria covering:
 
 * clarity of research objectives;
-* clarity of agent roles and autonomy;
-* specification of communication mechanisms;
-* specification of coordination or negotiation mechanisms;
-* description of the agricultural environment;
-* description of datasets or simulation data;
-* quality of experimental evaluation;
+* description of the MAS and agent roles;
+* methodological and data transparency;
+* clarity of decision or coordination mechanisms;
+* quality of experimental or analytical evaluation;
 * reproducibility;
-* acknowledgement of limitations.
+* acknowledgement of limitations and future research needs.
+
+The completed quality-assessment dataset contains scores and supporting notes for all **53 included publications**.
 
 ---
 
@@ -511,51 +533,71 @@ Typical fields include:
 | Agent types              | Crop, weather, livestock, water, manager                                                                  |
 | Agent architecture       | Reactive, BDI, utility, hierarchical, distributed                                                         |
 | Coordination             | Cooperation, negotiation, auction, contract-net                                                           |
-| AI technique             | Rules, optimisation, ML, RL/MARL, MPC, LLM                                                                |
+| AI technique             | Rules, optimisation, ML, RL/MARL, MPC, LLM                                                               |
 | Resources                | Water, feed, energy, pasture, land, machinery                                                             |
 | Environmental conditions | Drought, heatwave, rainfall, scarcity                                                                     |
-| Deployment               | Simulation, IoT, cyber-physical, field deployment                                                         |
-| Agricultural outcomes    | Yield, crop stress, livestock welfare                                                                     |
+| Deployment               | Simulation, prototype, cyber-physical, field deployment                                                   |
+| Agricultural outcomes    | Yield, crop stress, farm performance, livestock welfare                                                   |
 | Sustainability outcomes  | Water, GHG, energy, soil, pollution                                                                       |
 | Evaluation               | Dataset, metrics, baselines, scenarios                                                                    |
-| Limitations              | Scalability, uncertainty, **explainability**, interoperability, environmental modelling, deployment, cost |
+| Limitations              | Scalability, uncertainty, explainability, interoperability, environmental modelling, deployment, cost    |
 
 ---
 
 ## 15. Analysis and Synthesis
 
-The literature is compared across four broad classes of coordination:
+The review uses the **53 included publications** as the primary publication-level corpus and **44 reconciled study families** as an evidence-independence sensitivity check.
 
-1. **Independent / decentralised decision-making**
-2. **Centralised / hierarchical coordination**
-3. **Cooperative / negotiated multi-agent allocation**
-4. **Learning / adaptive approaches**
+The synthesis addresses five connected analytical dimensions:
 
-The review considers reported outcomes such as:
+1. the overall MAS application landscape and functional purpose;
+2. agent types, roles, architectures, autonomy, and decision-making;
+3. communication, cooperation, coordination, negotiation, and shared-resource allocation;
+4. agricultural, livestock, resource-efficiency, and environmental outcomes;
+5. evaluation approaches, implementation maturity, limitations, and research gaps.
 
-* water-use efficiency;
-* unmet resource demand;
-* crop yield and crop stress;
-* livestock welfare and heat stress;
-* resource conflicts;
-* allocation fairness;
-* overall farm utility;
-* economic outcomes;
-* communication overhead;
-* computational requirements;
-* energy consumption;
-* greenhouse-gas reduction;
-* pollution reduction;
-* soil and land impacts.
+Publication-level and study-family analyses are used for different purposes. Publication counts describe the literature as published, while study-family sensitivity checks reduce the risk that multiple publications from the same underlying model, dataset, or case study artificially strengthen a conclusion.
 
-Where quantitative results are sufficiently comparable, they will be summarised descriptively.
+Multi-label characteristics may occur simultaneously within one publication or study family. Family-level values therefore indicate whether a family contains evidence for a characteristic; they are not necessarily mutually exclusive and do not represent independent replications of an effect.
 
-Due to expected differences between agricultural domains, MAS architectures, datasets, and metrics, the primary synthesis will use:
+The synthesis explicitly distinguishes between:
+
+* reported outcomes and demonstrated improvements;
+* simulation results and real-world operational evidence;
+* alternative scenario comparisons and external or operational baselines;
+* direct communication and indirect environment-mediated interaction;
+* auctions or market mechanisms and explicit negotiation;
+* publication counts and independent study-family evidence.
+
+The analytical sequence is:
+
+```text
+Step 6A — Descriptive statistics: original 34 vs final 53 publications
+Step 6B — RQ0: overall MAS application landscape and purpose
+Step 6C — RQ1: agents, architectures, autonomy, and decision-making
+Step 6D — RQ2: communication, coordination, negotiation, and allocation
+Step 6E — RQ3: agricultural, resource, livestock, and environmental outcomes
+Step 6F — RQ4: evaluation, implementation maturity, limitations, and gaps
+Step 6G — Cross-RQ integration, manual adjudication, source checks,
+           and final analytical reconciliation
+Step 6H — Formal MAS taxonomy and evidence mapping
+Step 6I — Consolidated research-gap analysis
+```
+
+The current Step 6A–6G results are based on the reconciled 53-publication extraction dataset. RQ1/RQ2 thematic classifications were manually reviewed at the extraction-evidence level, while RQ3 outcome-direction and RQ4 comparator interpretations were adjudicated conservatively. Targeted primary-source checks were also used for selected high-impact claims.
+
+No pooled meta-analysis is performed because the included studies differ substantially in agricultural domain, MAS architecture, datasets, objectives, scenarios, metrics, spatial scale, and evaluation design.
+
+The primary synthesis methods are therefore:
 
 * structured thematic analysis;
-* evidence mapping;
+* descriptive quantitative analysis;
+* study-family sensitivity analysis;
+* comparative interpretation;
 * taxonomy construction;
-* comparative analysis.
+* evidence mapping.
+
+The next analytical stage is **Step 6H — MAS taxonomy and evidence mapping**, followed by **Step 6I — consolidated research gaps**. PRISMA 2020 reporting will follow those analytical stages.
 
 ---
 
@@ -639,13 +681,26 @@ Multi-Agent-Systems-for-Sustainable-Smart-Farming/
 │   ├── citation_chasing_fulltext_screening_batch2.csv
 │   ├── citation_chasing_fulltext_screening_batch3.csv
 │   ├── citation_chasing_screening_final.csv
-│   └── citation_chasing_screening_final_summary.md
+│   ├── citation_chasing_screening_final_summary.md
+│   └── citation_search_study_id_mapping.csv
 │
 ├── data_extraction/
 │   ├── data_extraction_schema.md
 │   ├── extraction_codebook.md
 │   ├── extraction_template_updated6(final).csv
-│   └── quality_assessment_updated6(final).csv
+│   ├── quality_assessment_updated6(final).csv
+│   ├── step4_batch1_extraction_S35-S40.csv
+│   ├── step4_batch1_qa_S35-S40.csv
+│   ├── STEP4_batch1_summary.md
+│   ├── step4_batch2_extraction_S41-S46.csv
+│   ├── step4_batch2_qa_S41-S46.csv
+│   ├── STEP4_batch2_summary.md
+│   ├── step4_batch3_extraction_S47-S53.csv
+│   ├── step4_batch3_qa_S47-S53.csv
+│   ├── STEP4_batch3_summary.md
+│   ├── study_family_reconciliation_53.csv
+│   ├── study_family_summary_44.csv
+│   └── STEP5_study_family_reconciliation.md
 │
 └── analysis/
     ├── descriptive_analysis.md
@@ -655,12 +710,25 @@ Multi-Agent-Systems-for-Sustainable-Smart-Farming/
     ├── rq3_synthesis.md
     ├── rq4_synthesis.md
     ├── integrated_results_synthesis.md
-    └── slr_descriptive_analysis.xlsx
+    ├── slr_descriptive_analysis.xlsx
+    ├── SLR_6B_RQ0_landscape_and_purpose.xlsx
+    ├── RQ0_primary_purpose_mapping_53.csv
+    ├── SLR_6C_RQ1_agents_architectures_decisions.xlsx
+    ├── SLR_6D_RQ2_coordination_resource_allocation.xlsx
+    ├── SLR_6E_RQ3_sustainability_outcomes.xlsx
+    ├── SLR_6F_RQ4_evaluation_methods_and_gaps.xlsx
+    ├── SLR_6G_integrated_consistency_audit.xlsx
+    ├── SLR_6G_manual_RQ1_RQ2_adjudication.xlsx
+    ├── SLR_6G_adjudication_RQ3_RQ4.xlsx
+    ├── RQ1_RQ2_ADJUDICATED_THEME_COUNTS.csv
+    └── PRIMARY_EVIDENCE_EXCEPTIONS.csv
 ```
 
 `ProjectScope_Extended.pdf` is retained as a historical project-scope document. Where it differs from the current review protocol, the Markdown files in `protocol/` are authoritative.
 
-The current files in `analysis/` represent the preliminary 34-publication analysis and will be replaced after extraction and quality assessment of S35–S53 are complete.
+The canonical extraction dataset in `data_extraction/extraction_template_updated6(final).csv` contains the reconciled **53-publication / 44-study-family** dataset. The canonical quality-assessment file contains completed QA for all 53 publications.
+
+The canonical Markdown files in `analysis/` contain the reconciled Step 6A–6G synthesis. Supporting workbooks and adjudication files retain the study-level audit trail used to derive and verify those conclusions.
 
 ---
 
@@ -675,7 +743,9 @@ Single-reviewer screening is therefore recognised as a methodological limitation
 * exclusion reasons are recorded;
 * ambiguous studies are reconsidered during full-text assessment;
 * screening decisions are maintained in Rayyan;
-* selected records may be re-screened to check intra-reviewer consistency.
+* selected records may be re-screened to check intra-reviewer consistency;
+* study-family reconciliation is used to reduce the risk of over-counting related publications;
+* manual adjudication is used for ambiguous thematic classifications and high-impact claims.
 
 ---
 
