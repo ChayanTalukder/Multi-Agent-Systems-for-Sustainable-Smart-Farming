@@ -200,5 +200,3 @@ Completed Zotero preparation steps:
 9. Prepare the public reference exports for repository archiving.
 
 **Final bibliographic corpus: 53 publications, 44 reconciled study families, 0 Zotero duplicate groups.**
-
-The remaining Zotero task is citation-insertion setup for the final report (**Step 8I — Word/Overleaf integration**). This does not require changes to the final SLR study selection or synthesis datasets.
