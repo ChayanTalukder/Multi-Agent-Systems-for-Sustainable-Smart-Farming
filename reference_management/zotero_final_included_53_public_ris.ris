@@ -1,0 +1,1533 @@
+TY  - JOUR
+TI  - Polarization in (post)nomadic resource use in Eastern Morocco: insights using a multi-agent simulation model
+AU  - Dressler, Gunnar
+AU  - Hoffmann, Falk
+AU  - Breuer, Ingo
+AU  - Kreuer, David
+AU  - Mahdi, Mohamed
+AU  - Frank, Karin
+AU  - Müller, Birgit
+T2  - Regional Environmental Change
+DA  - 2019///
+PY  - 2019
+DO  - 10.1007/s10113-018-1412-9
+VL  - 19
+IS  - 2
+SP  - 489
+EP  - 500
+UR  - https://link.springer.com/article/10.1007/s10113-018-1412-9
+KW  - S01
+KW  - SF01
+ER  - 
+
+TY  - CONF
+TI  - Smart Farming – Open Multi-agent Platform and Eco-System of Smart Services for Precision Farming
+AU  - Skobelev, Petr
+AU  - Larukchin, Vladimir
+AU  - Mayorov, Igor
+AU  - Simonova, Elena
+AU  - Yalovenko, Olga
+T2  - Advances in Practical Applications of Survivable Agents and Multi-Agent Systems: The PAAMS Collection
+T3  - Lecture Notes in Computer Science
+C1  - Cham
+C3  - 17th International Conference on Practical Applications of Agents and Multi-Agent Systems (PAAMS 2019)
+DA  - 2019///
+PY  - 2019
+DO  - 10.1007/978-3-030-24209-1_18
+VL  - 11523
+SP  - 212
+EP  - 224
+LA  - English
+PB  - Springer
+UR  - https://link.springer.com/chapter/10.1007/978-3-030-24209-1_18
+KW  - S02
+KW  - SF02
+ER  - 
+
+TY  - JOUR
+TI  - Assessing seed and breeding interventions for organic farming using a multiagent value chain approach
+AU  - Winter, Eva
+AU  - Grovermann, Christian
+AU  - Messmer, Monika M.
+AU  - Aurbacher, Joachim
+T2  - Agricultural and Food Economics
+DA  - 2023///
+PY  - 2023
+DO  - 10.1186/s40100-023-00262-x
+SP  - 22
+LA  - English
+UR  - https://link.springer.com/article/10.1186/s40100-023-00262-x
+KW  - S03
+KW  - SF03
+ER  - 
+
+TY  - JOUR
+TI  - CowNet-AI: A Multi-Agent Decision Support Framework for Social Network–Driven Welfare Insights in Dairy Cattle
+AU  - T. Shanteer
+AU  - K. Sailunaz
+AU  - S. R. Neethirajan
+T2  - IEEE Access
+AB  - Dairy farms increasingly deploy sensor networks that generate high-frequency behavioral and spatial data, yet translating these multimodal streams into actionable welfare insights remains a key challenge. This study presents CowNet-AI, a modular, multi-agent conversational decision-support framework that integrates social network analysis with large language model–driven agents to deliver explainable welfare risk indicators and simulation-based insights. The system comprises a behavioral simulation engine for synthetic herd interaction generation, a data ingestion pipeline, social network analysis modules computing centrality- and isolation-based metrics, and a LangGraph-based multi-agent architecture including supervisor, data loader, SNA, research, simulation, response, and reporting agents. The framework is evaluated using the MmCows dataset, with demonstrations conducted through natural-language farmer queries. Experimental results show that CowNet-AI achieves high intent routing accuracy and a low hallucination rate (5%), outperforming baseline single-agent LLM and static rule-based SNA approaches. The system effectively integrates behavioral metrics with contextual knowledge to generate personalized, explainable recommendations, while enabling autonomous query routing and scenario-based reasoning. End-to-end latency varies depending on agent configuration and query complexity. This work represents a pilot-scale validation conducted on a limited dataset, establishing the feasibility of agentic, explainable AI systems for livestock welfare intelligence. Current limitations include reliance on behavioral proxies without direct clinical validation, dependence on LLM-based evaluation, and computational scaling challenges for larger herds. Future work will focus on multimodal data integration, expert-in-the-loop validation, and system optimization for real-time deployment.
+DA  - 2026///
+PY  - 2026
+DO  - 10.1109/ACCESS.2026.3688544
+VL  - 14
+SP  - 64882
+EP  - 64897
+J2  - IEEE Access
+SN  - 2169-3536     VO  - 14
+KW  - Activity recognition
+KW  - Antennas
+KW  - Circuits
+KW  - Contacts
+KW  - Conversational AI
+KW  - dairy cattle welfare indicator
+KW  - digital livestock management
+KW  - explainable AI
+KW  - Feedback
+KW  - Feeds
+KW  - Filtering
+KW  - Filters
+KW  - large language models
+KW  - multi-agent systems
+KW  - Payloads
+KW  - precision agriculture
+KW  - S04
+KW  - Sensor systems
+KW  - SF04
+KW  - simulation-based reasoning
+KW  - social network analysis
+ER  - 
+
+TY  - JOUR
+TI  - Peer-to-peer energy trading in dairy farms using multi-agent systems
+AU  - Shah, Mian Ibad Ali
+AU  - Wahid, Abdul
+AU  - Barrett, Enda
+AU  - Mason, Karl
+T2  - Computers and Electrical Engineering
+AB  - To accomplish the desired reduction in carbon emissions, society must improve the integration of renewable generation and accelerate the adoption of technologies like peer-to-peer energy trading. This necessity is particularly evident in the agriculture sector, specifically for energy-intensive forms of farming, such as dairy farming. Nevertheless, the integration of renewable energy sources and peer-to-peer energy trading presents notable challenges. Effective control strategies are essential for dairy farms to engage in peer-to-peer energy trading markets. This paper introduces the Multi-Agent Peer-to-Peer Dairy Farm Energy Simulator-extended (MAPDES), which leverages multi-agent systems to facilitate the participation of dairy farms in peer-to-peer markets. The energy trading strategy yields a 43% reduction in electricity costs and a 42% decrease in peak demand, while also increasing energy sales by 59% compared to the baseline scenario, which does not include peer-to-peer energy trading or renewable energy sources. This model has been tested across various farm community sizes, renewable energy combinations, and geographical locations to determine the ideal farm community configuration and assess the model’s applicability across different settings.
+DA  - 2024///
+PY  - 2024
+DO  - 10.1016/j.compeleceng.2024.109437
+VL  - 118
+SP  - 109437
+SN  - 0045-7906
+UR  - https://www.sciencedirect.com/science/article/pii/S0045790624003653
+Y2  - 0009/01/01/
+KW  - Dairy farming
+KW  - Energy auction
+KW  - Multi-agent systems
+KW  - Peer-to-peer energy trading
+KW  - Renewable energy
+KW  - S05
+KW  - SF05
+KW  - Sustainability
+ER  - 
+
+TY  - JOUR
+TI  - Intelligent IoT-multiagent precision irrigation approach for improving water use efficiency in irrigation systems at farm and district scales
+AU  - Jiménez, Andrés-F
+AU  - Cárdenas, Pedro-F
+AU  - Jiménez, Fabián
+T2  - Computers and Electronics in Agriculture
+AB  - The fourth industrial revolution in agriculture seeks the automation of traditional practices, using modern smart technologies. Advances in electronics, computation and the internet of things are integrated for improving field inputs management. The aim of this paper is to present the design and implementation of an intelligent IoT-multiagent precision irrigation approach for improving water use efficiency in irrigation systems. The study site was the large-scale irrigation and drainage district of Chicamocha and Firavitoba (Usochicamocha) located in Boyacá - Colombia, where water is distributed from the Chicamocha riverbed. In the proposed system, irrigation is supervised and controlled in each field by an intelligent irrigation agent that autonomously prescribes and applies water amounts with agronomical criteria. The methodology was applied with real (cyber-physical) and virtual (simulated) intelligent agents and was extended to eleven pump stations that supply water to 5911 fields. Using a MQTT protocol, hundreds of irrigation intelligent agents report water prescriptions and crop characteristics to a master agent in each pump station, who creates a regional irrigation map to manage georeferenced field information and performs negotiation of water resources between agents according to supply availability. Field maps and intelligent irrigation agents can be visualized using devices with internet access. Results demonstrated that irrigation amounts were correctly applied on the fields, thus improving the water use efficiency. This technology is a novel support to decision-making in water resources management applications at field and district scales.
+DA  - 2022///
+PY  - 2022
+DO  - 10.1016/j.compag.2021.106635
+VL  - 192
+SP  - 106635
+SN  - 0168-1699
+UR  - https://www.sciencedirect.com/science/article/pii/S0168169921006529
+Y2  - 0001/01/01/
+KW  - Artificial intelligence
+KW  - Internet of things
+KW  - Irrigation scheduling
+KW  - Multi-agent
+KW  - Precision irrigation
+KW  - S06
+KW  - SF06
+ER  - 
+
+TY  - JOUR
+TI  - Learning-based multi-agent MPC for irrigation scheduling
+AU  - Agyeman, Bernard T.
+AU  - Naouri, Mohamed
+AU  - Appels, Willemijn M.
+AU  - Liu, Jinfeng
+AU  - Shah, Sirish L.
+T2  - Control Engineering Practice
+AB  - Amid concerns about freshwater scarcity, the agricultural sector faces challenges in water conservation and optimizing crop yields, highlighting the limitations of traditional irrigation scheduling methods. To overcome these challenges, this paper introduces a unified, learning-based predictive irrigation scheduler that integrates machine learning and Model Predictive Control (MPC), while also incorporating multi-agent principles. The proposed framework incorporates a three-stage management zone delineation process, utilizing k-means clustering and hydraulic parameters estimates for optimized agro-hydrological modeling. Long Short-Term Memory (LSTM) networks are employed for accurate and computationally efficient root zone soil moisture modeling. The scheduler, formulated as a mixed-integer MPC with zone control, utilizes the identified LSTM networks to maximize root water uptake while minimizing overall water consumption and fixed irrigation costs. Additionally, the learning-based scheduler adopts a multi-agent MPC paradigm, where decentralized hybrid actor–critic agents and the concept of a limiting irrigation management zone are employed to enhance computational efficiency. Evaluating the performance on a 26.4-hectare field in Lethbridge for the 2015 and 2022 growing seasons demonstrates the superiority of the proposed scheduler over the widely-used triggered scheduling approach in terms of Irrigation Water Use Efficiency (IWUE) and total prescribed irrigation. Notably, the proposed approach achieves water savings between 7 to 23%, coupled with IWUE increases ranging from 10 to 35%.
+DA  - 2024///
+PY  - 2024
+DO  - 10.1016/j.conengprac.2024.105908
+VL  - 147
+SP  - 105908
+SN  - 0967-0661
+UR  - https://www.sciencedirect.com/science/article/pii/S0967066124000686
+Y2  - 0006/01/01/
+KW  - Hybrid actor–critic paradigm
+KW  - Learning-based scheduler
+KW  - Mixed-integer model predictive control
+KW  - Nonlinear programming
+KW  - Proximal policy optimization
+KW  - S07
+KW  - SF07
+ER  - 
+
+TY  - JOUR
+TI  - A semi-centralized multi-agent RL framework for efficient irrigation scheduling
+AU  - Agyeman, Bernard T.
+AU  - Decardi-Nelson, Benjamin
+AU  - Liu, Jinfeng
+AU  - Shah, Sirish L.
+T2  - Control Engineering Practice
+AB  - Efficient water management in agriculture is essential for addressing the growing freshwater scarcity crisis. Multi-Agent Reinforcement Learning (MARL) has emerged as a promising method for solving daily irrigation scheduling problems in spatially variable fields, where management zones are employed to account for field variability. To enhance the application of MARL to address daily irrigation scheduling in large-scale fields with significant spatial variation, this study proposes a Semi-Centralized MARL (SCMARL) framework. The SCMARL framework adopts a hierarchical structure, decomposing the daily irrigation scheduling problem into two levels of decision-making. At the top level, a centralized coordinator agent determines irrigation timing, which is modeled as a discrete variable, based on field-wide soil moisture data, crop conditions, and weather forecasts. At the lower level, decentralized local agents use local soil moisture, crop, and weather information to determine the appropriate irrigation amounts for each management zone. To address the issue of non-stationarity in this framework, a state augmentation technique is employed, wherein the coordinator’s decision is incorporated into the decision-making process of the local agents. The SCMARL framework, which leverages the Proximal Policy Optimization algorithm for training the agents, is evaluated on a large-scale field in Lethbridge, Canada, and compared with an existing MARL irrigation scheduling approach. The results demonstrate improved performance, achieving a 4.0% reduction in water use and a 6.3% increase in irrigation water use efficiency.
+DA  - 2025///
+PY  - 2025
+DO  - 10.1016/j.conengprac.2024.106183
+VL  - 155
+SP  - 106183
+LA  - English
+SN  - 0967-0661
+UR  - https://www.sciencedirect.com/science/article/pii/S0967066124003423
+Y2  - 0002/01/01/
+KW  - Irrigation scheduling
+KW  - Mixed-integer optimal control
+KW  - Multi-Agent Reinforcement Learning
+KW  - S08
+KW  - Semi-Centralized Multi-Agent Reinforcement Learning
+KW  - SF08
+ER  - 
+
+TY  - JOUR
+TI  - Energy management for demand response in networked greenhouses with multi-agent deep reinforcement learning
+AU  - Ajagekar, Akshay
+AU  - Decardi-Nelson, Benjamin
+AU  - You, Fengqi
+T2  - Applied Energy
+AB  - Greenhouses are key to ensuring food security and realizing a sustainable future for agriculture. However, to ensure crop growth efficiency, greenhouses consume a significant amount of energy, primarily through climate control and artificial lighting systems. Owing to this high energy consumption, a network of greenhouses exhibits immense potential to participate in demand response programs for power grid stability. In this work, a multi-agent deep reinforcement learning (MADRL) control framework utilizing an actor-critic algorithm with a shared attention mechanism is proposed for energy management in networked greenhouses. A network of renewable energy integrated greenhouses is constructed to interact with the power grid, when necessary, to address the fluctuations associated with renewable energy generation and dynamic electricity prices. The viability and scalability of this multi-agent approach is demonstrated by evaluating its capabilities for a network of five greenhouses of varying capacities. The proposed MADRL-based control approach for demand-side energy management in networked greenhouses demonstrates efficiency in maintaining indoor climate in all greenhouses while ensuring a 28% reduction in net load demand as compared to well-known algorithms.
+DA  - 2024///
+PY  - 2024
+DO  - 10.1016/j.apenergy.2023.122349
+VL  - 355
+SP  - 122349
+SN  - 0306-2619
+UR  - https://www.sciencedirect.com/science/article/pii/S0306261923017130
+Y2  - 0002/01/01/
+KW  - Deep reinforcement learning
+KW  - Demand response
+KW  - Greenhouse
+KW  - Multi-agent
+KW  - S09
+KW  - SF09
+KW  - Urban agriculture
+ER  - 
+
+TY  - JOUR
+TI  - CaTMAS: A multi-agent model for simulating the dynamics of carbon resources of West African villages
+AU  - Belem, Mahamadou
+AU  - Manlay, Raphaël J.
+AU  - Müller, Jean-Pierre
+AU  - Chotte, Jean-Luc
+T2  - Ecological Modelling
+AB  - Carbon is an important determinant of the sustainability of West African farming systems and of the atmospheric greenhouse effect. Given the complexity of C dynamics, various simulation models have been developed. Few include socioeconomic factors or handle system heterogeneity. This study proposes a generic, multi-agent model for the analysis of C dynamics at village level. It assumes that a better analysis of carbon dynamics at village level requires account to be taken of social, economic, physical and biological factors as well as of the actions of individuals and their interdependence. The Carbon of Territory Multi-Agent Simulator (CaTMAS) model is based on the Organization-Role-Entity-Aspect (OREA) meta-model and the Multi-Agent Systems (MAS) approach. OREA enables C dynamics to be studied from various points of view through the roles played by entities within organizations and also allows various entities to play the same role in various ways through the notion of aspects. The model was coupled with the Century model and a geographical information system to provide a realistic representation of C dynamics. CaTMAS provides not only a framework for the explicit description of the carbon dynamics of farming systems but can also be used to assess the viability of farming systems using various socioeconomic and biophysical scenarios. The model includes interactions between human activities and the environment. Simple simulations involving two cropping systems and focusing on the impact of population growth and different climate regimes on the C dynamics indicate that CaTMAS accounts realistically for the relationships between population, agriculture, climate and SOC dynamics. In simulation, population growth, which drives food demand, leads to agricultural expansion, land scarcity and decrease in fallow duration. These effects are accentuated by increasing temperature and decreasing rainfall which affect the SOC dynamics controlling soil fertility and thus crop production. Improvements to the model should make it possible to extend the scale of the simulation of C dynamics and include refinements such as the inclusion of the trading of carbon credits.
+DA  - 2011///
+PY  - 2011
+DO  - 10.1016/j.ecolmodel.2011.08.024
+VL  - 222
+IS  - 20
+SP  - 3651
+EP  - 3661
+LA  - English
+SN  - 0304-3800
+UR  - https://www.sciencedirect.com/science/article/pii/S030438001100456X
+Y2  - 0010/01/01/
+KW  - Century
+KW  - Farming system
+KW  - Generic model
+KW  - Global change
+KW  - Modeling and simulation
+KW  - Organic matter
+KW  - S10
+KW  - SF10
+KW  - West African savanna
+ER  - 
+
+TY  - JOUR
+TI  - Peer-to-peer energy trading in dairy farms using multi-agent reinforcement learning
+AU  - Shah, Mian Ibad Ali
+AU  - Cruz Victorio, Marcos Eduardo
+AU  - Duffy, Maeve
+AU  - Barrett, Enda
+AU  - Mason, Karl
+T2  - Applied Energy
+AB  - The integration of renewable energy resources in rural areas, such as dairy farming communities, enables decentralized energy management through Peer-to-Peer (P2P) energy trading. This research highlights the role of P2P trading in efficient energy distribution and its synergy with advanced optimization techniques. While traditional rule-based methods perform well under stable conditions, they struggle in dynamic environments. To address this, Multi-Agent Reinforcement Learning (MARL), specifically Proximal Policy Optimization (PPO) and Deep Q-Networks (DQN), is combined with community/distributed P2P trading mechanisms. By incorporating auction-based market clearing, a price advisor agent, and load and battery management, the approach achieves significant improvements. Results show that, compared to baseline models, DQN reduces electricity costs by 14.2 % in Ireland and 5.16 % in Finland, while increasing electricity revenue by 7.24 % and 12.73 %, respectively. PPO achieves the lowest peak hour demand, reducing it by 55.5 % in Ireland, while DQN reduces peak hour demand by 50.0 % in Ireland and 27.02 % in Finland. These improvements are attributed to both MARL algorithms and P2P energy trading, which together result in electricity cost and peak hour demand reduction, and increase electricity selling revenue. This study highlights the complementary strengths of DQN, PPO, and P2P trading in achieving efficient, adaptable, and sustainable energy management in rural communities.
+DA  - 2026///
+PY  - 2026
+DO  - 10.1016/j.apenergy.2025.127041
+VL  - 402
+SP  - 127041
+SN  - 0306-2619
+UR  - https://www.sciencedirect.com/science/article/pii/S0306261925017714
+Y2  - 0001/01/01/
+KW  - Dairy farming
+KW  - Energy auction
+KW  - Multi-agent reinforcement learning
+KW  - Multi-agent systems
+KW  - P2P energy trading
+KW  - Renewable energy
+KW  - S11
+KW  - SF05
+ER  - 
+
+TY  - JOUR
+TI  - MASSAI: Multi-agent system for simulating sustainable agricultural intensification of smallholder farms in Africa
+AU  - Mponela, Powell
+AU  - Le, Quang Bao
+AU  - Snapp, Sieglinde
+AU  - Villamor, Grace B.
+AU  - Tamene, Lulseged
+AU  - Borgemeister, Christian
+T2  - MethodsX
+AB  - The research and development needed to achieve sustainability of African smallholder agricultural and natural systems has led to a wide array of theoretical frameworks for conceptualising socioecological processes and functions. However, there are few analytical tools for spatio-temporal empirical approaches to implement use cases, which is a prerequisite to understand the performance of smallholder farms in the real world. This study builds a multi-agent system (MAS) to operationalise the Sustainable Agricultural Intensification (SAI) theoretical framework (MASSAI). This is an essential tool for spatio-temporal simulation of farm productivity to evaluate sustainability trends into the future at fine scale of a managed plot. MASSAI evaluates dynamic nutrient transfer using smallholder nutrient monitoring functions which have been calibrated with parameters from Malawi and the region. It integrates two modules: the Environmental (EM) and Behavioural (BM) ones.•The EM assess dynamic natural nutrient inputs (sedimentation and atmospheric deposition) and outputs (leaching, erosion and gaseous loses) as a product of bioclimatic factors and land use activities.•An integrated BM assess the impact of farmer decisions which influence farm-level inputs (fertilizer, manure, biological N fixation) and outputs (crop yields and associated grain).•A use case of input subsidies, common in Africa, markedly influence fertilizer access and the impact of different policy scenarios on decision-making, crop productivity, and nutrient balance are simulated. This is of use for empirical analysis smallholder's sustainability trajectories given the pro-poor development policy support.
+DA  - 2023///
+PY  - 2023
+DO  - 10.1016/j.mex.2023.102467
+VL  - 11
+SP  - 102467
+SN  - 2215-0161
+UR  - https://www.sciencedirect.com/science/article/pii/S2215016123004636
+Y2  - 0012/01/01/
+KW  - Farm productivity
+KW  - Farmer behaviour
+KW  - Nutrient balance
+KW  - Re-orienting farm input subsidy
+KW  - S12
+KW  - SF12
+ER  - 
+
+TY  - CONF
+TI  - Integrated modelling of social-ecological systems: The MAELIA high-resolution multi-agent platform to deal with water scarcity problems
+AU  - Therond, O.
+AU  - Sibertin-Blanc, C.
+AU  - Lardy, R.
+AU  - Gaudou, B.
+AU  - Balestrat, M.
+AU  - Hong, Y.
+AU  - Louail, T.
+AU  - Nguyen, V.B.
+AU  - Panzoli, D.
+AU  - Sanchez-Perez, J.-M.
+AU  - Sauvage, S.
+AU  - Taillandier, P.
+AU  - Vavasseur, M.
+AU  - Mazzega, P.
+T2  - 7th International Congress on Environmental Modelling and Software (iEMSs 2014)
+AB  - Sustainable water resource management is typical of environmental management problems emerging from complex social-ecological systems. It deeply depends upon water user strategies, land use management and water governance systems. MAELIA, a "policy issue" modelling platform, allows performing integrated assessment at watershed level of a wide range of scenarios regarding water and land use management strategies in combination with global changes. It has been developed through a strong analysis of different French water management situations and an inductive modelling process. It allows representing dynamic interactions between human activities (farming practices), ecological processes (hydrology and crop growth), and governance systems (water regulations and releases from dams) at fine spatiotemporal resolutions in order to handle actual problems of water managers and issues of the main water users (farmers). MAELIA includes original farmer, dam manager and state services (software) agents.
+C3  - Proceedings - 7th International Congress on Environmental Modelling and Software: Bold Visions for Environmental Modeling, iEMSs 2014
+DA  - 2014///
+PY  - 2014
+VL  - 4
+SP  - 1833
+EP  - 1840
+LA  - English
+PB  - International Environmental Modelling and Software Society
+UR  - https://www.scopus.com/pages/publications/84911949248?origin=resultslist
+KW  - Agent-based model
+KW  - Agriculture
+KW  - Computational methods
+KW  - Decision process
+KW  - Decision process modelling
+KW  - Ecology
+KW  - Environmental management
+KW  - Farm model
+KW  - Integrated assessment and modelling
+KW  - Land use
+KW  - Managers
+KW  - Multi agent systems
+KW  - S13
+KW  - SF13
+KW  - Social-ecological systems
+KW  - Software agents
+KW  - Water conservation
+KW  - Water management
+ER  - 
+
+TY  - CONF
+TI  - Network-aware multi-agent simulations of herder-farmer conflicts
+AU  - Dambanemuya, H.K.
+AU  - Horvát, E.-Á.
+T2  - 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2019)
+AB  - We propose a network-aware multi-agent simulation approach to understanding the interlacing connections between herder-farmer communities in open property regimes. Specifically, we model herder-farmer conflicts in agent-based terms whereby individual decision-making, pastoral mobility, and symbiotic herder-farmer relations result in the emergence of a complex adaptive system in which communal resources are managed in ways that either lead to peaceful coexistence or conflict. From a theoretical perspective, we hope to further understanding of how individual decision-making and coordination produces complex adaptive systems as well as how emergent structures shape individual action. In practice, we anticipate that this study will help shed light on how herder-farmer communities can cooperate and coordinate their activity and mobility patterns to manage common pool resources in sustainable ways that mitigate violent conflict. Broadly, our work aims to contribute new insights towards multi-agent modelling of traditional small-scale societies. © 2019 Association for Computing Machinery.
+C3  - Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, ASONAM 2019
+DA  - 2019///
+PY  - 2019
+DO  - 10.1145/3341161.3343682
+SP  - 721
+EP  - 722
+LA  - English
+PB  - Association for Computing Machinery, Inc
+SN  - 978-145036868-1 (ISBN)
+UR  - https://www.scopus.com/pages/publications/85078858879?origin=resultslist
+KW  - Adaptive systems
+KW  - Agriculture
+KW  - Common pool resources
+KW  - Complex adaptive systems
+KW  - Complex networks
+KW  - Coordination reactions
+KW  - Decision making
+KW  - Emergent structure
+KW  - Individual decision making
+KW  - Mobility pattern
+KW  - Multi agent simulation
+KW  - Multi agent systems
+KW  - Multi-agent modelling
+KW  - Multi-agent simulations
+KW  - Peacebuilding
+KW  - S14
+KW  - SF14
+KW  - Social networking (online)
+KW  - Social networks
+ER  - 
+
+TY  - CONF
+TI  - Modelling a multi agent system for dairy farms for integrated decision making
+AU  - Thangaraj, A.
+AU  - Patricia, A.
+AU  - Samarasinghe, S.
+T2  - 22nd International Congress on Modelling and Simulation (MODSIM2017)
+AB  - Currently, dairy farmers are using various software tools to enable them to make decisions on different aspects of farming such as pasture management, herd management, nutrient management and finance management. Some of the widely used software tools for dairy farming are as follows: Rapid Plate Meter, Overseer, Farm Enviro Walk, and Cash Manager. Each of these tools is used only for particular aspects of dairy farm management. For example, Overseer is used to check the nutrient levels present in the soil. Since these tools operate independently, farmers often find it difficult and time consuming when making integrated decisions relating to farm management. Often, they need to extract data from each of these tools, combine and integrate them and use another general purpose tool to perform analysis before making any decision. The complexity of the decision making is increased with the amount of information and, to make matters worse, information loss may occur during the integration. The main objective of the proposed research is to model a multi agent system platform to automatically integrate data from the various software tools and perform a variety of analysis to support decision making on the farm. The proposed multi-agent system environment provides an interface in which farmers can enter queries related to farming which requires agents to communicate with the various tools in order to respond to these queries. This is possible as the agents possess special abilities such as autonomy, dynamism and intelligence. Each management activity has its own functions and outputs. • Pasture management - deals with pasture related works. • Nutrient management - performs tasks involving nutrient application. • Herd management - perform tasks related to cattle health, herd cleaning and other herd related activities. • Financial management - contains tasks like calculating revenue, stock maintenance and other related financial activities. An individual agent is designed for each management aspect of dairy farming and co-ordination between them is managed by a coordinator agent to form a multi-agent system. Depending on the problem to be solved, different agents are invoked. Agents can communicate with other agents whenever necessary when making decisions in a multi agent system. The model consists of the following agents: interface agent, control agent, pasture management agent, herd management agent, nutrient management agent and finance management agent. The interface agent is the bridge between user and the multi agent system. The interface agent senses the environment and passes the user information to the control agent. The control agent is the controller who decides what action plans need to be executed based on the information received from interface agent. The control agent will trigger the appropriate actions based on the changes in the environment. All other agents deal with tasks related to the appropriate dairy farm management. For instance, the pasture management agent handles queries related to dairy pasture management. The main advantage of this integrated model is that farmers will be able to make farming decisions more efficiently and effectively without the hassle of having to work through the data from various data sources. © 2017 Proceedings - 22nd International Congress on Modelling and Simulation, MODSIM 2017. All rights reserved.
+C3  - Proceedings - 22nd International Congress on Modelling and Simulation, MODSIM 2017
+DA  - 2017///
+PY  - 2017
+SP  - 529
+EP  - 535
+LA  - English
+PB  - Modelling and Simulation Society of Australia and New Zealand Inc. (MSSANZ)
+SN  - 978-098721437-9 (ISBN)
+UR  - https://www.scopus.com/pages/publications/85049556864?origin=resultslist
+KW  - Amount of information
+KW  - Autonomous agents
+KW  - Computer aided software engineering
+KW  - Dairy farms
+KW  - Decision making
+KW  - Farms
+KW  - Finance
+KW  - Financial managements
+KW  - Integrated decision
+KW  - Integrated decision making
+KW  - Integrated decision makings
+KW  - Integrated modeling
+KW  - Intelligent agents
+KW  - Management activities
+KW  - Multi Agent System (MAS)
+KW  - Multi agent systems
+KW  - Nutrient management
+KW  - Nutrients
+KW  - Operations research
+KW  - Risk assessment
+KW  - S15
+KW  - SF15
+KW  - Software agents
+ER  - 
+
+TY  - JOUR
+TI  - Water distribution in community irrigation using a multi-agent system
+AU  - Chiewchan, K.
+AU  - Anthony, P.
+AU  - KC, B.
+AU  - Samarasinghe, S.
+T2  - Journal of the Royal Society of New Zealand
+AB  - Insufficient water for irrigation is a common problem in the Canterbury Region of New Zealand. Farmers have the option of applying for resource consent or joining a community irrigation scheme to take water. Water supply becomes more problematic during drought seasons as farmers must adhere to water restrictions imposed by the water authority. To deal with this problem, we developed an agent-based irrigation management system that can be used by farmers to calculate the ideal crop water needs on individual farms, which is particularly useful during periods of water scarcity. During water scarcity, most farms will have shortages of water. However, it is possible that there are farmers who will have excess water that could be distributed to those who need it. By doing this, farmers with excess water can make more profit and those who do not have enough water can purchase water to reduce their losses. In this work, we explore how auction-based negotiation in a multi-agent setting can be used to maximise water sharing within a community during periods of water scarcity. We evaluate various auction mechanisms that can be used to distribute excess water. In addition, we investigate the effect of various different agents' behaviours on water distribution and community profit. © 2022 The Royal Society of New Zealand.
+CY  - ["Lincoln University, Christchurch, New Zealand", "Aqualinc Research Ltd., Christchurch, New Zealand"]
+DA  - 2023///
+PY  - 2023
+DO  - 10.1080/03036758.2022.2117830
+VL  - 53
+IS  - 1
+SP  - 6
+EP  - 26
+LA  - English
+PB  - Taylor and Francis Asia Pacific
+SN  - 03036758 (ISSN)
+UR  - https://www.scopus.com/pages/publications/85139967246?origin=resultslist
+KW  - agent behaviour
+KW  - auction
+KW  - Canterbury
+KW  - drought
+KW  - irrigation
+KW  - irrigation management
+KW  - management practice
+KW  - Multi-agent
+KW  - negotiation process
+KW  - S16
+KW  - SF16
+KW  - water distribution
+KW  - water scarcity
+KW  - water stress
+KW  - water supply
+ER  - 
+
+TY  - JOUR
+TI  - Assessment of agricultural vulnerability and risk to climate change in sugarcane production through life cycle analysis and a multi-agent system
+AU  - Badillo-Márquez, A.E.
+AU  - Moras-Sánchez, C.G.
+AU  - Rico-Contreras, J.O.
+AU  - Meza-Palacios, R.
+AU  - Aguilar-Lasserre, A.A.
+T2  - Journal of Agricultural Engineering
+AB  - Climate change has had profound impacts on agricultural systems, altering crop productivity, changing precipitation patterns, spreading pests and diseases, reducing soil quality, displacing agricultural areas, and increasing the use of inputs such as fertilizers and pesticides, which in turn leads to an increase in atmospheric emissions. To address this issue, this research proposes the use of a multi-agent system-based model to analyze the vulnerability of sugarcane production, representing complex systems and adapting to changing conditions by integrating dynamic and uncertain variables. The main advantage of the model is that it enables the quantification and analysis of critical variables, including the use of fuel, fertilizers, and nitrogen oxide (N₂O) emissions. The results demonstrate how the increase in operating trend negatively impacts environmental performance, highlighting the fragility of the sys-tem. Meanwhile, the validation of the model through structural tests and extreme conditions confirmed its reliability in supporting decision-making processes. Likewise, the average vulnerability value of the system (0.54) indicates a moderately unstable condition, susceptible to climatic and economic changes. Complementarily, the IMPACT 2002+ methodology was applied to conduct a life cycle assessment (LCA) of sugarcane, encompassing its cultivation and industrial processing. It was found that the resources used in sugar mills have the most significant environmental impact in the categories of climate change, human health, ecosystem quality, and resource consumption. This impact is caused by CO₂ emissions, the use of toxic pesticides and heavy metals, and high dependence on fossil fuels such as coal, natural gas, and oil, mainly. These findings underscore the need to enhance environmental management in Mexico's sugar sector by adopting cleaner technologies, establishing reliable ecological databases, and implementing assessment tools such as multi-agent modeling and life cycle analysis. © the Author(s), 2026 Licensee PAGEPress, Italy.
+CY  - ["Division of Research and Postgraduate Studies, Tecnológico Nacional de México, Instituto Tecnologico de Orizaba, Mexico", "Grupo Porres, Veracruz, Mexico"]
+DA  - 2026///
+PY  - 2026
+DO  - 10.4081/jae.2026.1934
+VL  - 57
+IS  - 2
+LA  - English
+PB  - Page Press Publications
+SN  - 19747071 (ISSN)
+UR  - https://www.scopus.com/pages/publications/105036953255?origin=resultslist
+KW  - agent-based modelling
+KW  - agricultural vulnerability
+KW  - climate change
+KW  - life cycle assessment
+KW  - S17
+KW  - SF17
+KW  - sugarcane
+ER  - 
+
+TY  - JOUR
+TI  - Quantum Machine Learning-Enhanced Multiagent Reinforcement Learning for Intelligent Crop Resource Allocation in IoT-Enabled Smart Agriculture
+AU  - Prasanthi, B.
+AU  - Manchikalapudi, S.S.R.
+T2  - Journal of Wireless Mobile Networks, Ubiquitous Computing, and Dependable Applications
+AB  - This paper presents a new Quantum Machine Learning (QML)-Enhanced Multiagent Reinforcement Learning (MARL) framework, designed for dynamic crop resource allocation in smart agriculture using IoT. The framework is based on multi-agent systems to enable collaborative operation among agents responsible for controlling irrigation, fertilization, pesticide injection, and energy use. Quantum machine learning, as a consequence, allows for exploration and exploitation tradeoffs in decision-making to be both more efficient (when compared to classical benchmarks) and better able to support optimal behavior in high-dimensional or complex agricultural systems. It promotes ongoing agent learning and adaptation to actual IoT sensor readings in real time, which may vary across states such as soil conditions, weather, and so on. In the following, we would like to compare and contrast our work on cooperative learning with single-agent RL models along a few dimensions, e.g., scalability (better), robustness & adaptive ability. The simulation results indicate that the crop yield can reach 1250kg/ha, and our method performs better than other existing methods by 14-32%. The WUE reached 85%, an increase of 13–42% and the energy consumption was 420kWh/season, a decrease of 8–12%. When TD loss was 0.05 and the reward variance was 0.04, stable synchronous training by learning with fast policy optimization was able to converge rapidly in 350 episodes. The score for multi-agent coordination in adaptation and militarization was around 0.9, suggesting adaptability in the face of difficult circumstances. The framework enhances crop yield prediction, sustainable resource management, and operational efficiency, all in an agile, highly adaptable, scalable, and energy-efficient manner. "QML-MARL makes use of quantum scalable multiagent coordination and ensures intelligent data-driven sustainable precision agriculture methodologically superior to state-of-the-art models.". © 2026, Innovative Information Science and Technology Research Group. All rights reserved.
+CY  - ["Department of Electronics and Communication Engineering, Acharya Nagarjuna University, Andhra Pradesh, Guntur, India", "Department of Electronics and Communication Engineering, R.V.R & J.C. College of Engineering, Chaudavaram, Andhra Pradesh, Guntur, India"]
+DA  - 2026///
+PY  - 2026
+DO  - 10.58346/JOWUA.2026.I1.033
+VL  - 17
+IS  - 1
+SP  - 592
+EP  - 611
+LA  - English
+PB  - Innovative Information Science and Technology Research Group
+SN  - 20935374 (ISSN)
+UR  - https://www.scopus.com/pages/publications/105035504721?origin=resultslist
+KW  - Crop Management
+KW  - Dynamic Resource Allocation
+KW  - IoT Integration
+KW  - Multiagent Reinforcement Learning (MARL)
+KW  - Precision Farming
+KW  - Quantum Machine Learning (QML)
+KW  - Real-Time Adaptation
+KW  - S18
+KW  - SF18
+KW  - Smart Agriculture
+KW  - Sustainable Agriculture
+KW  - Yield Prediction
+ER  - 
+
+TY  - JOUR
+TI  - Modification of the Ant Colony Optimization Algorithm for Solving Multi-Agent Task Allocation Problem in Agricultural Application
+AU  - Hardhienata, M.K.D.
+AU  - Priandana, K.
+AU  - Putra, D.R.
+AU  - Sriatun, M.
+AU  - Buono, A.
+AU  - Mohamed, R.
+T2  - Journal of Advanced Research in Applied Sciences and Engineering Technology
+AB  - This paper considers the problem of task allocation where the goal is to find a coalition of UAVs (agents) to complete on-farm agricultural tasks. In this study, Ant Colony Optimization (ACO) algorithm is employed to find the best coalition of agents. The performance of the basic ACO algorithm for solving task allocation is improved by modifying the efficiency factor. In the proposed algorithm, the efficiency factor is defined as a function that relates not only to the capability of the agents and the distance between the agents, but also to the distance between the agents and the target. To solve the task allocation problem, the capability list of the agents was also adjusted using common UAV capabilities in agricultural application. Simulation results showed that the proposed ACO algorithm with the modified efficiency factor improved the performance of basic ACO algorithm for solving task allocation problem in terms of the average total travel cost for each agent. The optimum number of ants and agents in the proposed algorithm was also analysed for robust performance. Simulation results revealed that the addition of the numbers of agents and ants increases the average efficiency of the algorithm. In this study, we have also added a function to calculate the system capability utilization. By employing such a function, simulation results show that the total resource used by the agents and total communication cost can be optimized. In addition, a simple experiment using five ground robots with a centralized control was also carried out as a proof of concept for the proposed algorithm. © 2024, Semarak Ilmu Publishing. All rights reserved.
+CY  - ["Department of Computer Science, Faculty of Mathematics and Natural Sciences, IPB University, Bogor, Indonesia", "Intelligent Computing RG, Department of Computer Science, Faculty of Computer Science and Information Technology, Universiti Putra Malaysia, Selangor, Serdang, 43400, Malaysia"]
+DA  - 2024///
+PY  - 2024
+DO  - 10.37934/araset.34.1.90105
+VL  - 34
+IS  - 1
+SP  - 90
+EP  - 105
+LA  - English
+PB  - Semarak Ilmu Publishing
+SN  - 24621943 (ISSN)
+UR  - https://www.scopus.com/pages/publications/85178339296?origin=resultslist
+KW  - Ant Colony Optimization
+KW  - Efficiency Factor
+KW  - Multi-Agent Systems
+KW  - S19
+KW  - SF19
+KW  - Task Allocation
+KW  - UAV
+ER  - 
+
+TY  - CONF
+TI  - Improving Water Allocation Using Multi-agent Negotiation Mechanisms
+AU  - Chiewchan, K.
+AU  - Anthony, P.
+AU  - Birendra, K.C.
+AU  - Samarasinghe, S.
+T2  - 13th KES International Conference on Agents and Multi-Agent Systems: Technologies and Applications (KES-AMSTA-2019)
+T3  - Smart Innovation, Systems and Technologies
+AB  - This paper describes a multi-agent irrigation management system that can be used to distribute water efficiently among farmers in a community irrigation scheme during water scarcity. Each farm is represented as an agent that can calculate how much water is needed in the farm and hence estimate the marginal profit for the farm based on how much water is available. During water scarcity such as drought, some farmers would face water shortages and some would have excess water for irrigation. To ensure efficient water distribution, those farmers with excess water should share their water with other farmers needing water. In this study, we used the auction mechanism to distribute water efficiently among the farmers with the objective of maximizing the farmer’s expected utility (profit margin). Our preliminary experiments showed that water distribution using an auction mechanism yielded a higher profit margin for all farmers in a community irrigation scheme when compared to direct negotiation strategy with a fixed price. © 2020, Springer Nature Singapore Pte Ltd.
+C1  - ["Lincoln University, Christchurch, 7608, New Zealand", "Aqualinc Research Ltd., Christchurch, 8543, New Zealand"]
+C3  - Agents and Multi-agent Systems: Technologies and Applications 2019
+DA  - 2020///
+PY  - 2020
+DO  - 10.1007/978-981-13-8679-4_9
+VL  - 148
+SP  - 105
+EP  - 115
+LA  - English
+PB  - Springer Science and Business Media Deutschland GmbH
+SN  - 21903018 (ISSN); 978-981138678-7 (ISBN)
+UR  - https://www.scopus.com/pages/publications/85068329577?origin=resultslist
+KW  - Auction mechanism
+KW  - Auction mechanisms
+KW  - Irrigation
+KW  - Irrigation management systems
+KW  - Irrigation schemes
+KW  - Multi agent systems
+KW  - Multi-agent negotiation
+KW  - Multiagent negotiation
+KW  - Negotiation strategy
+KW  - Profitability
+KW  - S20
+KW  - SF16
+KW  - Water allocation
+KW  - Water allocations
+KW  - Water distributions
+KW  - Water scarcity
+KW  - Water supply systems
+ER  - 
+
+TY  - JOUR
+TI  - AI-driven multi-agent framework for smart irrigation and crop health monitoring in Indian rice and sugarcane farming
+AU  - Sheetal, V.A.
+AU  - Vikranth, B.M.
+AU  - Adarsha Sagar, H.V.
+T2  - Plant Science Today
+AB  - Disease prevention and water management are important to all the crops, particularly rice and sugarcane production in India. The article proposes a reinforcement learning (RL) based intelligent irrigation management system that is capable of optimising water consumption and crop nutrition in response to the changing agricultural climatic conditions. Decentralised reinforcement learning (RL) is used in a network of irrigation agents that utilise soil and microclimate sensor networks to set the terms of water allocation, water use efficiency (WUE) and crop health. At the same time, deep convolutional networks can be used to differentiate between plant stress/disease and leaf images and take applicable proactive actions. It is a framework that incorporates satellite-derived indices (NDVI, EVI, land surface temperature) with local sensor measurements and image-based health measurements through multimodal deep learning. Far-reaching simulations (including Indian climate and crop calendars) demonstrate that the multi-agent system lowers water consumption and preserves the yields and properly notifies stressed plants. The scores of disease detection with plantvillage-based fine-tuned on rice (120 (3 disease types) and 3829 (5 disease types) and sugarcane (2569 images for all disease types, Convolutional Neural Network (CNN) yield results of >98% accuracy. Crop mapping (rice/sugarcane) Satellite/LSTM-based crop mapping (with Sentinel-1/Sentinel-2) achieves more than 97% accuracy. The suggested structure provides a data-driven, scalable system for precision agriculture to enhance the management of irrigation periods and crop health. Simulation experiments show that the RL-based controller can reduce water consumption while preserving optimal soil moisture levels when compared to rule-based irrigation strategies. © The Author(s).
+CY  - Department of Computer Science and Engineering, B M S College of Engineering, Karnataka, Bengaluru, 560 004, India
+DA  - 2026///
+PY  - 2026
+DO  - 10.14719/pst.12797
+VL  - 13
+SP  - 1
+EP  - 16
+LA  - English
+PB  - Horizon e-Publishing Group
+SN  - 23481900 (ISSN)
+UR  - https://www.scopus.com/pages/publications/105044891167?origin=resultslist
+KW  - crop health monitoring
+KW  - deep learning
+KW  - multi-agent system
+KW  - multimodal data fusion
+KW  - plant village
+KW  - remote sensing
+KW  - S21
+KW  - Sentinel-1
+KW  - Sentinel-2
+KW  - SF21
+KW  - smart irrigation
+ER  - 
+
+TY  - CONF
+TI  - The MAELIA Multi-agent platform for integrated analysis of interactions between agricultural land-use and low-water management strategies
+AU  - Gaudou, B.
+AU  - Sibertin-Blanc, C.
+AU  - Therond, O.
+AU  - Amblard, F.
+AU  - Auda, Y.
+AU  - Arcangeli, J.-P.
+AU  - Balestrat, M.
+AU  - Charron-Moirez, M.-H.
+AU  - Gondet, E.
+AU  - Hong, Y.
+AU  - Lardy, R.
+AU  - Louail, T.
+AU  - Mayor, E.
+AU  - Panzoli, D.
+AU  - Sauvage, S.
+AU  - Sánchez-Pérez, J.-M.
+AU  - Taillandier, P.
+AU  - Van Bai, N.
+AU  - Vavasseur, M.
+AU  - Mazzega, P.
+T2  - 14th International Workshop on Multi-Agent-Based Simulation (MABS 2013)
+T3  - Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)
+AB  - The MAELIA project is developing an agent-based modeling and simulation platform to study the environmental, economic and social impacts of various regulations regarding water use and water management in combination with climate change. It is applied to the case of the French Adour-Garonne Basin, which is the most concerned in France by water scarcity during the low-water period. An integrated approach has been chosen to model this social-ecological system: the model combines spatiotemporal models of ecologic (e.g. rainfall and temperature changes, water flow and plant growth) and socio-economic (e.g. farmer decision-making process, management of low-water flow, demography, land use and land cover changes) processes and sub-models of cognitive sharing among agents (e.g. weather forecast, normative constraints on behaviors). © Springer-Verlag Berlin Heidelberg 2014.
+C1  - Berlin, Heidelberg
+C3  - Multi-Agent-Based Simulation XIV
+DA  - 2014///
+PY  - 2014
+DO  - 10.1007/978-3-642-54783-6_6
+VL  - 8235
+SP  - 85
+EP  - 100
+LA  - English
+PB  - Springer Verlag
+SN  - 03029743 (ISSN); 978-364254782-9 (ISBN)
+UR  - https://www.scopus.com/pages/publications/84958521272?origin=resultslist
+KW  - Agent-based model
+KW  - Agent-based modeling and simulation
+KW  - Climate change
+KW  - Computational methods
+KW  - Computer simulation
+KW  - Decision making process
+KW  - Economic and social effects
+KW  - Economics
+KW  - Environmental regulations
+KW  - Flow of water
+KW  - Hydraulics
+KW  - Integrated assessment
+KW  - Integrated assessment and modeling
+KW  - Land use
+KW  - Land use and land cover change
+KW  - Management strategies
+KW  - S22
+KW  - SF13
+KW  - Social-ecological systems
+KW  - Spatio-temporal models
+KW  - Water management
+KW  - Weather forecasting
+ER  - 
+
+TY  - CONF
+TI  - Semi-centralized Multi-agent RL for Irrigation Scheduling
+AU  - Agyeman, B.T.
+AU  - Liu, J.
+AU  - Shah, S.L.
+T2  - 12th IFAC International Symposium on Advanced Control of Chemical Processes (ADCHEM 2024)
+AB  - This study proposes a Semi-centralized Multi-agent Reinforcement Learning (SCMARL) approach for irrigation scheduling in agricultural fields, which are characterized by spatial variability and therefore delineated into management zones. The SCMARL framework is hierarchical in nature, with a coordinator agent at the top level and local agents at the second/lower level. The coordinator agent makes daily 'yes/no' irrigation decisions based on field-wide observations from all the management zones, which are then communicated to local agents. These local agents are tasked with determining the optimal daily irrigation depths for specific management zones, utilizing both the coordinator agent's decision and local observations. A comparison between the SCMARL method and a Fully Decentralized Multi-agent Reinforcement Learning approach is presented, highlighting the superior performance of the SCMARL approach in terms of water savings and improved irrigation water-use efficiency. Copyright © 2024 The Authors.
+C3  - IFAC-PapersOnLine
+DA  - 2024///
+PY  - 2024
+DO  - 10.1016/j.ifacol.2024.08.328
+VL  - 58
+IS  - 14
+SP  - 145
+EP  - 150
+LA  - English
+PB  - Elsevier B.V.
+SN  - 24058971 (ISSN)
+UR  - https://www.scopus.com/pages/publications/85203283304?origin=resultslist
+KW  - Centralised
+KW  - Federated learning
+KW  - irrigation scheduling
+KW  - Irrigation scheduling
+KW  - Management zones
+KW  - Mixed integer
+KW  - Mixed-integer linear programming
+KW  - mixed-integer optimal control
+KW  - Mixed-integer optimal control
+KW  - Multi-agent reinforcement learning
+KW  - Optimal controls
+KW  - Reinforcement learning
+KW  - Reinforcement learning approach
+KW  - S23
+KW  - semi-centralized multi-agent reinforcement learning
+KW  - Semi-centralized multi-agent reinforcement learning
+KW  - SF08
+KW  - Subirrigation
+ER  - 
+
+TY  - CONF
+TI  - Intelligent multi-agent system for water reduction in automotive irrigation processes
+AU  - González-Briones, A.
+AU  - Mezquita, Y.
+AU  - Castellanos-Garzón, J.A.
+AU  - Prieto, J.
+AU  - Corchado, J.M.
+T2  - 9th International Symposium on Internet of Ubiquitous and Pervasive Things (IUPT 2019)
+AB  - This paper deals with a multi-agent system (MAS) to automate the gathering and managing of information from potato crops in order to provide a precision irrigation system. The proposal and development of a novel MAS is presented based on different agent subsystems with specific objectives to meet the main objective of the global MAS. The proposed MAS has been developed on the Cloud Computing paradigm and is able to gather data from wireless sensor networks (WSNs) located in potato crops for knowledge discovery and decision making. According to the collected information as historical data by the MAS, it can make decision on an actuator set that modify the irrigation system by updating the areas of the crop with most irrigation needs. The use of these intelligent technologies in rural areas provides a considerable saving of resources and improves the efficiency and effectiveness of agricultural production systems. The architecture has been tested in an agricultural environment in order to optimize irrigation in a potato crop. The results showed a significant reduction in comparison to traditional automotive irrigation. © 2019 The Authors. Published by Elsevier B.V.
+C3  - Procedia Computer Science
+DA  - 2019///
+PY  - 2019
+DO  - 10.1016/j.procs.2019.04.136
+VL  - 151
+SP  - 971
+EP  - 976
+LA  - English
+PB  - Elsevier B.V.
+SN  - 18770509 (ISSN)
+UR  - https://www.scopus.com/pages/publications/85071932581?origin=resultslist
+KW  - Agricultural environments
+KW  - Agricultural production system
+KW  - Agricultural robots
+KW  - CBR system
+KW  - CBR systems
+KW  - Crops
+KW  - Decision making
+KW  - Industry 4.0
+KW  - Intelligent agents
+KW  - Intelligent multi agent systems
+KW  - Intelligent technology
+KW  - Irrigation
+KW  - Multi agent systems
+KW  - Multi-agent system
+KW  - Pivot irrigation
+KW  - Precision irrigation
+KW  - Radio frequency identification (RFID)
+KW  - RFID
+KW  - S24
+KW  - SF24
+KW  - Smart sprinkling
+KW  - Wireless sensor network (WSNs)
+KW  - Wireless sensor networks
+ER  - 
+
+TY  - CONF
+TI  - Challenges for Multi-Agent Based Agricultural Workforce Management
+AU  - Harman, H.
+AU  - Sklar, E.I.
+T2  - 23rd International Workshop on Multi-Agent-Based Simulation (MABS 2022)
+T3  - Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)
+AB  - Multi-agent task allocation methods seek to distribute a set of tasks fairly amongst a set of agents. In real-world settings, such as soft fruit farms, human labourers undertake harvesting tasks, assigned by farm managers. The work here explores the application of artificial intelligence planning methodologies to optimise the existing workforce and applies multi-agent based simulation to evaluate the efficacy of the AI strategies. Key challenges threatening the acceptance of such an approach are highlighted and solutions are evaluated experimentally. © 2023, The Author(s), under exclusive license to Springer Nature Switzerland AG.
+C1  - Cham
+C3  - Multi-Agent-Based Simulation XXIII
+DA  - 2023///
+PY  - 2023
+DO  - 10.1007/978-3-031-22947-3_10
+VL  - 13743
+SP  - 121
+EP  - 133
+LA  - English
+PB  - Springer Science and Business Media Deutschland GmbH
+SN  - 03029743 (ISSN); 978-303122946-6 (ISBN)
+UR  - https://www.scopus.com/pages/publications/85148689424?origin=resultslist
+KW  - Agent based
+KW  - Agriculture
+KW  - Allocation methods
+KW  - Artificial intelligence planning
+KW  - Multi agent
+KW  - Multi agent based simulations
+KW  - Multi agent systems
+KW  - Multi agent-based simulations
+KW  - Multi-agent based simulation
+KW  - Personnel
+KW  - Planning methodology
+KW  - Real world setting
+KW  - S25
+KW  - SF25
+KW  - Task allocation
+KW  - Workforce management
+ER  - 
+
+TY  - JOUR
+TI  - Assessing Adaptive Irrigation Impacts on Water Scarcity in Nonstationary Environments—A Multi-Agent Reinforcement Learning Approach
+AU  - Hung, F.
+AU  - Yang, Y.C.E.
+T2  - Water Resources Research
+AB  - One major challenge in water resource management is to balance the uncertain and nonstationary water demands and supplies caused by the changing anthropogenic and hydroclimate conditions. To address this issue, we developed a reinforcement learning agent-based modeling (RL-ABM) framework where agents (agriculture water users) are able to learn and adjust water demands based on their interactions with the water systems. The intelligent agents are created by a reinforcement learning algorithm adapted from the Q-learning algorithm. We illustrated this framework in a case study where the RL-ABM is two-way coupled with the Colorado River Simulation System (CRSS), a long-term planning model used for the administration of the Colorado River Basin, for assessing agriculture water uses impacts on water scarcity. Seventy-eight intelligent agents are simulated, which can be grouped into three categories based on their parameter values: the “aggressive” (swift actions; low regrets), the “forward-looking conservative” (mild actions; high regrets; fast learning), and the “myopic conservative” (mild actions; median regrets; slow learning). The ABM-CRSS results showed that the major reservoirs in the Upper Colorado Basin might experience more frequent water shortages due to the increasing water uses compared to the original CRSS results. If the drought continues, the case study also demonstrates that agents can learn and adjust their demands. © 2021. American Geophysical Union. All Rights Reserved.
+CY  - Department of Civil and Environmental Engineering, Lehigh University, Bethlehem, PA, United States
+DA  - 2021///
+PY  - 2021
+DO  - 10.1029/2020WR029262
+VL  - 57
+IS  - 9
+SP  - e2020WR029262
+LA  - English
+PB  - John Wiley and Sons Inc
+SN  - 00431397 (ISSN)
+UR  - https://www.scopus.com/pages/publications/85115720155?origin=resultslist
+KW  - Agricultural robots
+KW  - Agriculture
+KW  - Agriculture water demand
+KW  - agriculture water demands
+KW  - algorithm
+KW  - assessment method
+KW  - Autonomous agents
+KW  - Colorado River
+KW  - Colorado River Basin
+KW  - Computational methods
+KW  - coupled human-nature systems
+KW  - Coupled human-nature systems
+KW  - Intelligent agents
+KW  - irrigation system
+KW  - Learn+
+KW  - Learning algorithms
+KW  - machine learning
+KW  - Multi agent systems
+KW  - Reinforcement learning
+KW  - Reinforcement learning agent
+KW  - Reservoirs (water)
+KW  - resource management
+KW  - Rivers
+KW  - S26
+KW  - SF26
+KW  - Simulation systems
+KW  - water demand
+KW  - Water demand
+KW  - water depth
+KW  - water management
+KW  - Water management
+KW  - water resource
+KW  - water resources
+KW  - Water scarcity
+KW  - Waters resources
+KW  - Watersheds
+ER  - 
+
+TY  - JOUR
+TI  - Multi-agent agro-economic simulation of irrigation water demand with climate services for climate change adaptation
+AU  - Balbi, S.
+AU  - Bhandari, S.
+AU  - Gain, A.K.
+AU  - Giupponi, C.
+T2  - Italian Journal of Agronomy
+AB  - Farmers' irrigation practices play a crucial role in the sustainability of crop production and water consumption, and in the way they deal with the current and future effects of climate change. In this study, a system dynamic multi-agent model adopting the soil water balance provided by the Food and Agriculture Organization (FAO) Irrigation and Drainage Paper 56 was developed to explore how farmers' decision making may affect future water needs and use with a focus on the role of climate services, i.e. forecasts and insurance. A climatic projection record representing the down-scaled A1B market scenario (a balance across all sources) of the assessment report of the Intergovernmental Panel on Climate Change (IPCC) is used to produce future daily data about relative humidity, precipitation, temperature and wind speed. Two types of meteorological services are made available: i) a bi-weekly bulletin; and ii) seasonal forecasts. The precision of these services was altered to represent different conditions, from perfect knowledge to poor forecasts. Using the available forecasts, farming agents take adaptation decisions concerning crop allocation and irrigation management on the basis of their own risk attitudes. Farmers' attitudes are characterized by fuzzy classifications depending on age, relative income and crop profitability. Farming agents' adaptation decisions directly affect the crop and irrigation parameters, which in turn affect future water needs on a territorial level. By incorporating available and future meteorological services, the model allows the farmer's decision making-process to be explored together with the consequent future irrigation water demand for the period 2015 to 2030. The model prototype is applied to a data set of the Venice Lagoon Watershed, an area of 2038 km2 in north-east Italy, for a preliminary test of its performance and to design future development objectives. © S. Balbi et al.
+CY  - ["Basque Centre for Climate Change (BC3), Bilbao, Spain", "Department of Economics, Ca' Foscari University of Venice, Italy", "Center For Sustainable Development Solutions, Lalitpur, Nepal", "Euro-Mediterranean Centre for Climate Change, Island of San Giorgio Maggiore, Venice, Italy"]
+DA  - 2013///
+PY  - 2013
+DO  - 10.4081/ija.2013.e23
+VL  - 8
+IS  - 3
+SP  - 175
+EP  - 185
+LA  - English
+PB  - Page Press Publications
+SN  - 11254718 (ISSN)
+UR  - https://www.scopus.com/pages/publications/84884545322?origin=resultslist
+KW  - climate change
+KW  - Climate services
+KW  - crop production
+KW  - data set
+KW  - decision making
+KW  - Farmer behaviour
+KW  - fuzzy mathematics
+KW  - irrigation system
+KW  - Irrigation water demand
+KW  - Italy
+KW  - Micro-simulation
+KW  - S27
+KW  - SF27
+KW  - simulation
+KW  - soil water
+KW  - Veneto
+KW  - Venezia [Veneto]
+KW  - Venice Lagoon
+KW  - water demand
+KW  - water use
+KW  - watershed
+KW  - weather forecasting
+KW  - wind velocity
+ER  - 
+
+TY  - JOUR
+TI  - A multi-agent simulation model for spatial optimisation of manure allocation
+AU  - van der Straeten, B.
+AU  - Buysse, J.
+AU  - Nolte, S.
+AU  - Lauwers, L.
+AU  - Claeys, D.
+AU  - van Huylenbroeck, G.
+T2  - Journal of Environmental Planning and Management
+AB  - The EU Nitrate Directive has spurred many countries to regulate manure production and manure application. Farmers have three allocation options: spreading manure on their own land, transporting manure to other farmers' land or processing manure. The manure problem can be seen as an allocation problem. To better understand this allocation problem, we have developed the spatial mathematical programming multi-agent simulation (MP-MAS) model. This model has been applied in Flanders, Belgium, a region with a high concentration of livestock. The model evaluates the cost efficiency of policy intervention in the manure market through obliged processing. We propose to further optimise the policy using a regionally differentiated manure pressure indicator, which is directly derived from the dual outcome of the mathematical programme. This indicator increases transparency in the manure and processing market, leading to better decision support about location and type of manure processing. © 2010 University of Newcastle upon Tyne.
+CY  - ["Department of Agricultural Economics, Ghent University, Coupure links 653, B-9000, Ghent, Belgium", "Social Sciences Unit, Institute for Agricultural and Fisheries Research (ILVO), B-9820, Merelbeke, Burg. van Gansberghelaan 115 bus 2, Belgium"]
+DA  - 2010///
+PY  - 2010
+DO  - 10.1080/09640568.2010.495546
+VL  - 53
+IS  - 8
+SP  - 1011
+EP  - 1030
+LA  - English
+SN  - 13600559 (ISSN)
+UR  - https://www.scopus.com/pages/publications/77958038358?origin=resultslist
+KW  - Belgium
+KW  - decision support system
+KW  - Flanders
+KW  - Flanders, spatial allocation
+KW  - manure
+KW  - Manure abatement
+KW  - Mathematical programming
+KW  - modeling
+KW  - Multi-agent-simulation
+KW  - optimization
+KW  - S28
+KW  - SF28
+ER  - 
+
+TY  - CONF
+TI  - A Multi-agent Systems Approach for Peer-to-Peer Energy Trading in Dairy Farming
+AU  - Shah, M.I.A.
+AU  - Wahid, A.
+AU  - Barrett, E.
+AU  - Mason, K.
+T2  - International Workshops of the 26th European Conference on Artificial Intelligence (ECAI 2023)
+T3  - Communications in Computer and Information Science
+AB  - To achieve desired carbon emission reductions, integrating renewable generation and accelerating the adoption of peer-to-peer energy trading is crucial. This is especially important for energy-intensive farming, like dairy farming. However, integrating renewables and peer-to-peer trading presents challenges. To address this, we propose the Multi-Agent Peer-to-Peer Dairy Farm Energy Simulator (MAPDES), enabling dairy farms to participate in peer-to-peer markets. Our strategy reduces electricity costs and peak demand by approximately 30% and 24% respectively, while increasing energy sales by 37% compared to the baseline scenario without P2P trading. This demonstrates the effectiveness of our approach. © The Author(s), under exclusive license to Springer Nature Switzerland AG 2024.
+C1  - Cham
+C3  - Artificial Intelligence. ECAI 2023 International Workshops
+DA  - 2024///
+PY  - 2024
+DO  - 10.1007/978-3-031-50485-3_27
+VL  - 1948
+SP  - 254
+EP  - 261
+LA  - English
+PB  - Springer Science and Business Media Deutschland GmbH
+SN  - 18650929 (ISSN); 978-303150484-6 (ISBN)
+UR  - https://www.scopus.com/pages/publications/85184292904?origin=resultslist
+KW  - Carbon emissions reductions
+KW  - Costs
+KW  - Dairy farming
+KW  - Dairy farms
+KW  - Emission control
+KW  - Energy
+KW  - Energy trading
+KW  - Farms
+KW  - Multi agent systems
+KW  - Multi-Agent Systems
+KW  - Peer to peer
+KW  - Peer to peer networks
+KW  - Peer-to-peer energy trading
+KW  - Peer-to-Peer Energy Trading
+KW  - Power markets
+KW  - Renewable energies
+KW  - Renewable Energy
+KW  - Renewable generation
+KW  - Renewables
+KW  - S29
+KW  - SF05
+ER  - 
+
+TY  - CONF
+TI  - Heterogeneous multi-agent resource allocation through multi-bidding with applications to precision agriculture⁎
+AU  - Cobbenhagen, A.T.J.R.
+AU  - Antunes, D.J.
+AU  - van de Molengraft, M.J.G.
+AU  - Heemels, W.P.M.H.
+T2  - 7th IFAC Workshop on Distributed Estimation and Control in Networked Systems (NECSYS 2018)
+AB  - In this paper we consider the problem of allocating multiple resources to a number of clients by a group of heterogeneous agents over time such that the clients can produce products while maximizing a profit function. We propose an approximate optimization framework in which every client provides multiple bids from which the agents choose such that an allocation is feasible and that the profit function is maximized over time. The proposed framework exploits decomposition techniques that can be used for large-scale multi-agent resource allocation problems in which the cost objective is additive, the dynamics of product generation is non-linear and the agents have different capabilities. Interestingly, the decomposition can be solved in a distributed fashion, enabling application to large-scale problems. We apply this decomposition to the management of resources and agents in precision agriculture as an inspirational and important application domain of the obtained results. We show that our framework can be used in order to schedule the time, location and quantity of resources that every agent must provide whilst optimizing the profit of the entire farm over the growing season. © 2018
+C1  - Control Systems Technology group, Dept. of Mechanical Engineering, Eindhoven University of Technology, Eindhoven, Netherlands
+C3  - IFAC-PapersOnLine
+DA  - 2018///
+PY  - 2018
+DO  - 10.1016/j.ifacol.2018.12.034
+VL  - 51
+IS  - 23
+SP  - 194
+EP  - 199
+LA  - English
+PB  - Elsevier B.V.
+SN  - 24058963 (ISSN)
+UR  - https://www.scopus.com/pages/publications/85058469019?origin=resultslist
+KW  - Agricultural robots
+KW  - Agriculture
+KW  - Approximate dynamic programming
+KW  - Approximate optimization
+KW  - Decomposition technique
+KW  - Distributed optimization
+KW  - Dynamic programming
+KW  - Heterogeneous agents
+KW  - Multi agent
+KW  - Multi agent systems
+KW  - Multi-agent resource allocation
+KW  - Optimal control
+KW  - Optimal controls
+KW  - Precision agriculture
+KW  - Profitability
+KW  - Resource allocation
+KW  - Resource allocation problem
+KW  - S30
+KW  - SF30
+ER  - 
+
+TY  - CONF
+TI  - Dynamic Task Allocation Method for Heterogenous Multiagent System in Uncertain Scenarios of Agricultural Field Operation
+AU  - Liang, Y.
+AU  - Zhou, K.
+AU  - Wu, C.
+T2  - International Conference on Electrical, Electronics and Information Engineering (EEIE-2022)
+AB  - This study focuses on the problem of dynamic task allocation for a heterogeneous multiagent system (MAS) in uncertain scenarios and its application in agricultural field operation. Previous studies lacked robustness or efficiency for uncertain environments especially in agricultural field, such as agent removal, agent inclusion, changes of agent capabilities, and task changes. We present herein a novel concept of the potential field of capability influence (PFCI), and based on which, we can estimate potential overloaded tasks. This provides an opportunity to improve the allocation of the remaining tasks. Then, we propose a heuristic-based clustering auction (HBCA) method by introducing PFCI into the auction mechanism to achieve an effective and efficient task allocation. The whole method consists of the three following phases based on the auction mechanism: 1) auctioneer preprocessing phase that adopts a capability priority strategy to select the preferable agent; 2) bidder preprocessing phase that introduces the PFCI to obtain a list of clustered tasks heuristically; and 3) adaptive auction phase that applies the auction mechanism to achieve an appropriate match between agents and tasks. Numerical simulations with different uncertain field operation scenarios validate the effectiveness of the proposed method. The results show that the proposed HBCA can dramatically reduce the total assignment cost and outperform state-of-the-art methods, especially in the case of obvious variances in agent capabilities. © Published under licence by IOP Publishing Ltd.
+C3  - Journal of Physics: Conference Series
+DA  - 2022///
+PY  - 2022
+DO  - 10.1088/1742-6596/2356/1/012049
+VL  - 2356
+IS  - 1
+SP  - 012049
+LA  - English
+PB  - Institute of Physics
+SN  - 17426588 (ISSN)
+UR  - https://www.scopus.com/pages/publications/85141775019?origin=resultslist
+KW  - Agricultural fields
+KW  - Agriculture
+KW  - Auction algorithm
+KW  - Auction algorithms
+KW  - Auctions mechanisms
+KW  - Combinatorial optimization
+KW  - dynamic task allocation
+KW  - Dynamic task allocation
+KW  - Dynamics
+KW  - field operation
+KW  - Field operation
+KW  - heterogeneous multiagent
+KW  - Heterogeneous multiagent
+KW  - Heuristic methods
+KW  - Heuristic-based clustering
+KW  - Multi agent
+KW  - Multi agent systems
+KW  - Numerical methods
+KW  - Potential field
+KW  - S31
+KW  - SF31
+KW  - uncertain environment
+KW  - Uncertain environments
+ER  - 
+
+TY  - JOUR
+TI  - A constrained multi-agent system compensating for self-lucrative behaviours in water resource sharing
+AU  - Barbalios, N
+AU  - Ioannidou, I
+AU  - Tzionas, P
+AU  - Paraskeuopoulos, S
+T2  - CIVIL ENGINEERING AND ENVIRONMENTAL SYSTEMS
+AB  - This paper presents the development of a multi-agent model for simulating realistic water-sharing scenarios and a means of studying and assessing an ecosystem's viability by taking under consideration environmental and socio-economical parameters. To account for farmer self-lucrative behaviours, exhibited due to the economic pressure exerted on them, the proposed model imposes constraints such as the lack of inter-farmer communication and observation. Additionally, a self-adaptive learning algorithm is proposed that compensates for such self-lucrative behaviours, despite the imposed constraints. The proposed model was calibrated using data derived from the Lake Koronia ecosystem, and experimental results provided statistical and objective figures of merit for assessing typical irrigation policies under study. As it will be demonstrated, the developed model is a viable means for assessing irrigation policies, and the proposed self-adaptive learning method is a means of guiding behaviours towards the viability of both the resource and its users.
+CY  - ["Univ Thessaly, Dept Special Educ, GR-38221 Volos, Greece", "Technol Educ Inst Thessaloniki, Dept Automat, Intelligent Control Lab, Thessaloniki, Greece", "Technol Educ Inst Thessaloniki, Dept Early Educ, Thessaloniki, Greece"]
+DA  - 2012///
+PY  - 2012
+DO  - 10.1080/10286608.2012.716424
+VL  - 29
+IS  - 4
+SP  - 282
+EP  - 290
+LA  - English
+SN  - ["1028-6608", "1029-0249     J9  - CIV ENG ENVIRON SYST     JI  - Civ. Eng. Environ. Syst."]
+KW  - MODEL
+KW  - multi-agent model
+KW  - policy evaluation
+KW  - S32
+KW  - SF32
+KW  - water management
+KW  - water sharing
+ER  - 
+
+TY  - JOUR
+TI  - Multi-agent task allocation for harvest management
+AU  - Harman, H
+AU  - Sklar, EI
+T2  - FRONTIERS IN ROBOTICS AND AI
+AB  - Multi-agent task allocation methods seek to distribute a set of tasks fairly amongst a set of agents. In real-world settings, such as soft fruit farms, human labourers undertake harvesting tasks. The harvesting workforce is typically organised by farm manager(s) who assign workers to the fields that are ready to be harvested and team leaders who manage the workers in the fields. Creating these assignments is a dynamic and complex problem, as the skill of the workforce and the yield (quantity of ripe fruit picked) are variable and not entirely predictable. The work presented here posits that multi-agent task allocation methods can assist farm managers and team leaders to manage the harvesting workforce effectively and efficiently. There are three key challenges faced when adapting multi-agent approaches to this problem: (i) staff time (and thus cost) should be minimised; (ii) tasks must be distributed fairly to keep staff motivated; and (iii) the approach must be able to handle incremental (incomplete) data as the season progresses. An adapted variation of Round Robin (RR) is proposed for the problem of assigning workers to fields, and market-based task allocation mechanisms are applied to the challenge of assigning tasks to workers within the fields. To evaluate the approach introduced here, experiments are performed based on data that was supplied by a large commercial soft fruit farm for the past two harvesting seasons. The results demonstrate that our approach produces appropriate worker-to-field allocations. Moreover, simulated experiments demonstrate that there is a "sweet spot " with respect to the ratio between two types of in-field workers.
+CY  - ["Lincoln Ctr Autonomous Syst, Lincoln, England", "Sch Comp Sci, Lincoln, England", "Lincoln Inst Agrifood Technol, Lincoln, England     FU  - UKRI Research England as part of the Expanding Excellence in England (E3) Programme [Lincoln Agri-Robotics]; Ceres Agri-Tech under the Co-Farm.AI project     FX  - This work was supported by UKRI Research England as part of the Expanding Excellence in England (E3) Programme [Lincoln Agri-Robotics] and Ceres Agri-Tech under the Co-Farm.AI project.     PU  - FRONTIERS MEDIA SA     PI  - LAUSANNE     PA  - AVENUE DU TRIBUNAL FEDERAL 34, LAUSANNE, CH-1015, SWITZERLAND"]
+DA  - 2022///
+PY  - 2022
+DO  - 10.3389/frobt.2022.864745
+VL  - 9
+SP  - 864745
+LA  - English
+SN  - 2296-9144     J9  - FRONT ROBOT AI     JI  - Front. Robot. AI
+Y2  - 0010/01/01/
+KW  - agent-based simulation
+KW  - applied AI
+KW  - automated harvest management
+KW  - COORDINATION
+KW  - multi-agent system
+KW  - MULTIROBOT
+KW  - S33
+KW  - SF25
+KW  - task allocation
+KW  - TAXONOMY
+ER  - 
+
+TY  - JOUR
+TI  - 'Smart' policies to reduce pesticide use and avoid income trade-offs: An agent-based model applied to Thai agriculture
+AU  - Grovermann, Christian
+AU  - Schreinemachers, Pepijn
+AU  - Riwthong, Suthathip
+AU  - Berger, Thomas
+T2  - Ecological Economics
+DA  - 2017///
+PY  - 2017
+DO  - 10.1016/j.ecolecon.2016.09.031
+VL  - 132
+SP  - 91
+EP  - 103
+LA  - English
+UR  - https://hohpublica.uni-hohenheim.de/bitstreams/ce3a46c7-3736-4ae0-968d-7a39863efc4d/download
+KW  - S36
+KW  - SF36
+ER  - 
+
+TY  - JOUR
+TI  - Ex-ante assessment of soil conservation methods in the uplands of Vietnam: An agent-based modeling approach
+AU  - Quang, Dang Viet
+AU  - Schreinemachers, Pepijn
+AU  - Berger, Thomas
+T2  - Agricultural Systems
+DA  - 2014///
+PY  - 2014
+DO  - 10.1016/j.agsy.2013.10.002
+VL  - 123
+SP  - 108
+EP  - 119
+LA  - English
+UR  - https://www.sciencedirect.com/science/article/pii/S0308521X13001261
+KW  - S37
+KW  - SF37
+ER  - 
+
+TY  - JOUR
+TI  - An agent-based simulation of cooperation in the use of irrigation systems
+AU  - Cai, Jingjing
+AU  - Xiong, Hang
+T2  - Complex Adaptive Systems Modeling
+DA  - 2017///
+PY  - 2017
+DO  - 10.1186/s40294-017-0047-x
+VL  - 5
+SP  - 9
+LA  - English
+UR  - https://www.research-collection.ethz.ch/bitstreams/f2c7ff38-db5d-4931-9efc-81dc8a97ecf0/download
+KW  - S38
+KW  - SF38
+ER  - 
+
+TY  - JOUR
+TI  - Water management for irrigation, crop yield and social attitudes: a socio-agricultural agent-based model to explore a collective action problem
+AU  - Tamburino, Lucia
+AU  - Baldassarre, Giuliano Di
+AU  - Vico, Giulia
+T2  - Hydrological Sciences Journal
+DA  - 2020///
+PY  - 2020
+DO  - 10.1080/02626667.2020.1769103
+VL  - 65
+IS  - 11
+SP  - 1815
+EP  - 1829
+LA  - English
+UR  - https://www.tandfonline.com/doi/pdf/10.1080/02626667.2020.1769103
+KW  - S39
+KW  - SF39
+ER  - 
+
+TY  - JOUR
+TI  - An agent-based model of farmer decision-making and water quality impacts at the watershed scale under markets for carbon allowances and a second-generation biofuel crop
+AU  - Ng, Tze Ling
+AU  - Eheart, J. Wayland
+AU  - Cai, Ximing
+AU  - Braden, John B.
+T2  - Water Resources Research
+DA  - 2011///
+PY  - 2011
+DO  - 10.1029/2011WR010399
+VL  - 47
+IS  - 9
+SP  - W09519
+LA  - English
+UR  - https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2011WR010399
+KW  - S40
+KW  - SF40
+ER  - 
+
+TY  - JOUR
+TI  - A hybrid TOPSIS-agent-based framework for reducing the water demand requested by stakeholders with considering the agents’ characteristics and optimization of cropping pattern
+AU  - Ghazali, Mahboubeh
+AU  - Honar, Tooraj
+AU  - Nikoo, Mohammad Reza
+T2  - Agricultural Water Management
+DA  - 2018///
+PY  - 2018
+DO  - 10.1016/j.agwat.2017.12.014
+VL  - 199
+SP  - 71
+EP  - 85
+LA  - English
+UR  - https://www.researchgate.net/publication/321859892_A_Hybrid_TOPSIS-Agent-Based_framework_for_Reducing_the_Water_Demand_Requested_by_Stakeholders_with_Considering_the_agents%27_characteristics_and_Optimization_of_Cropping_Pattern
+KW  - S41
+KW  - SF41
+ER  - 
+
+TY  - CONF
+TI  - Fine spatio-temporal simulation of cropping and farming systems effects on irrigation withdrawal dynamics within a river basin
+AU  - Murgue, Clément
+AU  - Lardy, Romain
+AU  - Vavasseur, Maroussia
+AU  - Leenhardt, Delphine
+AU  - Therond, Olivier
+C3  - 7th International Congress on Environmental Modelling and Software (iEMSs 2014)
+DA  - 2014///
+PY  - 2014
+SP  - 1
+EP  - 8
+LA  - English
+UR  - http://www.iemss.org/sites/iemss2014/papers/iemss2014_submission_128.pdf
+KW  - S42
+KW  - SF42
+ER  - 
+
+TY  - JOUR
+TI  - Agent-based spatial models applied to agriculture: a simulation tool for technology diffusion, resource use changes and policy analysis
+AU  - Berger, Thomas
+T2  - Agricultural Economics
+DA  - 2001///
+PY  - 2001
+DO  - 10.1016/S0169-5150(01)00082-2
+VL  - 25
+IS  - 2-3
+SP  - 245
+EP  - 260
+LA  - English
+UR  - https://www.researchgate.net/publication/222704785_Agent-based_spatial_models_applied_to_agriculture_a_simulation_tool_for_technology_diffusion_resource_use_changes_and_policy_analysis
+KW  - S43
+KW  - SF43
+ER  - 
+
+TY  - JOUR
+TI  - SINUSE: A multi-agent model to negotiate water demand management on a free access water table
+AU  - Feuillette, S.
+AU  - Bousquet, François
+AU  - Goulven, Patrick Le
+T2  - Environmental Modelling & Software
+DA  - 2003///
+PY  - 2003
+DO  - 10.1016/S1364-8152(03)00006-9
+VL  - 18
+IS  - 5
+SP  - 413
+EP  - 427
+LA  - English
+UR  - https://publications.cirad.fr/une_notice.php?dk=513835
+KW  - S44
+KW  - SF44
+ER  - 
+
+TY  - JOUR
+TI  - Agent based simulation of a small catchment water management in northern Thailand: Description of the CATCHSCAPE model
+AU  - Becu, Nicolas
+AU  - Perez, Pascal
+AU  - Walker, Andrew
+AU  - Barreteau, Olivier
+AU  - Page, Christophe Le
+T2  - Ecological Modelling
+DA  - 2003///
+PY  - 2003
+DO  - 10.1016/S0304-3800(03)00236-9
+VL  - 170
+IS  - 2-3
+SP  - 319
+EP  - 331
+LA  - English
+UR  - https://publications.cirad.fr/une_notice.php?dk=517507
+KW  - S45
+KW  - SF45
+ER  - 
+
+TY  - JOUR
+TI  - Suitability of Multi-Agent Simulations to study irrigated system viability: application to case studies in the Senegal River Valley
+AU  - Barreteau, Olivier
+AU  - Bousquet, François
+AU  - Millier, Claude
+AU  - Weber, Jacques
+T2  - Agricultural Systems
+DA  - 2004///
+PY  - 2004
+DO  - 10.1016/j.agsy.2003.07.005
+VL  - 80
+IS  - 3
+SP  - 255
+EP  - 275
+LA  - English
+UR  - https://publications.cirad.fr/une_notice.php?dk=519555
+KW  - S46
+KW  - SF46
+ER  - 
+
+TY  - JOUR
+TI  - Simulating soil fertility and poverty dynamics in Uganda: A bio-economic multi-agent systems approach
+AU  - Schreinemachers, Pepijn
+AU  - Berger, Thomas
+AU  - Aune, Jens B.
+T2  - Ecological Economics
+DA  - 2007///
+PY  - 2007
+DO  - 10.1016/j.ecolecon.2007.07.018
+VL  - 64
+IS  - 2
+SP  - 387
+EP  - 401
+LA  - English
+UR  - https://www.sciencedirect.com/science/article/abs/pii/S0921800907004120
+KW  - S47
+KW  - SF47
+ER  - 
+
+TY  - JOUR
+TI  - An adaptive multi-agent model for water allocation under scarcity: application of bankruptcy methods
+AU  - Mahmoudian, Shirin Alsadat
+AU  - Mahjouri, Najmeh
+T2  - Journal of Hydroinformatics
+DA  - 2025///
+PY  - 2025
+DO  - 10.2166/hydro.2025.319
+VL  - 27
+IS  - 7
+SP  - 1121
+EP  - 1141
+LA  - English
+UR  - https://doi.org/10.2166/hydro.2025.319
+KW  - S48
+KW  - SF48
+ER  - 
+
+TY  - JOUR
+TI  - Optimal Irrigation Allocation for Large-Scale Arable Farming
+AU  - Cobbenhagen, A. T. J. R.
+AU  - Schoonen, L. P. A.
+AU  - Molengraft, M. J. G. van de
+AU  - Heemels, W. P. M. H.
+T2  - IEEE Transactions on Control Systems Technology
+DA  - 2022///
+PY  - 2022
+DO  - 10.1109/TCST.2021.3118296
+VL  - 30
+IS  - 4
+SP  - 1484
+EP  - 1493
+LA  - English
+UR  - https://pure.tue.nl/ws/files/300106073/Optimal_Irrigation_Allocation_for_Large_Scale_Arable_Farming.pdf
+KW  - S49
+KW  - SF49
+ER  - 
+
+TY  - CONF
+TI  - Multi-Robot Task Allocation in Agriculture Scenarios Based on the Improved NSGA-II Algorithm
+AU  - Lu, Zaiwang
+AU  - Zhao, Zixu
+AU  - Long, Long
+AU  - Ma, Yike
+AU  - Li, Lei
+AU  - Liu, Zichen
+AU  - Dai, Feng
+AU  - Zhang, Yucheng
+AU  - Li, Jintao
+C1  - Piscataway, NJ, USA
+C3  - 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall)
+DA  - 2023///
+PY  - 2023
+DO  - 10.1109/VTC2023-Fall60731.2023.10333601
+SP  - 1
+EP  - 6
+LA  - English
+PB  - IEEE
+UR  - https://www.ieeevtc.org/vtc2023fall/DATA/2023002760.pdf
+KW  - S50
+KW  - SF50
+ER  - 
+
+TY  - JOUR
+TI  - Fostering local crop-livestock integration via legume exchanges using an innovative integrated assessment and modelling approach based on the MAELIA platform
+AU  - Catarino, Rui
+AU  - Therond, Olivier
+AU  - Berthomier, Jérémy
+AU  - Miara, Maurice
+AU  - Mérot, Emmanuel
+AU  - Misslin, Renaud
+AU  - Vanhove, Paul
+AU  - Villerd, Jean
+AU  - Angevin, Frédérique
+T2  - Agricultural Systems
+DA  - 2021///
+PY  - 2021
+DO  - 10.1016/j.agsy.2021.103066
+VL  - 189
+SP  - 103066
+LA  - English
+UR  - https://hal.science/hal-03118846
+KW  - S51
+KW  - SF51
+ER  - 
+
+TY  - JOUR
+TI  - Multi-actor approach to manage the water-energy-food nexus at territory scale
+AU  - Saint-Bois, Amaya
+AU  - Boix, Marianne
+AU  - Therond, Olivier
+AU  - Montastruc, Ludovic
+AU  - Villerd, Jean
+AU  - Touche, Iréa
+T2  - Computers & Chemical Engineering
+DA  - 2024///
+PY  - 2024
+DO  - 10.1016/j.compchemeng.2024.108773
+VL  - 189
+SP  - 108773
+LA  - English
+UR  - https://hal.science/hal-04744314
+KW  - S52
+KW  - SF42
+ER  - 
+
+TY  - CONF
+TI  - Optimal irrigation management for large-scale arable farming using model predictive control
+AU  - Schoonen, L. P. A.
+AU  - Cobbenhagen, A. T. J. R.
+AU  - Heemels, W. P. M. H.
+T2  - 6th IFAC Conference on Sensing, Control and Automation Technologies for Agriculture (AGRICONTROL 2019)
+C3  - IFAC-PapersOnLine
+DA  - 2019///
+PY  - 2019
+DO  - 10.1016/j.ifacol.2019.12.489
+VL  - 52
+IS  - 30
+SP  - 56
+EP  - 61
+LA  - English
+PB  - Elsevier B.V.
+UR  - https://research.tue.nl/files/144240465/1_s2.0_S2405896319323985_main.pdf
+KW  - S53
+KW  - SF49
+ER  - 
+
+TY  - CHAP
+TI  - Multi-Agent Task Allocation Techniques for Harvest Team Formation
+AU  - Harman, Helen
+AU  - Sklar, Elizabeth I.
+T2  - Advances in Practical Applications of Agents, Multi-Agent Systems, and Complex Systems Simulation. The PAAMS Collection
+A2  - Dignum, Frank
+A2  - Mathieu, Philippe
+A2  - Corchado, Juan Manuel
+A2  - De La Prieta, Fernando
+AB  - With increasing demands for soft fruit and shortages of seasonal workers, farms are seeking innovative solutions for efficiently managing their workforce. The harvesting workforce is typically organised by farm managers who assign workers to the fields that are ready to be harvested. They aim to minimise staff time (and costs) and distribute work fairly, whilst still picking all ripe fruit within the fields that need to be harvested. This paper posits that this problem can be addressed using multi-criteria, multi-agent task allocation techniques. The work presented compares the application of Genetic Algorithms (GAs) vs auctionbased approaches to the challenge of assigning workers with various skill sets to fields with various estimated yields. These approaches are evaluated alongside a previously suggested method and the teams that were manually created by a farm manager during the 2021 harvesting season. Results indicate that the GA approach produces more efficient team allocations than the alternatives assessed.
+CY  - Cham
+DA  - 2022///
+PY  - 2022
+DO  - 10.1007/978-3-031-18192-4_18
+DP  - DOI.org (Crossref)
+VL  - 13616
+SP  - 217
+EP  - 228
+LA  - en
+PB  - Springer International Publishing
+SN  - 978-3-031-18191-7 978-3-031-18192-4
+UR  - https://link.springer.com/10.1007/978-3-031-18192-4_18
+Y2  - 2026/10/13/11:10:00
+KW  - S34
+KW  - SF25
+ER  - 
+
+TY  - JOUR
+TI  - An agent-based simulation model of human–environment interactions in agricultural systems
+AU  - Schreinemachers, Pepijn
+AU  - Berger, Thomas
+T2  - Environmental Modelling & Software
+AB  - This paper describes an agent-based software package, called Mathematical Programming-based Multi-Agent Systems (MP-MAS), which builds on a tradition of using constrained optimization to simulate farm decision-making in agricultural systems. The purpose of MP-MAS is to understand how agricultural technology, market dynamics, environmental change, and policy intervention affect a heterogeneous population of farm households and the agro-ecological resources these households command. The software is presented using the Overview, Design concepts, and Details (ODD) protocol. Modeling features are demonstrated with empirical applications to study sites in Chile, Germany, Ghana, Thailand, Uganda, and Vietnam. We compare MP-MAS with eight other simulators of human-environment interactions (ABSTRACT, CATCHSCAPE, ECECMOD, IMT, LUDAS, PALM, SAM, and SIM). The comparison shows that the uniqueness of MP-MAS lies in its combination of a microeconomic modeling approach and a choice of alternative biophysical modules that are either coded as part of the software or coupled with it using the Typed Data Transfer (TDT) library.
+DA  - 2011/07//
+PY  - 2011
+DO  - 10.1016/j.envsoft.2011.02.004
+DP  - DOI.org (Crossref)
+VL  - 26
+IS  - 7
+SP  - 845
+EP  - 859
+J2  - Environmental Modelling & Software
+LA  - en
+SN  - 13648152
+UR  - https://linkinghub.elsevier.com/retrieve/pii/S1364815211000314
+Y2  - 2026/10/13/11:21:57
+KW  - S35
+KW  - SF35
+ER  - 
+
