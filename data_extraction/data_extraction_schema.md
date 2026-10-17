@@ -4,7 +4,7 @@
 
 **Version:** 1.0 — Frozen  
 **Date:** 3 October 2026  
-**Extraction status:** S01–S34 complete; S35–S53 added following supplementary citation searching and pending full structured extraction.
+**Extraction status:** Complete for all 53 included publications (S01–S53), including structured extraction and quality assessment.
 
 ---
 
