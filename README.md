@@ -60,8 +60,10 @@ Step 6H — MAS taxonomy + evidence mapping            Complete
 Step 6I — Consolidated research gaps                 Complete
 PRISMA 2020 reporting                                Complete
 Zotero reference library + exports (Steps 8A–8H)     Complete
-Step 8I — Zotero Word / Overleaf integration         Next
-Final report and presentation                        Pending
+Step 8I — Zotero / Overleaf integration              Complete
+SLR report — main sections and appendices            Draft complete
+SLR report — final technical and academic audit      In progress
+Presentation                                         Pending
 ```
 
 The formal MAS taxonomy, evidence mapping, consolidated research gaps, and final PRISMA 2020 study-selection reporting are also complete. The final Zotero library contains the 53 included publications, tagged by publication and study-family identifiers; public RIS/BibTeX reference exports are documented under `reference_management/`.
@@ -322,7 +324,7 @@ The final primary database search was conducted using:
 * ScienceDirect;
 * SpringerLink.
 
-ACM Digital Library was originally planned but was removed from the primary database set because the available interface did not support a reproducible implementation of the frozen title/abstract search strategy. The decision is documented in `protocol/protocol_notes.md`.
+ACM Digital Library was originally planned but was removed from the primary database set because the available interface did not support a reproducible implementation of the frozen title/abstract search strategy. The decision is documented in `protocol/protocol_notes (2).md`.
 
 ### Supplementary Citation Searching
 
@@ -507,7 +509,7 @@ Zotero has been finalised for reference management (Steps 8A–8H) and is used f
 * citation management;
 * bibliography generation.
 
-The final Zotero collection contains **53 publications** (34 primary database inclusions and 19 citation-search additions), representing **44 reconciled study families**. Cleaned public RIS/BibTeX exports and Zotero documentation are maintained in `reference_management/`. Word/Overleaf citation integration is the remaining Step 8I task.
+The final Zotero collection contains **53 publications** (34 primary database inclusions and 19 citation-search additions), representing **44 reconciled study families**. Cleaned public RIS/BibTeX exports and Zotero documentation are maintained in `reference_management/`. Zotero/Biber citation integration has been implemented in the Overleaf report. Final bibliography and submission checks remain in progress.
 
 The main screening and deduplication record is maintained in **Rayyan** to avoid inconsistent PRISMA counts across multiple applications.
 
@@ -605,7 +607,7 @@ The primary synthesis methods are therefore:
 * taxonomy construction;
 * evidence mapping.
 
-Step 6H — MAS taxonomy and evidence mapping, Step 6I — consolidated research gaps, and PRISMA 2020 reporting are complete. The next stage is Zotero citation integration (Step 8I), followed by final report and presentation preparation.
+Step 6H — MAS taxonomy and evidence mapping, Step 6I — consolidated research gaps, and PRISMA 2020 reporting are complete. The next stage is final Overleaf report verification and submission checks, followed by presentation preparation.
 
 ---
 
@@ -667,7 +669,7 @@ Multi-Agent-Systems-for-Sustainable-Smart-Farming/
 │   ├── research_questions.md
 │   ├── inclusion_exclusion.md
 │   ├── quality_assessment.md
-│   └── protocol_notes.md
+│   └── protocol_notes (2).md
 │
 ├── searches/
 │   ├── master_search_strategy.md
@@ -696,7 +698,7 @@ Multi-Agent-Systems-for-Sustainable-Smart-Farming/
 │   ├── data_extraction_schema.md
 │   ├── extraction_codebook.md
 │   ├── extraction_template_updated6(final).csv
-│   ├── quality_assessment_updated6(final).csv
+│   ├── quality_assessment_updated6(final).csv.csv
 │   ├── step4_batch1_extraction_S35-S40.csv
 │   ├── step4_batch1_qa_S35-S40.csv
 │   ├── STEP4_batch1_summary.md
@@ -734,15 +736,15 @@ Multi-Agent-Systems-for-Sustainable-Smart-Farming/
 │   ├── STEP6H_MAS_taxonomy_and_evidence_mapping.md
 │   ├── SLR_6I_consolidated_research_gaps.xlsx
 │   ├── STEP6I_consolidated_research_gaps.md
-│   ├── PRISMA_2020_flow_diagram_FINAL_official_template.docx
-│   ├── PRISMA_2020_flow_diagram_FINAL_official_template.pdf
+│   ├── PRISMA_2020_flow_diagram_FINAL.docx
+│   ├── PRISMA_2020_flow_diagram_FINAL.pdf
 │   ├── SLR_7_PRISMA_2020_reporting_audit_FINAL.xlsx
 │   └── STEP7_PRISMA_2020_FINAL.md
 │
 └── reference_management/
     ├── zotero.md
     ├── zotero_final_included_53_public.bib
-    └── zotero_final_included_53_public.ris
+    └── zotero_final_included_53_public_ris.ris
 ```
 
 `ProjectScope_Extended.pdf` is retained as a historical project-scope document. Where it differs from the current review protocol, the Markdown files in `protocol/` are authoritative.
