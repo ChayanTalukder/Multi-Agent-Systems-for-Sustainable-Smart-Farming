@@ -3,9 +3,11 @@
 **Status:** Frozen  
 **Database:** Scopus  
 **Search stage:** Phase 2.2 — Pilot query refinement and validation  
-**Final date coverage:** 2010–2026  
+**Publication year coverage:** 2010–2026  
 **Language filter:** English  
-**Document types:** Article and Conference Paper  
+**Document types:** Article and Conference Paper
+
+**Reporting note:** The publication-year coverage is a search filter, not the execution date. No execution date has been retrospectively estimated or assigned.
 
 ---
 
