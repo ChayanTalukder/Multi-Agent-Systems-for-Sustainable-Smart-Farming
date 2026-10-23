@@ -10,7 +10,7 @@ The main analysis uses **53 publications**, with a sensitivity check across **44
 |---|---:|---:|---:|
 | Decentralised | 10 (29.4%) | 17 (32.1%) | 16 (36.4%) |
 | Hybrid | 8 (23.5%) | 13 (24.5%) | 11 families contain the code |
-| Hierarchical | 7 (20.6%) | 11 (20.8%) | 8 families contain the code |
+| Hierarchical | 7 (20.6%) | 11 (20.8%) | 9 (20.5%) |
 | Centralised | 7 (20.6%) | 10 (18.9%) | 7 (15.9%) |
 | Distributed | 2 (5.9%) | 2 (3.8%) | 2 (4.5%) |
 
