@@ -1,0 +1,1037 @@
+\subsection{Exact database-specific search expressions}
+
+The following Boolean strings are reproduced from the final frozen query logs, preserving the field-specific branch syntax. The search filters and count reconciliations are shown above. These expressions document the completed searches; they are not a proposal to rerun the review.
+
+\subsubsection{Scopus: V0.3c (29 September 2026)}
+
+\paragraph{Final frozen expression}
+
+\begin{lstlisting}
+
+(
+    TITLE(
+        "multi-agent system*" OR
+        "multi agent system*" OR
+        "multiagent system*" OR
+        "multi-agent" OR
+        multiagent*
+    )
+
+    AND
+
+    TITLE-ABS(
+        agricultur* OR
+        farming OR
+        "smart farm*" OR
+        "smart farming" OR
+        "precision agriculture" OR
+        "precision farming" OR
+        irrigat* OR
+        livestock OR
+        "precision livestock" OR
+        dairy OR
+        cattle OR
+        crop* OR
+        pasture OR
+        grazing OR
+        farmer* OR
+        grain*
+    )
+
+    AND
+
+    TITLE(
+        irrigat* OR
+        "irrigation water" OR
+        "water allocation" OR
+        "water distribution" OR
+        "water sharing" OR
+        "water management" OR
+        "water demand" OR
+        "water scarcity" OR
+        "soil moisture" OR
+
+        livestock OR
+        "precision livestock" OR
+        dairy OR
+        cattle OR
+        herd* OR
+        pasture OR
+        grazing OR
+        manure OR
+        "animal welfare" OR
+
+        "resource allocation" OR
+        "resource sharing" OR
+        "resource negotiation" OR
+        "resource scheduling" OR
+        "task allocation" OR
+
+        "environmental sustainability" OR
+        "climate adaptation" OR
+        "climate mitigation" OR
+        emission* OR
+        methane OR
+        "greenhouse gas*" OR
+        "renewable energy" OR
+        "energy management" OR
+        "energy trading" OR
+        "nutrient management" OR
+        runoff OR
+        "soil health" OR
+        "soil degradation" OR
+        "agricultural waste" OR
+        "farm waste" OR
+        microclimate
+    )
+
+    AND
+
+    TITLE-ABS(
+        coordinat* OR
+        cooperat* OR
+        negotiat* OR
+        allocat* OR
+        schedul* OR
+        "resource sharing" OR
+        "resource management" OR
+        "decision support" OR
+        "decision-making" OR
+        "decision making" OR
+        "integrated decision*" OR
+        "distributed decision*" OR
+        "collective decision*" OR
+        "distributed control" OR
+        "adaptive control" OR
+        "peer-to-peer" OR
+        auction* OR
+        consensus
+    )
+)
+
+OR
+
+(
+    TITLE(
+        agricultur* OR
+        farming OR
+        "smart farm*" OR
+        "smart farming" OR
+        "precision agriculture"
+    )
+
+    AND
+
+    TITLE(
+        "multi-agent system*" OR
+        "multi agent system*" OR
+        "multiagent system*" OR
+        "multi-agent" OR
+        multiagent*
+    )
+
+    AND
+
+    ABS(
+        irrigat* OR
+        fertiliz* OR
+        harvest* OR
+        livestock OR
+        dairy OR
+        pasture OR
+        manure OR
+        "resource allocation" OR
+        "resource sharing" OR
+        "resource scheduling" OR
+        "energy management" OR
+        "energy trading" OR
+        "renewable energy" OR
+        "climate adaptation" OR
+        "climate mitigation" OR
+        emission*
+    )
+
+    AND
+
+    ABS(
+        coordinat* OR
+        cooperat* OR
+        negotiat* OR
+        allocat* OR
+        schedul* OR
+        "decision support" OR
+        "decision-making" OR
+        "decision making" OR
+        "distributed control" OR
+        "adaptive control" OR
+        "tracking control"
+    )
+)
+
+\end{lstlisting}
+
+\subsubsection{IEEE Xplore: V0.3c-A and V0.3c-B (29 September 2026)}
+
+\paragraph{Branch A: main MAS pathway (repaired final version)}
+
+\begin{lstlisting}
+
+(
+    (
+        "Document Title":"multi-agent"
+        OR "Document Title":multiagent
+    )
+
+    AND
+
+    (
+        "Document Title":agriculture
+        OR "Abstract":agriculture
+        OR "Document Title":agricultural
+        OR "Abstract":agricultural
+        OR "Document Title":farming
+        OR "Abstract":farming
+        OR "Document Title":"smart farming"
+        OR "Abstract":"smart farming"
+        OR "Document Title":"precision agriculture"
+        OR "Abstract":"precision agriculture"
+        OR "Document Title":irrigation
+        OR "Abstract":irrigation
+        OR "Document Title":livestock
+        OR "Abstract":livestock
+        OR "Document Title":dairy
+        OR "Abstract":dairy
+        OR "Document Title":cattle
+        OR "Abstract":cattle
+        OR "Document Title":crop
+        OR "Abstract":crop
+        OR "Document Title":pasture
+        OR "Abstract":pasture
+        OR "Document Title":grain
+        OR "Abstract":grain
+    )
+
+    AND
+
+    (
+        "Document Title":irrigation
+        OR "Document Title":"water allocation"
+        OR "Document Title":"water distribution"
+        OR "Document Title":"water management"
+        OR "Document Title":"water scarcity"
+        OR "Document Title":"soil moisture"
+        OR "Document Title":livestock
+        OR "Document Title":dairy
+        OR "Document Title":cattle
+        OR "Document Title":pasture
+        OR "Document Title":grazing
+        OR "Document Title":manure
+        OR "Document Title":"resource allocation"
+        OR "Document Title":"resource sharing"
+        OR "Document Title":"resource negotiation"
+        OR "Document Title":"resource scheduling"
+        OR "Document Title":"task allocation"
+        OR "Document Title":"environmental sustainability"
+        OR "Document Title":"climate adaptation"
+        OR "Document Title":emission
+        OR "Document Title":methane
+        OR "Document Title":"renewable energy"
+        OR "Document Title":"energy management"
+        OR "Document Title":"nutrient management"
+        OR "Document Title":microclimate
+    )
+
+    AND
+
+    (
+        "All Metadata":coordination
+        OR "All Metadata":cooperation
+        OR "All Metadata":negotiation
+        OR "All Metadata":allocation
+        OR "All Metadata":scheduling
+        OR "All Metadata":"resource sharing"
+        OR "All Metadata":"resource management"
+        OR "All Metadata":"decision support"
+        OR "All Metadata":"decision making"
+        OR "All Metadata":"distributed control"
+        OR "All Metadata":"adaptive control"
+        OR "All Metadata":"peer-to-peer"
+        OR "All Metadata":auction
+        OR "All Metadata":consensus
+        OR "All Metadata":control
+    )
+)
+
+\end{lstlisting}
+
+\paragraph{Branch B: narrow recall branch}
+
+\begin{lstlisting}
+
+(
+    (
+        "Document Title":agriculture
+        OR "Document Title":agricultural
+        OR "Document Title":farming
+        OR "Document Title":"smart farming"
+        OR "Document Title":"precision agriculture"
+    )
+
+    AND
+
+    (
+        "Document Title":"multi-agent"
+        OR "Document Title":multiagent
+    )
+
+    AND
+
+    (
+        "Abstract":irrigation
+        OR "Abstract":fertilizer
+        OR "Abstract":fertilization
+        OR "Abstract":harvest
+        OR "Abstract":livestock
+        OR "Abstract":dairy
+        OR "Abstract":pasture
+        OR "Abstract":manure
+        OR "Abstract":"resource allocation"
+        OR "Abstract":"resource sharing"
+        OR "Abstract":"resource scheduling"
+        OR "Abstract":"energy management"
+        OR "Abstract":"energy trading"
+        OR "Abstract":"renewable energy"
+        OR "Abstract":"climate adaptation"
+        OR "Abstract":emission
+    )
+
+    AND
+
+    (
+        "Abstract":coordination
+        OR "Abstract":cooperation
+        OR "Abstract":negotiation
+        OR "Abstract":allocation
+        OR "Abstract":scheduling
+        OR "Abstract":"decision support"
+        OR "Abstract":"decision making"
+        OR "Abstract":"distributed control"
+        OR "Abstract":"adaptive control"
+        OR "Abstract":"tracking control"
+    )
+)
+
+\end{lstlisting}
+
+\noindent The two branch exports contained 19 and six records respectively, with one overlap: $19+6-1=24$ unique IEEE records.
+
+\subsubsection{Web of Science Core Collection: V0.3c (29--30 September 2026)}
+
+\paragraph{Final frozen advanced-search expression}
+
+\begin{lstlisting}
+
+(
+    TI=(
+        "multi-agent system*" OR
+        "multi agent system*" OR
+        "multiagent system*" OR
+        "multi-agent" OR
+        multiagent*
+    )
+
+    AND
+
+    (
+        TI=(
+            agricultur* OR
+            farming OR
+            "smart farm*" OR
+            "smart farming" OR
+            "precision agriculture" OR
+            "precision farming" OR
+            irrigat* OR
+            livestock OR
+            "precision livestock" OR
+            dairy OR
+            cattle OR
+            crop* OR
+            pasture OR
+            grazing OR
+            farmer* OR
+            grain*
+        )
+
+        OR
+
+        AB=(
+            agricultur* OR
+            farming OR
+            "smart farm*" OR
+            "smart farming" OR
+            "precision agriculture" OR
+            "precision farming" OR
+            irrigat* OR
+            livestock OR
+            "precision livestock" OR
+            dairy OR
+            cattle OR
+            crop* OR
+            pasture OR
+            grazing OR
+            farmer* OR
+            grain*
+        )
+    )
+
+    AND
+
+    TI=(
+        irrigat* OR
+        "irrigation water" OR
+        "water allocation" OR
+        "water distribution" OR
+        "water sharing" OR
+        "water management" OR
+        "water demand" OR
+        "water scarcity" OR
+        "soil moisture" OR
+
+        livestock OR
+        "precision livestock" OR
+        dairy OR
+        cattle OR
+        herd* OR
+        pasture OR
+        grazing OR
+        manure OR
+        "animal welfare" OR
+
+        "resource allocation" OR
+        "resource sharing" OR
+        "resource negotiation" OR
+        "resource scheduling" OR
+        "task allocation" OR
+
+        "environmental sustainability" OR
+        "climate adaptation" OR
+        "climate mitigation" OR
+        emission* OR
+        methane OR
+        "greenhouse gas*" OR
+        "renewable energy" OR
+        "energy management" OR
+        "energy trading" OR
+        "nutrient management" OR
+        runoff OR
+        "soil health" OR
+        "soil degradation" OR
+        "agricultural waste" OR
+        "farm waste" OR
+        microclimate
+    )
+
+    AND
+
+    (
+        TI=(
+            coordinat* OR
+            cooperat* OR
+            negotiat* OR
+            allocat* OR
+            schedul* OR
+            "resource sharing" OR
+            "resource management" OR
+            "decision support" OR
+            "decision-making" OR
+            "decision making" OR
+            "integrated decision*" OR
+            "distributed decision*" OR
+            "collective decision*" OR
+            "distributed control" OR
+            "adaptive control" OR
+            "peer-to-peer" OR
+            auction* OR
+            consensus
+        )
+
+        OR
+
+        AB=(
+            coordinat* OR
+            cooperat* OR
+            negotiat* OR
+            allocat* OR
+            schedul* OR
+            "resource sharing" OR
+            "resource management" OR
+            "decision support" OR
+            "decision-making" OR
+            "decision making" OR
+            "integrated decision*" OR
+            "distributed decision*" OR
+            "collective decision*" OR
+            "distributed control" OR
+            "adaptive control" OR
+            "peer-to-peer" OR
+            auction* OR
+            consensus
+        )
+    )
+)
+
+OR
+
+(
+    TI=(
+        agricultur* OR
+        farming OR
+        "smart farm*" OR
+        "smart farming" OR
+        "precision agriculture"
+    )
+
+    AND
+
+    TI=(
+        "multi-agent system*" OR
+        "multi agent system*" OR
+        "multiagent system*" OR
+        "multi-agent" OR
+        multiagent*
+    )
+
+    AND
+
+    AB=(
+        irrigat* OR
+        fertiliz* OR
+        harvest* OR
+        livestock OR
+        dairy OR
+        pasture OR
+        manure OR
+        "resource allocation" OR
+        "resource sharing" OR
+        "resource scheduling" OR
+        "energy management" OR
+        "energy trading" OR
+        "renewable energy" OR
+        "climate adaptation" OR
+        "climate mitigation" OR
+        emission*
+    )
+
+    AND
+
+    AB=(
+        coordinat* OR
+        cooperat* OR
+        negotiat* OR
+        allocat* OR
+        schedul* OR
+        "decision support" OR
+        "decision-making" OR
+        "decision making" OR
+        "distributed control" OR
+        "adaptive control" OR
+        "tracking control"
+    )
+)
+
+\end{lstlisting}
+
+\subsubsection{ScienceDirect (1 October 2026)}
+
+The interface required six separately executed two-field branches. In each branch, the first expression was entered in the \emph{Title} field and the second in \emph{Title, abstract or author-specified keywords}. The final unique union was $A1 \cup A2r \cup A3 \cup A4 \cup B1 \cup B2$.
+
+\paragraph{Branch A1}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR multiagent
+)
+AND
+(
+    irrigation
+    OR water
+    OR livestock
+    OR dairy
+    OR "soil moisture"
+)
+
+\end{lstlisting}
+
+\paragraph{Title, abstract or author-specified keywords}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR crop
+)
+AND
+(
+    coordination
+    OR allocation
+    OR scheduling
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch A2r}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR multiagent
+)
+AND
+(
+    resource
+    OR energy
+    OR climate
+)
+
+\end{lstlisting}
+
+\paragraph{Title, abstract or author-specified keywords}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR livestock
+    OR dairy
+)
+AND
+(
+    coordination
+    OR allocation
+    OR control
+    OR decision
+    OR trading
+)
+
+\end{lstlisting}
+
+\paragraph{Branch A3}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR multiagent
+)
+AND
+(
+    emission
+    OR methane
+    OR nutrient
+    OR runoff
+    OR soil
+    OR waste
+)
+
+\end{lstlisting}
+
+\paragraph{Title, abstract or author-specified keywords}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR crop
+)
+AND
+(
+    coordination
+    OR allocation
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch A4}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR multiagent
+)
+AND
+(
+    pasture
+    OR grazing
+    OR manure
+    OR welfare
+    OR microclimate
+)
+
+\end{lstlisting}
+
+\paragraph{Title, abstract or author-specified keywords}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR livestock
+    OR dairy
+)
+AND
+(
+    coordination
+    OR allocation
+    OR control
+    OR decision
+    OR welfare
+)
+
+\end{lstlisting}
+
+\paragraph{Branch B1}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR multiagent
+)
+AND
+(
+    agriculture
+    OR farming
+)
+
+\end{lstlisting}
+
+\paragraph{Title, abstract or author-specified keywords}
+
+\begin{lstlisting}
+
+(
+    irrigation
+    OR fertilizer
+    OR harvest
+    OR livestock
+    OR dairy
+)
+AND
+(
+    coordination
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch B2}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR multiagent
+)
+AND
+(
+    agriculture
+    OR farming
+)
+
+\end{lstlisting}
+
+\paragraph{Title, abstract or author-specified keywords}
+
+\begin{lstlisting}
+
+(
+    resource
+    OR energy
+    OR climate
+    OR emission
+)
+AND
+(
+    coordination
+    OR allocation
+    OR scheduling
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\subsubsection{SpringerLink (1 October 2026)}
+
+The interface required six branches using \emph{Title} and \emph{Keywords} fields. The final unique union was $A1 \cup A2 \cup A3 \cup A4 \cup B1 \cup B2$.
+
+\paragraph{Branch A1}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR "multi agent"
+    OR multiagent
+)
+AND
+(
+    irrigation
+    OR water
+    OR livestock
+    OR dairy
+    OR "soil moisture"
+)
+
+\end{lstlisting}
+
+\paragraph{Keywords field}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR crop
+)
+AND
+(
+    coordination
+    OR allocation
+    OR scheduling
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch A2}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR "multi agent"
+    OR multiagent
+)
+AND
+(
+    resource
+    OR energy
+    OR climate
+)
+
+\end{lstlisting}
+
+\paragraph{Keywords field}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR livestock
+    OR dairy
+)
+AND
+(
+    coordination
+    OR allocation
+    OR scheduling
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch A3}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR "multi agent"
+    OR multiagent
+)
+AND
+(
+    emission
+    OR methane
+    OR nutrient
+    OR runoff
+    OR soil
+    OR waste
+)
+
+\end{lstlisting}
+
+\paragraph{Keywords field}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR crop
+)
+AND
+(
+    coordination
+    OR allocation
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch A4}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR "multi agent"
+    OR multiagent
+)
+AND
+(
+    pasture
+    OR grazing
+    OR manure
+    OR welfare
+    OR microclimate
+)
+
+\end{lstlisting}
+
+\paragraph{Keywords field}
+
+\begin{lstlisting}
+
+(
+    agriculture
+    OR farming
+    OR livestock
+    OR dairy
+)
+AND
+(
+    coordination
+    OR allocation
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch B1}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR "multi agent"
+    OR multiagent
+)
+AND
+(
+    agriculture
+    OR farming
+)
+
+\end{lstlisting}
+
+\paragraph{Keywords field}
+
+\begin{lstlisting}
+
+(
+    irrigation
+    OR fertilizer
+    OR harvest
+    OR livestock
+    OR dairy
+)
+AND
+(
+    coordination
+    OR control
+    OR decision
+)
+
+\end{lstlisting}
+
+\paragraph{Branch B2}
+
+\paragraph{Title field}
+
+\begin{lstlisting}
+
+(
+    "multi-agent"
+    OR "multi agent"
+    OR multiagent
+)
+AND
+(
+    agriculture
+    OR farming
+)
+
+\end{lstlisting}
+
+\paragraph{Keywords field}
+
+\begin{lstlisting}
+
+(
+    resource
+    OR energy
+    OR climate
+    OR emission
+)
+AND
+(
+    coordination
+    OR allocation
+    OR scheduling
+    OR control
+    OR decision
+)
+
+\end{lstlisting}

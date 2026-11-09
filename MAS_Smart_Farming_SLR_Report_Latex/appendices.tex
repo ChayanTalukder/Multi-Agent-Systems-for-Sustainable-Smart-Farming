@@ -1,0 +1,280 @@
+% ==================================================
+% APPENDICES A--D: upload this file and exact_search_queries.tex
+% Requires: \usepackage{booktabs,tabularx,longtable,array,listings}
+% Place \input{appendices} directly AFTER \appendix (exactly once)
+% ==================================================
+\section{Database Search Strategies}
+\label{app:search}
+The primary search followed frozen conceptual strategy V0.3c: an explicit MAS component, an agricultural setting, a focal farm/resource/environmental application and a coordination, allocation or decision function. A narrow recall branch addressed agricultural-MAS papers whose focal mechanism was more prominent in the abstract. Individual database syntax and search fields were translated and documented rather than assumed to be identical. The primary year window was 2010--2026.
+\begin{table}[htbp]\centering\small
+\caption{Final primary information sources and records exported before cross-database deduplication.}\label{tab:app_search_summary}
+\begin{tabularx}{\textwidth}{@{}Xllr@{}}\toprule
+Source & Final search date & Applied window/restriction & Records\\\midrule
+Scopus & 29 Sep 2026 & English; article/conference; 2010--26 & 60\\
+IEEE Xplore & 29 Sep 2026 & Journals/conferences; 2010--26 & 24\\
+WoS Core Collection & 29--30 Sep 2026 & English; article/proceedings; 2010--26 & 51\\
+ScienceDirect & 1 Oct 2026 & Year 2010--26; six-branch search & 20\\
+SpringerLink & 1 Oct 2026 & English; article/conference; 2010--26 & 31\\
+\midrule\textbf{Total}&&&\textbf{186}\\\bottomrule\end{tabularx}\end{table}
+IEEE Xplore required two frozen branches (19 and six exports, with one overlap). ScienceDirect required six branches, producing 27 year-filtered branch retrievals and 20 unique records. SpringerLink required six branches; 44 year/language-filtered branch retrievals reduced to 33 unique records and then to 31 eligible article/conference records after excluding two chapter-only records. ScienceDirect did not apply a separate English-language search filter. The database-specific source logs document these adaptations and precision checks.
+ACM Digital Library had initially been planned but was removed because the accessible search interface could not reproduce the frozen advanced title/abstract strategy. Relevant ACM publications remained eligible through other databases and supplementary citation searching. The 34 primary-pathway inclusions were used as seeds for one-generation backward and forward citation searching. Search records were retained privately where redistribution of database exports could be restricted.
+\input{exact_search_queries.tex}
+\clearpage
+\section{Data Extraction and Quality Assessment Documentation}
+\label{app:extraction}
+The frozen publication-level extraction template contains 63 fields, with one row per included publication (\texttt{S01}--\texttt{S53}). The same version 1.0 codebook and seven-criterion methodological quality assessment (QA) were applied to the 34 database-pathway inclusions and 19 citation-search additions. The six source groupings A--F and general notes G in the schema are reproduced below as an audit-friendly field inventory. Full field definitions and category vocabularies remain in the project repository files \path{data_extraction/data_extraction_schema.md} and \path{data_extraction/extraction_codebook.md}. The final authoritative extraction dataset in the uploaded archive is \path{data_extraction/extraction_template_updated6(final).csv}.
+\subsection{Extraction codebook and missing-value rules}
+\texttt{NR} means not reported; \texttt{NA} means not applicable; and \texttt{UNC} means information is present but ambiguous. Multiple applicable values were separated by semicolons. Reviewer-coded classifications were distinguished from author-reported descriptions, and numerical results retained their original units and comparator contexts. Evidence locators record relevant pages, sections, tables or figures. A field populated with an outcome description does not itself demonstrate a beneficial effect.
+\begingroup\footnotesize
+\begin{longtable}{@{}p{0.28\textwidth}p{0.63\textwidth}@{}}
+\caption{Inventory of the 63 extraction fields, following the frozen schema.}\label{tab:app_63_fields}\\
+\toprule Field & Field purpose / information recorded \\\midrule\endfirsthead
+\toprule Field & Field purpose / information recorded \\\midrule\endhead
+\multicolumn{2}{@{}l}{\textbf{Study Identification and Descriptive Metadata}}\\\addlinespace[2pt]
+\texttt{Study\_\allowbreak{}ID} & Unique SLR identifier assigned to the publication, e.g. S01--S53.\\
+\texttt{Rayyan\_\allowbreak{}ID} & Rayyan record identifier from the final included-study export.\\
+\texttt{PDF\_\allowbreak{}Filename} & Filename of the full-text PDF used for extraction.\\
+\texttt{Title} & Full publication title.\\
+\texttt{Authors} & Authors as recorded in the bibliographic metadata.\\
+\texttt{Year} & Publication year.\\
+\texttt{Venue} & Journal, conference, book, or other publication venue.\\
+\texttt{Publication\_\allowbreak{}Type} & Publication type, such as journal article, conference paper, or book chapter.\\
+\texttt{DOI} & Normalised DOI where available; otherwise NR.\\
+\texttt{Geographical\_\allowbreak{}Context} & Country, region, farming area, or geographical setting studied, where applicable.\\
+\texttt{Agricultural\_\allowbreak{}Domain} & Main agricultural context of the study, such as irrigation/water management, crops, livestock/dairy, greenhouse management, farm energy, workforce/harvesting, manure/nutrient management, land use, social-ecological systems, value chains, or integrated farming.\\
+\texttt{Study\_\allowbreak{}Objective} & Concise summary of the research problem or objective addressed by the publication.\\
+\texttt{Study\_\allowbreak{}Family\_\allowbreak{}ID} & Identifier linking publications confirmed to belong to the same research/system/experimental family. Publications without confirmed related papers receive their own family identifier.\\
+\texttt{Related\_\allowbreak{}Publication\_\allowbreak{}IDs} & Other included Study\_ID values confirmed to be related to the same system, experiment, dataset, or research programme; otherwise NA.\\
+\multicolumn{2}{@{}l}{\textbf{RQ0 --- Overall MAS Application and Scope}}\\\addlinespace[2pt]
+\texttt{MAS\_\allowbreak{}Application\_\allowbreak{}Purpose} & Concise description of what the MAS is intended to accomplish in the agricultural system.\\
+\texttt{System\_\allowbreak{}Integration\_\allowbreak{}Scope} & Whether the system addresses a single agricultural function, multiple connected functions, or a broader integrated farm/social-ecological system.\\
+\texttt{Contribution\_\allowbreak{}Type} & Main contribution of the publication, such as MAS architecture, algorithm, simulation model, decision-support framework, coordination mechanism, optimisation method, control system, or implemented platform.\\
+\texttt{Implementation\_\allowbreak{}Maturity} & Stage at which the proposed MAS is demonstrated, such as conceptual/model-level, simulation, prototype, controlled experiment, field pilot, or operational deployment.\\
+\multicolumn{2}{@{}l}{\textbf{RQ1 --- MAS Architectures, Agent Roles, and Decision-Making}}\\\addlinespace[2pt]
+\texttt{Agent\_\allowbreak{}Types} & Types of agents represented in the system, such as farmer, crop, field, irrigation, water/resource, livestock, pasture, sensor, machinery, energy, market, coordinator, or environmental agents.\\
+\texttt{Agent\_\allowbreak{}Roles} & Main responsibilities and functions assigned to the identified agents.\\
+\texttt{MAS\_\allowbreak{}Architecture} & Overall organisational architecture of the MAS, such as centralised, decentralised, distributed, hierarchical, or hybrid.\\
+\texttt{Agent\_\allowbreak{}Paradigm} & Agent design paradigm where identifiable, such as reactive, rule-based, utility-based, BDI, learning-based, or other explicitly described architecture.\\
+\texttt{Decision\_\allowbreak{}Mechanism} & Main mechanism used by agents to make decisions, such as rules, optimisation, planning, machine learning, reinforcement learning, MARL, MPC, auction-based decision making, or hybrid methods.\\
+\texttt{Agent\_\allowbreak{}Autonomy\_\allowbreak{}Description} & Description of what decisions agents can make independently and where central or external control remains.\\
+\texttt{Input\_\allowbreak{}Information} & Information used by agents for decision-making, such as sensor measurements, weather, soil moisture, crop demand, prices, livestock state, resource availability, or forecasts.\\
+\texttt{MAS\_\allowbreak{}Platform\_\allowbreak{}Technology} & Implementation or simulation technologies reported, such as JADE, GAMA, MATLAB, Python, custom MAS platforms, IoT infrastructure, or other frameworks.\\
+\texttt{RQ1\_\allowbreak{}Evidence\_\allowbreak{}Locator} & Page, section, table, or figure locations supporting the main RQ1 extraction.\\
+\multicolumn{2}{@{}l}{\textbf{RQ2 --- Communication, Coordination, Negotiation, and Resource Management}}\\\addlinespace[2pt]
+\texttt{Interaction\_\allowbreak{}Type} & Forms of inter-agent interaction, such as communication, information sharing, cooperation, coordination, negotiation, competition, or task allocation.\\
+\texttt{Coordination\_\allowbreak{}Mechanism} & Mechanism used to coordinate agents, such as priority rules, utility-based allocation, auctions, contract-net protocols, consensus, optimisation, scheduling, market mechanisms, MARL, or other approaches.\\
+\texttt{Communication\_\allowbreak{}Mechanism} & How agents exchange information, such as direct messages, peer-to-peer exchange, agent communication protocols, shared environments, blackboards, markets, or indirect interaction.\\
+\texttt{Information\_\allowbreak{}Shared} & Information exchanged among agents, such as resource requests, offers, bids, demand, availability, prices, sensor information, environmental state, or task status.\\
+\texttt{Managed\_\allowbreak{}Resource\_\allowbreak{}or\_\allowbreak{}Task} & Resource or coordination target being managed, such as water, irrigation capacity, energy, feed, pasture, land, manure, machinery, labour/workforce, harvest tasks, or other farm resources/tasks.\\
+\texttt{Resource\_\allowbreak{}Scarcity\_\allowbreak{}or\_\allowbreak{}Constraint\_\allowbreak{}Modelled} & Whether limited availability, capacity, scarcity, competition, scheduling constraints, or comparable resource/task constraints are explicitly represented.\\
+\texttt{Allocation\_\allowbreak{}or\_\allowbreak{}Coordination\_\allowbreak{}Objective} & Objective guiding coordination or allocation, such as efficiency, productivity, cost, profit, fairness, welfare, sustainability, resource utilisation, conflict reduction, or multi-objective optimisation.\\
+\texttt{Conflict\_\allowbreak{}Resolution} & Method used to resolve incompatible requests, competing objectives, resource conflicts, or task conflicts; NR or NA where appropriate.\\
+\texttt{Competing\_\allowbreak{}Agents\_\allowbreak{}or\_\allowbreak{}Demands} & Agents, stakeholders, farms, crops, livestock groups, tasks, or other demands competing for limited resources or attention.\\
+\texttt{Irrigation\_\allowbreak{}Decision\_\allowbreak{}Inputs} & For irrigation/water studies, information used in irrigation or water-allocation decisions, including soil moisture, crop water requirements, crop stress, rainfall, forecasts, drought, reservoir availability, or irrigation capacity. Use NA for non-irrigation studies.\\
+\texttt{RQ2\_\allowbreak{}Evidence\_\allowbreak{}Locator} & Page, section, table, or figure locations supporting the main RQ2 extraction.\\
+\multicolumn{2}{@{}l}{\textbf{RQ3 --- Agricultural, Livestock, Resource-Efficiency, and Environmental Outcomes}}\\\addlinespace[2pt]
+\texttt{Agricultural\_\allowbreak{}Outcomes} & Reported agricultural outcomes such as crop yield, crop health, crop stress, irrigation performance, production, unmet demand, farm utility, or productivity.\\
+\texttt{Livestock\_\allowbreak{}Outcomes} & Reported livestock-related outcomes such as water demand, feed demand, animal health, heat stress, grazing, pasture allocation, welfare, or dairy-farm performance. Use NA when livestock is outside the study scope.\\
+\texttt{Resource\_\allowbreak{}Efficiency\_\allowbreak{}Outcomes} & Reported effects on water use, irrigation efficiency, energy use, resource utilisation, allocation fairness, workload, scheduling efficiency, or resource conflicts.\\
+\texttt{Environmental\_\allowbreak{}Outcomes} & Reported environmental effects such as freshwater consumption, water scarcity, greenhouse-gas emissions, CO2, CH4, N2O, manure impacts, energy consumption, fertiliser use, nutrient runoff, pollution, soil condition, land use, pasture, carbon resources, or ecosystem effects.\\
+\texttt{Environmental\_\allowbreak{}Mitigation\_\allowbreak{}Mechanism} & Mechanisms intended to reduce environmental impact, such as precision irrigation, demand-aware allocation, manure management, renewable-energy scheduling, improved feeding, nutrient management, grazing management, or carbon-aware decisions.\\
+\texttt{Sustainability\_\allowbreak{}Addressed} & Degree to which sustainability is substantively addressed: direct, indirect, or not addressed. Detailed coding rules will be defined in the codebook.\\
+\texttt{Quantitative\_\allowbreak{}Results} & Key numerical results relevant to RQ3, recorded with the values, units, and comparison context reported by the authors.\\
+\texttt{Tradeoffs\_\allowbreak{}Reported} & Explicitly reported trade-offs between productivity, welfare, cost, resource efficiency, fairness, environmental performance, or other objectives.\\
+\texttt{RQ3\_\allowbreak{}Evidence\_\allowbreak{}Locator} & Page, section, table, or figure locations supporting the main RQ3 extraction.\\
+\multicolumn{2}{@{}l}{\textbf{RQ4 --- Evaluation, Limitations, and Research Gaps}}\\\addlinespace[2pt]
+\texttt{Evaluation\_\allowbreak{}Type} & Main evaluation method, such as simulation, analytical evaluation, case study, controlled experiment, laboratory experiment, field experiment, pilot deployment, or real-world deployment.\\
+\texttt{Evaluation\_\allowbreak{}Environment} & Description of the farm, simulation, IoT, laboratory, field, social-ecological, or other environment used for evaluation.\\
+\texttt{Data\_\allowbreak{}Source} & Origin of evaluation data, such as synthetic data, simulation-generated data, real sensor data, farm data, public datasets, historical data, surveys, or mixed sources.\\
+\texttt{Experimental\_\allowbreak{}Scenarios} & Scenarios or conditions evaluated, such as normal operation, drought, scarcity, changing demand, uncertain environments, heat stress, different resource levels, or alternative management strategies.\\
+\texttt{Baselines\_\allowbreak{}Comparators} & Algorithms, policies, existing practices, non-MAS approaches, control strategies, or other baselines used for comparison.\\
+\texttt{Evaluation\_\allowbreak{}Metrics} & Metrics used to assess system or algorithm performance, such as accuracy, reward, latency, task success, computational performance, or other reported evaluation measures.\\
+\texttt{Evaluation\_\allowbreak{}Results} & Qualitative or quantitative MAS/system evaluation results, including algorithmic performance, baseline comparisons, or ablation results distinct from agricultural and environmental outcomes.\\
+\texttt{Evaluation\_\allowbreak{}Scale} & Scale of evaluation where reported, such as number of agents, farms, fields, animals, tasks, resources, simulation duration, geographical extent, or number of scenarios.\\
+\texttt{Real\_\allowbreak{}World\_\allowbreak{}Deployment} & Whether the system was evaluated in an actual operational or field setting rather than solely through simulation or synthetic experiments.\\
+\texttt{Code\_\allowbreak{}Available} & Whether implementation/source code is publicly available or explicitly provided.\\
+\texttt{Data\_\allowbreak{}Available} & Whether the dataset or sufficient underlying evaluation data are publicly available or explicitly provided.\\
+\texttt{Limitation\_\allowbreak{}Categories} & Standardised categories assigned to limitations discussed or clearly evidenced in the publication, including scalability, uncertainty, explainability, interoperability, environmental modelling, computational requirements, reproducibility/data availability, deployment cost, real-world validation/adoption, or other limitations.\\
+\texttt{Reported\_\allowbreak{}Limitations} & Limitations, constraints, or threats to validity explicitly reported by the authors.\\
+\texttt{Reported\_\allowbreak{}Research\_\allowbreak{}Gaps} & Future work, unresolved problems, open challenges, or research gaps explicitly identified by the publication.\\
+\texttt{RQ4\_\allowbreak{}Evidence\_\allowbreak{}Locator} & Page, section, table, or figure locations supporting the main RQ4 extraction.\\
+\multicolumn{2}{@{}l}{\textbf{General Extraction Notes}}\\\addlinespace[2pt]
+\texttt{Extraction\_\allowbreak{}Notes} & Short reviewer notes for unusual cases, ambiguous classifications, relationships between publications, or extraction decisions that require later verification.\\
+\bottomrule\end{longtable}\endgroup
+\subsection{Quality assessment}
+Each criterion was scored 0 (insufficient), 1 (partially addressed) or 2 (clearly addressed), for an overall score from 0 to 14. QA supported descriptive assessment of methodological clarity and did not automatically exclude studies or replace a formal intervention-specific risk-of-bias instrument.
+\begin{table}[htbp]\centering\small
+\caption{Seven frozen quality-assessment criteria.}\label{tab:app_qa_criteria}
+\begin{tabularx}{\textwidth}{@{}llX@{}}\toprule Code & Criterion & Main assessment question \\\midrule
+QA1 & Research objective & Is the problem or objective clearly defined?\\
+QA2 & Agent roles/autonomy & Are agent responsibilities and autonomy described?\\
+QA3 & Communication/coordination & Are interaction/coordination procedures specified?\\
+QA4 & Environment/data & Are agricultural setting and inputs adequately described?\\
+QA5 & Evaluation & Is the evaluation clear and meaningful for the study?\\
+QA6 & Reproducibility & Are methods, parameters and implementation sufficiently detailed?\\
+QA7 & Limitations & Are study limitations meaningfully discussed?\\
+\bottomrule\end{tabularx}\end{table}
+The final assessment covered all 53 publications: 50 in the high-clarity band (11--14), three in the moderate band (7--10) and none in the limited band (0--6). The mean QA total was 12.94/14 and the median 13/14. Criterion-level results, totals and written justification are retained in \path{data_extraction/quality_assessment_updated6(final).csv.csv}. These scores do not establish real-world effectiveness, experimental causal validity or independent reproducibility.
+
+\section{Study-Family Reconciliation}
+\label{app:families}
+The 53 publication records were reconciled into 44 study families, consisting of 37 single-publication and seven multi-publication families. A shared platform, topic or author group was insufficient on its own to justify grouping: substantial reuse of an empirical case, model experiment or dataset, or an explicit publication extension, was required. The complete S-ID--SF-ID mapping is reproduced in Table~\ref{tab:app_family_mapping}. Its canonical source files in the uploaded repository are \path{data_extraction/study_family_reconciliation_53.csv} and \path{data_extraction/study_family_summary_44.csv}.
+\begin{table}[htbp]\centering\small
+\caption{Multi-publication study families (seven families; 16 related publications).}\label{tab:app_multifamilies}
+\begin{tabularx}{\textwidth}{@{}llX@{}}\toprule Family & Publication IDs & Reconciliation basis \\\midrule
+SF05 & S05, S11, S29 & Dairy P2P energy / MAPDES publication line\\
+SF08 & S08, S23 & Semi-centralised MARL irrigation\\
+SF13 & S13, S22 & Core MAELIA platform\\
+SF16 & S16, S20 & Community irrigation negotiation\\
+SF25 & S25, S33, S34 & Harvest workforce and task allocation\\
+SF42 & S42, S52 & Aveyron MAELIA application and WEF extension\\
+SF49 & S49, S53 & Multi-agent irrigation MPC/MARA conference and journal reports\\
+\bottomrule\end{tabularx}\end{table}
+\begingroup\footnotesize
+\begin{longtable}{@{}p{0.08\textwidth}p{0.09\textwidth}p{0.08\textwidth}p{0.64\textwidth}@{}}
+\caption{Complete publication identifier, study-family identifier and title mapping.}\label{tab:app_family_mapping}\\
+\toprule S-ID & SF-ID & Year & Publication title \\\midrule\endfirsthead
+\toprule S-ID & SF-ID & Year & Publication title \\\midrule\endhead
+\texttt{S01} & \texttt{SF01} & 2018 & Polarization in (post)nomadic resource use in Eastern Morocco: insights using a multi-agent simulation model\\
+\texttt{S02} & \texttt{SF02} & 2019 & Smart Farming -- Open Multi-agent Platform and Eco-System of Smart Services for Precision Farming\\
+\texttt{S03} & \texttt{SF03} & 2023 & Assessing seed and breeding interventions for organic farming using a multiagent value chain approach\\
+\texttt{S04} & \texttt{SF04} & 2026 & CowNet-AI: A Multi-Agent Decision Support Framework for Social Network--Driven Welfare Insights in Dairy Cattle\\
+\texttt{S05} & \texttt{SF05} & 2024 & Peer-to-peer energy trading in dairy farms using multi-agent systems\\
+\texttt{S06} & \texttt{SF06} & 2022 & Intelligent IoT-multiagent precision irrigation approach for improving water use efficiency in irrigation systems at farm and district scales\\
+\texttt{S07} & \texttt{SF07} & 2024 & Learning-based multi-agent MPC for irrigation scheduling\\
+\texttt{S08} & \texttt{SF08} & 2025 & A semi-centralized multi-agent RL framework for efficient irrigation scheduling\\
+\texttt{S09} & \texttt{SF09} & 2024 & Energy management for demand response in networked greenhouses with multi-agent deep reinforcement learning\\
+\texttt{S10} & \texttt{SF10} & 2011 & CaTMAS: A multi-agent model for simulating the dynamics of carbon resources of West African villages\\
+\texttt{S11} & \texttt{SF05} & 2026 & Peer-to-peer energy trading in dairy farms using multi-agent reinforcement learning\\
+\texttt{S12} & \texttt{SF12} & 2023 & MASSAI: Multi-agent system for simulating sustainable agricultural intensification of smallholder farms in Africa\\
+\texttt{S13} & \texttt{SF13} & 2014 & Integrated modelling of social-ecological systems: The MAELIA high-resolution multi-agent platform to deal with water scarcity problems\\
+\texttt{S14} & \texttt{SF14} & 2019 & Network-aware multi-agent simulations of herder-farmer conflicts\\
+\texttt{S15} & \texttt{SF15} & 2017 & Modelling a multi agent system for dairy farms for integrated decision making\\
+\texttt{S16} & \texttt{SF16} & 2023 & Water distribution in community irrigation using a multi-agent system\\
+\texttt{S17} & \texttt{SF17} & 2026 & Assessment of agricultural vulnerability and risk to climate change in sugarcane production through life cycle analysis and a multi-agent system\\
+\texttt{S18} & \texttt{SF18} & 2026 & Quantum Machine Learning-Enhanced Multiagent Reinforcement Learning for Intelligent Crop Resource Allocation in IoT-Enabled Smart Agriculture\\
+\texttt{S19} & \texttt{SF19} & 2024 & Modification of the Ant Colony Optimization Algorithm for Solving Multi-Agent Task Allocation Problem in Agricultural Application\\
+\texttt{S20} & \texttt{SF16} & 2020 & Improving Water Allocation Using Multi-agent Negotiation Mechanisms\\
+\texttt{S21} & \texttt{SF21} & 2026 & AI-driven multi-agent framework for smart irrigation and crop health monitoring in Indian rice and sugarcane farming\\
+\texttt{S22} & \texttt{SF13} & 2014 & The MAELIA Multi-agent platform for integrated analysis of interactions between agricultural land-use and low-water management strategies\\
+\texttt{S23} & \texttt{SF08} & 2024 & Semi-centralized Multi-agent RL for Irrigation Scheduling\\
+\texttt{S24} & \texttt{SF24} & 2019 & Intelligent multi-agent system for water reduction in automotive irrigation processes\\
+\texttt{S25} & \texttt{SF25} & 2023 & Challenges for Multi-Agent Based Agricultural Workforce Management\\
+\texttt{S26} & \texttt{SF26} & 2021 & Assessing Adaptive Irrigation Impacts on Water Scarcity in Nonstationary Environments---A Multi-Agent Reinforcement Learning Approach\\
+\texttt{S27} & \texttt{SF27} & 2013 & Multi-agent agro-economic simulation of irrigation water demand with climate services for climate change adaptation\\
+\texttt{S28} & \texttt{SF28} & 2010 & A multi-agent simulation model for spatial optimisation of manure allocation\\
+\texttt{S29} & \texttt{SF05} & 2024 & A Multi-agent Systems Approach for Peer-to-Peer Energy Trading in Dairy Farming\\
+\texttt{S30} & \texttt{SF30} & 2018 & Heterogeneous multi-agent resource allocation through multi-bidding with applications to precision agriculture\\
+\texttt{S31} & \texttt{SF31} & 2022 & Dynamic Task Allocation Method for Heterogenous Multiagent System in Uncertain Scenarios of Agricultural Field Operation\\
+\texttt{S32} & \texttt{SF32} & 2012 & A constrained multi-agent system compensating for self-lucrative behaviours in water resource sharing\\
+\texttt{S33} & \texttt{SF25} & 2022 & Multi-agent task allocation for harvest management\\
+\texttt{S34} & \texttt{SF25} & 2022 & Multi-Agent Task Allocation Techniques for Harvest Team Formation\\
+\texttt{S35} & \texttt{SF35} & 2011 & An agent-based simulation model of human--environment interactions in agricultural systems\\
+\texttt{S36} & \texttt{SF36} & 2017 & 'Smart' policies to reduce pesticide use and avoid income trade-offs: An agent-based model applied to Thai agriculture\\
+\texttt{S37} & \texttt{SF37} & 2014 & Ex-ante assessment of soil conservation methods in the uplands of Vietnam: An agent-based modeling approach\\
+\texttt{S38} & \texttt{SF38} & 2017 & An agent-based simulation of cooperation in the use of irrigation systems\\
+\texttt{S39} & \texttt{SF39} & 2020 & Water management for irrigation, crop yield and social attitudes: a socio-agricultural agent-based model to explore a collective action problem\\
+\texttt{S40} & \texttt{SF40} & 2011 & An agent-based model of farmer decision-making and water quality impacts at the watershed scale under markets for carbon allowances and a second-generation biofuel crop\\
+\texttt{S41} & \texttt{SF41} & 2018 & A hybrid TOPSIS-agent-based framework for reducing the water demand requested by stakeholders with considering the agents' characteristics and optimization of cropping pattern\\
+\texttt{S42} & \texttt{SF42} & 2014 & Fine spatio-temporal simulation of cropping and farming systems effects on irrigation withdrawal dynamics within a river basin\\
+\texttt{S43} & \texttt{SF43} & 2001 & Agent-based spatial models applied to agriculture: a simulation tool for technology diffusion, resource use changes and policy analysis\\
+\texttt{S44} & \texttt{SF44} & 2003 & SINUSE: A multi-agent model to negotiate water demand management on a free access water table\\
+\texttt{S45} & \texttt{SF45} & 2003 & Agent based simulation of a small catchment water management in northern Thailand: Description of the CATCHSCAPE model\\
+\texttt{S46} & \texttt{SF46} & 2004 & Suitability of Multi-Agent Simulations to study irrigated system viability: application to case studies in the Senegal River Valley\\
+\texttt{S47} & \texttt{SF47} & 2007 & Simulating soil fertility and poverty dynamics in Uganda: A bio-economic multi-agent systems approach\\
+\texttt{S48} & \texttt{SF48} & 2025 & An adaptive multi-agent model for water allocation under scarcity: application of bankruptcy methods\\
+\texttt{S49} & \texttt{SF49} & 2022 & Optimal Irrigation Allocation for Large-Scale Arable Farming\\
+\texttt{S50} & \texttt{SF50} & 2023 & Multi-Robot Task Allocation in Agriculture Scenarios Based on the Improved NSGA-II Algorithm\\
+\texttt{S51} & \texttt{SF51} & 2021 & Fostering local crop-livestock integration via legume exchanges using an innovative integrated assessment and modelling approach based on the MAELIA platform\\
+\texttt{S52} & \texttt{SF42} & 2024 & Multi-actor approach to manage the water-energy-food nexus at territory scale\\
+\texttt{S53} & \texttt{SF49} & 2019 & Optimal irrigation management for large-scale arable farming using model predictive control\\
+\bottomrule\end{longtable}\endgroup
+Within the MAELIA line, the core platform is \texttt{SF13}; the Aveyron/WEF application is \texttt{SF42}; and the independent Vend\'ee crop--livestock application remains \texttt{SF51}. MP-MAS applications with distinct case studies were not collapsed solely due to platform reuse. The related irrigation-MPC publications \texttt{S49} and \texttt{S53} form \texttt{SF49}; a platform overview does not count as an independent confirmation of another included application\'s numerical results. The unretrieved SHADOC reference is not a member of the included corpus.
+Study-family counts use any-member evidence for multi-label categories, which can overlap. \texttt{SF42}, for example, contributes evidence to both hybrid and hierarchical architecture categories. Family presence is not a statistical meta-analysis or a demonstration of independent replication.
+\clearpage
+\section{PRISMA 2020 Checklist and Supplementary Reporting}
+\label{app:prisma}
+The flow diagram appears in Section~4, and the detailed PRISMA 2020 audit is summarised below. The latest supplied repository includes the source diagram at \path{analysis/PRISMA_2020_flow_diagram_FINAL.pdf} and the audit at \path{analysis/SLR_7_PRISMA_2020_reporting_audit_FINAL.xlsx}. This is a project-specific reporting-location and completion audit, not a substitute for the official checklist, which includes additional sub-items. The complete official checklist and abstract guidance are available at \url{https://www.prisma-statement.org/prisma-2020-checklist}. The PRISMA 2020 statement is Page et al. (2021; \url{https://doi.org/10.1136/bmj.n71}).
+\subsection{Study-selection flow reconciliation}
+\begin{table}[htbp]\centering\small
+\caption{Final PRISMA stage counts (two search pathways).}\label{tab:app_prisma_counts}
+\begin{tabularx}{\textwidth}{@{}Xrr@{}}\toprule Stage & Database pathway & Citation pathway \\\midrule
+Records identified & 186 & 24\\
+Duplicates removed prior to screening & 84 & --\\
+Records screened / new candidates & 102 & 24\\
+Records excluded before retrieval & 51 & 3\\
+Reports sought for full text & 51 & 21\\
+Reports not retrieved & 16 & 1\\
+Reports assessed at full text & 35 & 20\\
+Reports excluded at full text & 1 & 1\\
+Reports included & 34 & 19\\
+\midrule \textbf{Total included publications} & \multicolumn{2}{c}{\textbf{53}}\\
+\textbf{Reconciled study families} & \multicolumn{2}{c}{\textbf{44}}\\
+\bottomrule\end{tabularx}\end{table}
+The database pathway comprised 60 Scopus, 24 IEEE Xplore, 51 Web of Science, 20 ScienceDirect and 31 SpringerLink records. Across both pathways, 72 full-text reports were sought, 17 were not retrieved, 55 were assessed and two were excluded after full-text assessment. The 44-family figure is an additional evidence-independence count, not asserted as identical to the PRISMA concept of studies.
+\subsection{Full-text exclusions and protocol deviations}
+\begin{table}[htbp]\centering\footnotesize
+\caption{Traceable supplementary exclusions and retrieval exceptions.}\label{tab:app_exceptions}
+\begin{tabularx}{\textwidth}{@{}p{0.2\textwidth}X@{}}\toprule Stage & Document / status and rationale \\\midrule
+Primary full-text exclusion & Isern et al. (2012), \emph{Development of a multi-agent system simulation platform for irrigation scheduling with case studies for garden irrigation}; excluded for landscape/garden irrigation outside the agricultural-production scope.\\
+Citation full-text exclusion & B08, \emph{A new BDI agent architecture based on the belief theory. Application to the modelling of cropping plan decision-making}; insufficient meaningful multi-agent interaction.\\
+Citation report not retrieved & B13, \emph{SHADOC: a multi-agent model to tackle viability of irrigated systems}; full text unavailable, therefore not assessed and not a substantive exclusion.\\
+Citation pre-retrieval exclusions & B10: insufficient connected multi-agent interaction; B11: book chapter outside publication-type scope; B18: non-peer-reviewed/internal document.\\
+\bottomrule\end{tabularx}\end{table}
+ACM Digital Library was omitted from primary searches due to restricted advanced search capability; the late garden-irrigation application clarification was logged on 12 October 2026. No automation-based eligibility exclusions or study registers were used. The review was conducted by one reviewer and was not externally registered. Versioned protocol and amendment notes were retained in the repository.
+\subsection{PRISMA 2020 reporting-location checklist}
+\begingroup\footnotesize
+\begin{longtable}{@{}p{0.075\textwidth}p{0.35\textwidth}p{0.48\textwidth}@{}}
+\caption{Project reporting audit against the 27 main PRISMA 2020 checklist items.}\label{tab:app_prisma_checklist}\\
+\toprule Item & Topic & Location / completion note \\\midrule\endfirsthead
+\toprule Item & Topic & Location / completion note \\\midrule\endhead
+1 & Title & Title page; systematic literature review explicitly identified.\\
+2 & Abstract & Completed abstract on title page.\\
+3 & Rationale & Section 1.\\
+4 & Objectives & Section 1.3, RQ0--RQ4.\\
+5 & Eligibility criteria & Section 3.3 and protocol/inclusion\_exclusion.md.\\
+6 & Information sources & Section 3.2; Appendix A search dates and sources.\\
+7 & Search strategy & Appendix A exact field-specific Boolean strings and filters.\\
+8 & Selection process & Sections 3.4--3.6; single-reviewer Rayyan workflow.\\
+9 & Data collection process & Sections 3.7--3.8; Appendix B.\\
+10 & Data items & Appendix B 63-field extraction inventory.\\
+11 & Risk of bias assessment & Methodological QA used, not a formal RoB instrument; Sections 3.8, 9.\\
+12 & Effect measures & No common/pooled effect measures; Sections 3.10 and 5.\\
+13 & Synthesis methods & Sections 3.9--3.10 and 5--7.\\
+14 & Reporting-bias assessment & No formal publication/reporting-bias test; declared in Appendix D.4.\\
+15 & Certainty assessment & No GRADE-style certainty assessment; declared in Appendix D.4.\\
+16 & Study selection & Section 4 and Appendix D; 53 included publications.\\
+17 & Study characteristics & Sections 4--6 and Appendix C.\\
+18 & Risk of bias in studies & Present QA as methodological quality, not formal RoB; Sections 4.5, 5.5.\\
+19 & Individual study results & Section 5 with evidence-backed examples; study-level extraction retained.\\
+20 & Results of syntheses & Sections 5--7.\\
+21 & Reporting biases & No formal reporting-bias assessment performed.\\
+22 & Certainty of evidence & No formal certainty framework applied.\\
+23 & Discussion & Sections 8--10, including limitations and future directions.\\
+24 & Registration and protocol & Not externally registered; version-controlled protocol and amendments.\\
+25 & Support & Funding and support declaration in Appendix D.4.\\
+26 & Competing interests & Competing-interests declaration in Appendix D.4.\\
+27 & Availability of data/code & Public repository and material-availability declaration in Appendix D.4.\\
+\bottomrule\end{longtable}\endgroup
+\subsection{Required final declarations and material availability}
+\noindent\textbf{Registration.} This review was not registered in an external systematic-review registry. The protocol and subsequent amendments were version-controlled in the project repository.
+\par\noindent\textbf{Funding and support.}
+This systematic literature review received no external
+financial or non-financial support.
+\par\noindent\textbf{Competing interests.}
+The author declares no competing interests.
+\par\noindent\textbf{Data, code and materials.}
+The review protocol, database-search documentation,
+extraction schema and codebook, final extraction and
+quality-assessment datasets, study-family reconciliation,
+evidence synthesis and PRISMA reporting materials are
+available in the public project repository:
+
+\href{https://github.com/ChayanTalukder/Multi-Agent-Systems-for-Sustainable-Smart-Farming/tree/main}{Public GitHub project repository}
+
+Publisher PDFs and licensed database exports are not
+redistributed publicly. The repository documents the
+review and its analytical materials; it does not imply
+that all included MAS implementations are reproducible
+from publicly available software.
+\par\noindent\textbf{Evidence-assessment limitations.} No formal intervention-specific risk-of-bias instrument, GRADE certainty assessment or statistical publication-bias test was performed. Reviewer-coded methodological QA, targeted source checks and conservative comparator/outcome adjudication were used instead.

@@ -1,0 +1,1375 @@
+
+
+\documentclass[11pt,a4paper]{article}
+
+% ==================================================
+% LANGUAGE AND TYPOGRAPHY
+% ==================================================
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{csquotes}
+
+% ==================================================
+% PAGE LAYOUT
+% ==================================================
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.15}
+
+% ==================================================
+% TABLES, FIGURES, AND MATHEMATICS
+% ==================================================
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{pdflscape}
+\usepackage{listings}
+
+\lstset{
+    basicstyle=\ttfamily\scriptsize,
+    breaklines=true,
+    breakatwhitespace=false,
+    columns=fullflexible,
+    keepspaces=true,
+    showstringspaces=false
+}
+
+\graphicspath{{figures/}}
+
+% ==================================================
+% ZOTERO BIBLIOGRAPHY
+% ==================================================
+
+\usepackage[
+    backend=biber,
+    style=numeric-comp,
+    sorting=none
+]{biblatex}
+
+% Hide unreliable access dates imported from Zotero
+\AtEveryBibitem{%
+    \clearfield{urldate}%
+    \clearfield{urlyear}%
+    \clearfield{urlmonth}%
+    \clearfield{urlday}%
+    \clearfield{isbn}%
+    \clearfield{issn}%
+}
+
+\addbibresource{zotero_final_included_53_public.bib}
+
+% ==================================================
+% HYPERLINKS
+% ==================================================
+
+\usepackage[hidelinks]{hyperref}
+
+% ==================================================
+% TEMPORARY DRAFT FORMATTING
+% ==================================================
+
+
+\newcommand{\draftspace}{%
+    \par\noindent\mbox{}\par
+}
+
+% ==================================================
+% TITLE INFORMATION
+% ==================================================
+
+\title{
+    \textbf{Multi-Agent Systems for Sustainable Smart Farming}\\[0.5cm]
+    \large
+    A Systematic Literature Review of Agent Architectures,\\
+    Coordination Mechanisms, Resource Management,\\
+    and Sustainability Outcomes
+}
+
+
+\author{
+    Chayan Talukder\\[4pt]
+    {\small chayan.talukder@studio.unibo.it}\\
+    {\small 0001172880}\\[8pt]
+    University of Bologna - Master's in Artificial Intelligence\\
+    Multi-Agent Systems
+}
+
+
+\date{October 2026}
+
+% ==================================================
+% DOCUMENT
+% ==================================================
+
+\begin{document}
+
+\maketitle
+
+% ==================================================
+% ABSTRACT
+% ==================================================
+
+
+
+\begin{abstract}
+
+The following systematic literature review explores the designs, coordination frameworks, evaluation practices and outcomes of Multi-Agent Systems (MAS) used in sustainable smart farming. Five bibliographic databases were considered followed by a one-generation backward and forward citation tracing. A total of 53 documents have been reconciled into 44 study families accounting for related reports.
+
+Five specific research questions were addressed covering applications, agent roles and architectures, coordination techniques, agricultural and environmental outcomes, and evaluation methods. The applications include irrigation and water management, studies of crops, livestock, energy, workforce allocation and environmental management. Coordination involved supervisory control, shared-resource interaction, scheduling, market and peer information exchange, learning based adaptation and negotiation.
+
+The results were classified according to their direction. They were found to be positive but conditional or simulated (24/53), mixed or scenario dependent (21/53), descriptive or feasibility oriented (7/53) or without directly evaluated agricultural result (1/53). Simulation accounted for 46/53 publications by implementation maturity. Independently verified evidence of operational sustainability benefits remained limited.
+
+This study provides a 6-axis MAS classification, evidence map, and
+research gap hierarchy of RG1 to RG9. The key issues emerging from the study include the need for validation, reproducibility, realism in stakeholders and environment, and appropriate comparisons. Agricultural MAS provide multiple ways of coordinating farm decisions, but there is not enough evidence to generalize about their sustainability.
+
+\end{abstract}
+
+\noindent\textbf{Keywords:}
+Multi-Agent Systems; Smart Farming;
+Sustainable Agriculture; Irrigation;
+Resource Allocation; Agent Coordination;
+Systematic Literature Review.
+
+
+\clearpage
+
+% ==================================================
+% TABLE OF CONTENTS
+% ==================================================
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\clearpage
+
+
+
+% ==================================================
+% SECTION 1 — INTRODUCTION
+% ==================================================
+
+\section{Introduction}
+\label{sec:introduction}
+
+\subsection{Context and Review Rationale}
+
+Decisions made on farm level concerning irrigation, land use, labour, energy and livestock are interconnected by means of limited and shared resources. MAS describe this interrelation via several decision-making entities. Operational MAS are applied to water distribution, irrigation, energy trading and task scheduling
+\parencite{chiewchan_water_2023,jimenez_intelligent_2022,
+agyeman_semi-centralized_2025,shah_peer--peer_2024,
+harman_multi-agent_2022}. Socio-ecological agent-based models focus on analysis of farmers, institutions and resource users in various policies and environmental settings
+\parencite{berger_agent-based_2001,therond_integrated_2014,
+schreinemachers_agent-based_2011,feuillette_sinuse_2003},
+as well as on integrated crop–livestock systems
+\parencite{catarino_fostering_2021}.
+
+These concepts are interconnected, but at the same time they differ from each other. In this way, agent \emph{roles} determine actors or responsibilities, \emph{architectures} specify who is responsible for the decision-making process, and \emph{decision paradigms} consist of various rules, economic preferences, optimization, model predictive control and learning
+\parencite{agyeman_learning-based_2024,schoonen_optimal_2019,
+grovermann_smart_2017}. Coordination may be achieved through supervision, scheduling, or through market mechanisms
+\parencite{chiewchan_improving_2020,cobbenhagen_heterogeneous_2018}.
+Coordination may also be indirect by having agents act on the same water resource or environmental condition without communication
+\parencite{cai_agent-based_2017,tamburino_water_2020,
+barreteau_suitability_2004}. Interaction alone therefore does not
+establish direct communication or negotiation.
+
+Comparing sustainability claims poses another challenge. MAS for agriculture includes issues of water, land, soil, nutrients, energy and environment
+\parencite{ng_agent-based_2011,quang_ex-ante_2014,
+van_der_straeten_multi-agent_2010,balbi_multi-agent_2013,
+ajagekar_energy_2024}, while MAS for livestock production might consider farm services rather than the health and welfare of animals
+\parencite{t_shanteer_cownet-ai_2026}. Simulated resource savings are based on their assumptions and comparisons. They do not, by themselves, establish sustained benefits on working farms. The literature review takes into account the MAS design along with its outcome, validation context and trade-offs.
+
+\subsection{Objectives and Research Questions}
+
+This study examines the design, coordination and evaluation of MAS
+used for interacting agricultural decisions, particularly in irrigation,
+shared-resource allocation, cattle and environmental management.
+It asks what these systems report and what their evaluations actually
+support. The five questions follow the review protocol verbatim:
+
+\smallskip
+\noindent\textbf{RQ0 --- Primary research question.}
+\emph{How have Multi-Agent Systems been designed, implemented, and evaluated for coordinated decision-making in smart agriculture, particularly for irrigation, shared-resource allocation, livestock management, and environmental sustainability?}\par\smallskip
+
+\noindent\textbf{RQ1 --- MAS architectures, agent roles and decision-making.}
+\emph{What types of agents, architectures, and decision-making approaches are used in Multi-Agent Systems for smart agriculture?}\par\smallskip
+
+\noindent\textbf{RQ2 --- Coordination, negotiation and shared-resource management.}
+\emph{How do agricultural agents communicate, coordinate, cooperate, or negotiate when managing shared and limited farm resources?}\par\smallskip
+
+\noindent\textbf{RQ3 --- Agricultural, livestock, resource and environmental outcomes.}
+\emph{What agricultural, livestock-welfare, resource-efficiency, and environmental outcomes are reported for MAS-based smart-farming approaches?}\par\smallskip
+
+\noindent\textbf{RQ4 --- Evaluation, limitations and research gaps.}
+\emph{How are agricultural Multi-Agent Systems evaluated, and what methodological, technical, and practical limitations or research gaps are reported in the literature?}
+
+\subsection{Scope and Contributions}
+
+The review discusses operational MAS and socio-ecological frameworks with significant interactions between agricultural decision-making actors; monitoring-only and stand-alone predictive models are not considered. The \textbf{53 included publications} were mapped into \textbf{44 study families} due to their related outputs.
+
+Contributions consist of an overview of RQ0-RQ4, the six-dimensional MAS framework and evidence map, assessments of reported effects in terms of evaluating strength, and research priorities. This is a review of existing literature, not a design or validation for a new MAS. Eligibility and screening are explained in the next section.
+
+
+
+
+% ==================================================
+% SECTION 2 — SYSTEMATIC REVIEW METHODOLOGY AND STUDY SELECTION
+% ==================================================
+
+\section{Systematic Review Methodology and Study Selection}
+\label{sec:methodology}
+
+\subsection{Protocol, Sources and Eligibility}
+
+The study was conducted by a single reviewer following a documented protocol, referencing PRISMA 2020 \href{https://doi.org/10.1136/bmj.n71}{guidelines}. The search strategy was finalized at version V0.3c, and any amendments made to the protocol were documented. The protocol was not registered externally.
+
+Primary records: Scopus (60), IEEE Xplore (24), Web of Science Core Collection (51), ScienceDirect (20) and SpringerLink (31). In total they produced \textbf{186 records before any deduplication}. The searches were formulated with MAS terms and with the context of agriculture, resources, and decision/coordination terms. Specific field restrictions in databases and query adjustments were required; these included a specific recall-oriented branch by title and two branches deduplicated in IEEE Xplore. The \href{https://github.com/ChayanTalukder/Multi-Agent-Systems-for-Sustainable-Smart-Farming} {repository} stores the final query formulations, filters, field restrictions, and available search execution dates. The executable date of the final Scopus V0.3c search could not be determined from the remaining records.
+
+ACM Digital Library was evaluated for source selection but did not qualify as a primary search engine since the accessible interface could not execute the frozen title/abstract Boolean method consistently.
+
+The eligible articles were peer-reviewed journals or conference papers in English, and reported meaningful interactions between agents involved in agricultural production and farm management decisions. Monitoring without interaction of agents, prediction without interaction of agents, non-agricultural applications, and articles lacking enough methodological information were not included. The main period for inclusion was \textbf{2010-2026}; IC7 exception of the protocol included relevant and earlier foundational studies obtained by backward and forward citation search.
+
+
+\subsection{Screening, Citation Searching and PRISMA Flow}
+
+The database searches were then screened and deduplicated in Rayyan. A single reviewer screened for duplicates and made all decisions regarding eligibility; neither automatic exclusion of eligible articles nor independent screening of duplicates took place. Following the exclusion of \textbf{84 duplicates} from among the \textbf{186} records in the database, \textbf{102} title and abstracts were assessed. \textbf{51} were excluded and \textbf{51} full-text papers were sought. \textbf{16} were unavailable in full-text form; however,
+\textbf{35} full-text articles were reviewed, with \textbf{1} disqualified since it dealt with landscape or garden irrigation and not agriculture. The main database search yielded \textbf{34} papers.
+
+A backward and forward search was done for one generation from these 34 papers. The additional search generated \textbf{24 additional hits} after screening them against the original corpus of screened records. There were three that were excluded prior to the retrieval process. Of the \textbf{21} records that were targeted, one record could not be retrieved and \textbf{20} were subjected to full-text evaluation. One paper was found to have insufficient multi-agent interaction and was hence excluded, resulting in \textbf{19 additional papers}. The SHADOC report was registered as not retrievable.
+
+A total of \textbf{53 articles} were reviewed: 34 through the database pathway and 19 via citations. Out of the 53 articles, five were published before 2010 and considered to be fundamental under IC7. Across both pathways, 72 reports were sought for retrieval, 17 could not be retrieved, 55 were assessed at full text, and two were excluded during the assessment. The details of selection pathways and exclusions are provided in Figure~\ref{fig:prisma2020}.
+
+% Retain the existing, audited PRISMA PDF in figures/.
+\clearpage
+\begin{landscape}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[
+        width=\linewidth,
+        height=0.88\textheight,
+        keepaspectratio
+    ]{PRISMA_2020_flow_diagram_FINAL}
+    \caption{PRISMA 2020 study selection via five databases and
+    supplementary citation searching: 53 included publications,
+    subsequently reconciled into 44 study families. Adapted from
+    Page et al. (2021), CC BY 4.0.}
+    \label{fig:prisma2020}
+\end{figure}
+\end{landscape}
+\clearpage
+
+\subsection{Extraction, Quality Assessment and Synthesis}
+
+Each included study was assigned an identification code (\texttt{S01-S53}), and its evidence was recorded in a \textbf{63-field} extraction dataset. 
+
+In this review, coding refers to assigning predefined categories or labels to extracted information from each publication. Depending on the extraction field, a publication could receive either a single category or multiple categories.
+
+The code book includes details about agricultural context, agent roles and structures, decision and coordination processes, constraints, outcomes, evaluation, and limitations. The information provided in the source was not mixed with those generated by the reviewer. Evidence locators and original comparator descriptions and outcomes were kept; \texttt{NR}, \texttt{NA} and \texttt{UNC} were used for missing, inapplicable, or uncertain information.
+
+The seven quality-assessment criteria covered objectives, agent roles and autonomy, communication and coordination, environment and data, evaluation, reproducibility, and limitations. These were scored 0--2 individually, and added up to a possible score of 0--14. The categories with scores of 11--14,
+7--10 and 0--6 were considered high, moderate, and limited methodological clarity, respectively. This assessment was descriptive, not an exclusion criteria nor a risk-of-bias or certainty-of-evidence assessment. Amongst the 53 publications analyzed, the mean score was \textbf{12.94/14} and the median score was \textbf{13}; \textbf{50} of them had high clarity, \textbf{3} were moderate and none had limited clarity.
+
+Overlapping publications were identified if a system, model, or empirical case was reused. This resulted in \textbf{44 study families}: 37 single publications and seven multiple publications
+(\texttt{SF05}, \texttt{SF08}, \texttt{SF13}, \texttt{SF16},
+\texttt{SF25}, \texttt{SF42}, and \texttt{SF49}). For publication
+statistics, $n=53$ applies, for family sensitivity analysis $n=44$
+applies. Family categories can overlap and should not be confused with
+replicated experiments.
+
+The synthesis included the distribution of RQ1 agent roles and RQ2 coordination mechanisms, outcome-direction coding for RQ3, and assessment of evaluation and comparators for RQ4. Insights derived from the research questions contributed to the six axes of the MAS taxonomy. Selected ambiguities were verified with the original literature, but all 53 publications were not independently cross-checked. Variations in methodology, results and comparators prevented effect size synthesis. The References section of the report includes papers cited in the report. All data for the full set of 53 publications, including bibliography, extraction and quality assurance, screening, family mapping, and analysis are provided in the \href{https://github.com/ChayanTalukder/Multi-Agent-Systems-for-Sustainable-Smart-Farming} {public GitHub repository}.
+
+\subsection{Characteristics of the Included Corpus}
+
+The \textbf{53 articles} span 2001--2026. Five are pre-2010 landmark papers, 20 appeared between 2010 and 2019, and 28 between 2020 and 2026. \textbf{37} are journals, and \textbf{16} are conference proceedings articles. The median publication year is 2020, compared to 2022 for the original 34-paper database corpus, due to content inclusion through citation searching.
+
+Table~\ref{tab:application_domains} shows the mutually exclusive primary application domains. Irrigation and water management accounts for the largest group (24/53). Family \texttt{SF42} spans two primary application domains, producing 45 family-category memberships across 44 families.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Primary agricultural domains in the original and final corpora.}
+\label{tab:application_domains}
+\begin{tabularx}{\textwidth}{@{}Xrrr@{}}
+\toprule
+\textbf{Primary application domain} &
+\textbf{Original 34} &
+\textbf{Final 53} &
+\textbf{Families} \\
+\midrule
+Irrigation / water management & 14 & 24 & 20 \\
+Crop / farm management & 4 & 8 & 8 \\
+Livestock / integrated farming & 5 & 6 & 6 \\
+Workforce / robotics / task allocation & 5 & 6 & 4 \\
+Energy / water--energy--food nexus & 4 & 5 & 3 \\
+Soil / nutrient / environmental management & 2 & 4 & 4 \\
+\midrule
+\textbf{Total publications} & \textbf{34} & \textbf{53} & -- \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\footnotesize\emph{Note:} Family memberships total 45 across 44
+families because \texttt{SF42} spans two primary domains.
+\end{table}
+
+The scope of the integrated system was coded for \textbf{27/53} papers, resource constraints or limitations for \textbf{50/53}, and direct focus on sustainability for \textbf{39/53}. Coding refers to the topics that were covered, although it does not imply that positive results were achieved. 
+
+In this review, simulation refers to the evaluation of a MAS within a modeled agricultural environment or scenario. A publication is described as simulation-coded when simulation is its assigned implementation-maturity category.
+
+
+Simulation accounts for \textbf{46/53} implementation maturity categories (Table~\ref{tab:implementation_maturity}). There is a separate field on deployment status with 51 \emph{No}, 1 \emph{Yes}, and 1 \emph{Partial} entries; the reported \emph{Yes} case was not independently confirmed as sustained farm operation. Farm data and simulations alone do not establish implementation.
+
+According to source reports, code was available in \textbf{8 out of 53}
+cases and data in \textbf{14 out of 53} cases, but reproducibility was
+not fully evaluated. Implications of the above evaluation settings are
+discussed in RQ4.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Implementation maturity coded for the 53 publications.}
+\label{tab:implementation_maturity}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Maturity} & \textbf{Publications} & \textbf{Share} \\
+\midrule
+Simulation & 46 & 86.8\% \\
+Prototype & 4 & 7.5\% \\
+Field pilot & 2 & 3.8\% \\
+Controlled experiment & 1 & 1.9\% \\
+\midrule
+\textbf{Total} & \textbf{53} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+% ==================================================
+% 3. RESULTS: RQ0--RQ4 (CONDENSED, FROZEN 53/44 CORPUS)
+% ==================================================
+\section{Results: RQ0--RQ4}
+
+
+\subsection{RQ0: MAS Application Landscape and Purpose}
+
+\subsubsection{Applications and Functional Purposes}
+
+RQ0 focuses on operational coordination and socio-ecological modeling
+of farmers, resource users, and institutions. A single dominant functional purpose was assigned to each paper (Table~\ref{tab:rq0_functional_purposes}).
+Allocation, scheduling, and control was the most common (21/53, 39.6\%);
+policy and scenario assessment was next (17/53, 32.1\%), followed by
+trading and resource management (13/53, 24.5\%). Decision support,
+monitoring, or diagnosis came last (2/53, 3.8\%). The ranking is quite
+similar among the 44 reconciled study families, despite the fact that the
+families are not independent experiments.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Dominant functional purpose of MAS in the initial
+and final corpora, with study-family sensitivity counts.}
+\label{tab:rq0_functional_purposes}
+
+\begin{tabularx}{\textwidth}{@{}Xccc@{}}
+\toprule
+
+\textbf{Primary functional purpose} &
+\textbf{Original 34} &
+\textbf{Final 53} &
+\textbf{44 families} \\
+
+\midrule
+
+Operational allocation, scheduling and control &
+16 (47.1\%) & 21 (39.6\%) & 17 (38.6\%) \\
+
+Policy, scenario and socio-ecological assessment &
+9 (26.5\%) & 17 (32.1\%) & 15 (34.1\%) \\
+
+Trading, negotiation and collective-resource governance &
+7 (20.6\%) & 13 (24.5\%) & 10 (22.7\%) \\
+
+Decision support, monitoring and diagnosis &
+2 (5.9\%) & 2 (3.8\%) & 2 (4.5\%) \\
+
+\midrule
+
+\textbf{Total} & \textbf{34} & \textbf{53} & \textbf{44} \\
+
+\bottomrule
+\end{tabularx}
+
+\par\smallskip
+\begin{minipage}{\textwidth}
+\footnotesize
+\emph{Note:} Purpose categories are mutually exclusive
+at the publication level. The family column reports
+the reconciled evidence-presence classification and
+must not be interpreted as independent replications.
+\end{minipage}
+
+\end{table}
+
+The categories of irrigation and water management cover 24/53 documents
+(20/44 families; Table~\ref{tab:application_domains}). They cover
+areas like scheduling and distribution of water supply at the field level,
+groundwater, and watershed management \parencite{chiewchan_water_2023,
+jimenez_intelligent_2022,feuillette_sinuse_2003}. Other research documents focus on crop management, livestock and agriculture, energy management of dairy farms and greenhouses, soil and nutrient management, and harvest/worker coordination \parencite{catarino_fostering_2021,shah_peer--peer_2024,
+harman_multi-agent_2022,grovermann_smart_2017}.
+
+
+\subsubsection{Contributions and RQ0 Synthesis}
+
+Contribution codes are multi-label: simulation/modeling and decision support, assessment or policy analysis each occur in 37/53 publications; optimisation/control in 27/53 articles; coordination/allocation/negotiation mechanism in 24/53 articles; and platforms/architectures in 22/53 articles. The integrated system is reported in 27/53 articles (25/44 families), but linking of the model components does not imply farm implementation.
+
+In fact, the five pre-2010 foundational extensions stress on socio-ecological
+assessments and collective resource governance. Operational
+allocation is the dominant goal for articles written during 2020–2026 (15/28). These distinctions are specific to the retrieved corpus rather than reflecting a transition in the historical traditions of research. Hence, RQ0 indicates that MAS is applied to coordinate decision-making when resources are limited as well as to explore collective/policy scenarios.
+
+
+
+% SECTION 3.2 — RQ1
+% Revised prose; original Tables 4–6 retained.
+
+\subsection{RQ1: Agent Types, Roles, Architectures and Decision-Making}
+
+\subsubsection{Agent Roles and Architecture}
+
+Agent roles were classified through manual classification of the study descriptions. The classifications are non-exclusive because a system may include multiple agents and/or multiple roles simultaneously (Table~\ref{tab:rq1_agent_roles}). Farmers, households or agricultural producers are found in 33 out of 53 studies, while managers, regulators or supervisors in 25/53 studies. Biophysics, crops, herds
+or environmental components are represented in 19/53 studies, while operational field, irrigation, workforce or robot roles in 17/53 studies. Specialist advisory and market/trading roles are found in 11/53 studies. These figures are indicative of the represented roles; representation of a crop, herd or environment and is not necessarily an agent \parencite{gaudou_maelia_2014,harman_multi-agent_2022,
+t_shanteer_cownet-ai_2026}.
+
+\begin{table}[H]
+\centering
+\small
+
+\caption{Manually adjudicated agent-role themes in the final corpus.}
+\label{tab:rq1_agent_roles}
+
+\begin{tabularx}{\textwidth}{@{}Xcc@{}}
+\toprule
+
+\textbf{Agent-role theme} &
+\textbf{Publications ($n=53$)} &
+\textbf{Families ($n=44$)} \\
+
+\midrule
+
+Farmer / household / agricultural producer &
+33 (62.3\%) & 28 (63.6\%) \\
+
+Manager / regulator / supervisory actor &
+25 (47.2\%) & 19 (43.2\%) \\
+
+Biophysical / herd / crop / environmental representation &
+19 (35.8\%) & 17 (38.6\%) \\
+
+Operational field / irrigation / workforce / robot actor &
+17 (32.1\%) & 13 (29.5\%) \\
+
+Specialist software / analytical / advisory actor &
+11 (20.8\%) & 11 (25.0\%) \\
+
+Market / bidder / trading role &
+11 (20.8\%) & 8 (18.2\%) \\
+
+\bottomrule
+\end{tabularx}
+
+\par\smallskip
+
+\begin{minipage}{\textwidth}
+\footnotesize
+\emph{Note:} Categories are non-exclusive,
+reviewer-adjudicated themes based on extracted descriptions.
+A family contributes once to a role when at least one of
+its publications supports that role. Biophysical
+representation does not necessarily imply autonomous agency.
+\end{minipage}
+
+\end{table}
+
+Architecture was divided according to decision-making power, and not according to the number of actors involved or whether it was implemented (Table~\ref{tab:rq1_architectures}). Decentralised designs constitute the largest source-coded category (17/53), with hybrid (13), hierarchical (11), centralised (10) and distributed (2) designs. Every publication had one
+architecture code. Publications related to \texttt{SF42} were, on the
+other hand, categorized as hybrid and hierarchical, resulting in 45 architecture codes within 44 families. The \emph{distributed} category is distinguished from the \emph{decentralised} category as seen in the extraction. These distributions reflect the corpus; they do not show that one architecture works better than another in all agricultural contexts \parencite{agyeman_semi-centralized_2025,therond_integrated_2014}.
+
+\begin{table}[htbp]
+\centering
+\small
+
+\caption{Frozen MAS architecture codes at publication
+and study-family levels.}
+
+\label{tab:rq1_architectures}
+
+\begin{tabular}{lcc}
+\toprule
+
+\textbf{Architecture} &
+\textbf{Publications ($n=53$)} &
+\textbf{Families ($n=44$)} \\
+
+\midrule
+
+Decentralised & 17 (32.1\%) & 16 (36.4\%) \\
+
+Hybrid & 13 (24.5\%) & 11 (25.0\%) \\
+
+Hierarchical & 11 (20.8\%) & 9 (20.5\%) \\
+
+Centralised & 10 (18.9\%) & 7 (15.9\%) \\
+
+Distributed & 2 (3.8\%) & 2 (4.5\%) \\
+
+\midrule
+
+\textbf{Total publication codes} &
+\textbf{53} & \textbf{--} \\
+
+\bottomrule
+\end{tabular}
+
+\par\smallskip
+
+\begin{minipage}{\textwidth}
+\footnotesize
+\emph{Note:} Architecture is exclusive for each
+publication, but family evidence is not always exclusive.
+\texttt{SF42} contains both hybrid and hierarchical
+architecture coding in related publications; therefore
+the family column sums to 45 category memberships across
+44 families. The \emph{distributed} category is retained
+separately from \emph{decentralised} as coded in
+the extraction.
+\end{minipage}
+
+\end{table}
+
+\subsubsection{Decision Paradigms and Autonomy}
+
+The paradigms for decision-making of the agents are equally diverse
+(Table~\ref{tab:rq1_paradigms}). Rule-based approaches are the most common (37/53), followed by economic or utility-based approaches
+(20/53) and finally learning-based approaches (11/53). BDI and reactive
+paradigms are used twice each; case-based and LLM-based approaches
+once. Six publications do not provide information about a specific
+approach. The approaches can be mixed, e.g., a rule-based approach
+with economic goals and optimisation. An economic model of a
+farming choice and learning-based approach to irrigation can
+solve different problems \parencite{berger_agent-based_2001,grovermann_smart_2017,
+agyeman_learning-based_2024}. The only paper that uses the LLM-based
+advisory approach cannot be considered as proof for extensive
+use of LLM agents in MAS \parencite{t_shanteer_cownet-ai_2026}.
+
+\begin{table}[H]
+\centering
+\small
+
+\caption{Source-coded decision paradigms in the
+final corpus.}
+
+\label{tab:rq1_paradigms}
+
+\begin{tabularx}{\textwidth}{@{}Xcc@{}}
+\toprule
+
+\textbf{Decision paradigm} &
+\textbf{Publications ($n=53$)} &
+\textbf{Families ($n=44$)} \\
+
+\midrule
+
+Rule-based &
+37 (69.8\%) & 31 (70.5\%) \\
+
+Utility-based / economic &
+20 (37.7\%) & 17 (38.6\%) \\
+
+Learning-based &
+11 (20.8\%) & 10 (22.7\%) \\
+
+Belief--Desire--Intention (BDI) &
+2 (3.8\%) & 1 (2.3\%) \\
+
+Reactive &
+2 (3.8\%) & 2 (4.5\%) \\
+
+Case-based reasoning &
+1 (1.9\%) & 1 (2.3\%) \\
+
+Large language model (LLM)-based &
+1 (1.9\%) & 1 (2.3\%) \\
+
+Other &
+1 (1.9\%) & 1 (2.3\%) \\
+
+Not reported (NR) &
+6 (11.3\%) & 5 (11.4\%) \\
+
+\bottomrule
+\end{tabularx}
+
+\par\smallskip
+
+\begin{minipage}{\textwidth}
+\footnotesize
+\emph{Note:} Decision paradigms are multi-label;
+their percentages do not sum to 100\%.
+\emph{Not reported} indicates a missing or unspecified
+paradigm, not an additional decision-making approach.
+Family counts record evidence found in any member publication.
+\end{minipage}
+
+\end{table}
+
+No common valid scale of agent autonomy is applied to the articles.
+Local decisions could still be dependent on a supervisor and a resource
+constraint; central policy training could be followed up with local
+implementation; optimizers can coordinate several agents without any direct
+communication. In total, the findings related to
+RQ1 suggest a variety of actors, decision processes and reasoning involved,
+often within the resource or institutional constraints. But no agent
+architecture has been proven to be superior to others and the reviewed corpus does not demonstrate a transition to fully autonomous farm operation.
+
+
+
+% SECTION 3.3 — RQ2
+% Prose revised; seven theme counts and table label unchanged.
+
+\subsection{RQ2: Coordination, Cooperation, Negotiation and Resource Allocation}
+
+\subsubsection{Communication and Adjudicated Mechanisms}
+
+Several labels have been used in these studies to refer to processes and interactions between agricultural agents. Co-ordination is coded in 47/53 articles, information sharing in 33/53, communication in 30/53, competition in 23/53 and cooperation in 18/53. These overlapping codes only show what was reported; they do not identify any communication protocol or evidence that agents negotiated. We therefore reviewed the extracted descriptions of mechanisms and coded them into seven non-exclusive, manually adjudicated themes
+(Table~\ref{tab:rq2_coordination_mechanisms}).  
+
+Supervision or shared controller appears as the most common one (25/53),
+interaction via a shared environment/resource follows (20/53). Operational
+allocation, optimisation or scheduling occurs in 16/53 publications, 
+auctions and other market interactions in 15/53, peer information sharing
+in 13/53, learning or adaptation coordination/MARL in 9/53, and direct
+negotiation/collective agreement in 8/53.
+
+\begin{table}[H]
+\centering
+\small
+
+\caption{Seven manually adjudicated coordination-mechanism
+themes in the final MAS corpus.}
+
+\label{tab:rq2_coordination_mechanisms}
+
+\begin{tabularx}{\textwidth}{@{}Xcc@{}}
+\toprule
+
+\textbf{Coordination mechanism} &
+\textbf{Publications ($n=53$)} &
+\textbf{Families ($n=44$)} \\
+
+\midrule
+
+Hierarchical / supervisory / shared-controller &
+25 (47.2\%) & 19 (43.2\%) \\
+
+Environment- / shared-resource-mediated interaction &
+20 (37.7\%) & 18 (40.9\%) \\
+
+Operational allocation / optimisation / task scheduling &
+16 (30.2\%) & 12 (27.3\%) \\
+
+Auction / bidding / market / price-based exchange &
+15 (28.3\%) & 10 (22.7\%) \\
+
+Social-network diffusion / peer information exchange &
+13 (24.5\%) & 13 (29.5\%) \\
+
+Learning-based adaptive coordination / MARL &
+9 (17.0\%) & 8 (18.2\%) \\
+
+Direct negotiation / collective agreements &
+8 (15.1\%) & 7 (15.9\%) \\
+
+\bottomrule
+\end{tabularx}
+
+\par\smallskip
+
+\begin{minipage}{\textwidth}
+\footnotesize
+
+\emph{Note:} Themes are non-exclusive. Family counts
+indicate that at least one publication in the family
+supports a theme and are not independent replications.
+The direct-negotiation theme has a narrower, manually
+reviewed definition than the original source-coded negotiation label (9 publications);
+the two coding layers should not be numerically equated.
+
+\end{minipage}
+
+\end{table}
+
+\subsubsection{Mechanism Boundaries and RQ2 Synthesis}
+
+The distinction between whether interactions involve messages or a
+common state is important for classifying coordination.
+Agents can either communicate explicitly with each other, or influence
+each other indirectly through their impact on the availability of
+water, environmental conditions or a common state in general
+\parencite{feuillette_sinuse_2003,becu_agent_2003,
+barreteau_suitability_2004}. Special attention needs to be paid to
+markets: an auction is able to allocate water or energy at a dairy farm
+through bidding rules and does not require bilateral negotiation
+\parencite{chiewchan_improving_2020,shah_peer--peer_2024}.
+In the original extraction, negotiation was found in 9/53 articles,
+while with manual adjudication 8/53 were categorized as negotiation or
+collective agreements. These are different classification categories,
+not substitutable measures. Similarly, centrally trained policies or task allocation by an optimiser do not, by themselves, establish direct agent-to-agent communication or decentralised decision authority at runtime.
+
+Scarcity of resources or operational limitations were observed in 50/53
+articles, although the ways in which these were solved differed.
+Step 6H: cross-classification results revealed that all six articles on workforce/robots had some form of operational optimization and scheduling. Irrigation articles make use of different combinations, such as coordination, shared resources interaction, scheduling and agreements. The complete cross-classification matrices can be found in the \href{https://github.com/ChayanTalukder/Multi-Agent-Systems-for-Sustainable-Smart-Farming} {repository}. With regard to the study family level, the two evidence-presence counts are 19/44 for supervision and 18/44 for interaction.
+
+Thus, the answers to RQ2 involve coordination through explicit and implicit
+interaction, either used together within one multi-agent system or not.
+These findings does not suggest a generally preferred method of coordination,
+nor does coordination provide better results for farming.
+
+
+
+% SECTION 3.4 — RQ3
+% Prose revised; the original outcome-direction table and label are retained.
+
+\subsection{RQ3: Agricultural, Resource-Efficiency, Livestock and Environmental Outcomes}
+
+\subsubsection{Reported Outcomes and Evidence Direction}
+
+Numerous articles report on agricultural or resource-based effects,
+but reporting an effect does not prove that there was an improvement.
+Agricultural outcomes were reported in 51/53 publications and resource
+efficiency effects in 48/53. Environmental effects were reported in
+38/53 articles and livestock-specific effects in 7/53. Environmental
+mitigation mechanisms were reported in 41/53 articles, quantitative results
+in 47/53 and trade-offs in 45/53. This is an overlapping set of indicators
+for reporting effects rather than the number of effects.
+
+In determining what the results actually indicate, the
+outcome was considered using four mutually exclusive publication classes (Table~\ref{tab:rq3_outcome_direction}). Favourable results, typically conditional or simulation-based, comprise 24 of 53 publications. 21 out of 53 publications present mixed results depending on scenario or trade-offs;
+seven are descriptive or feasibility-focused, while one does not consider a direct agricultural outcome. Related publications within the same study family may belong to different outcome-direction classes, thus the evidence presence counts for families are not disjoint.
+
+\begin{table}[htbp]
+\centering
+\small
+
+\caption{Adjudicated direction of reported RQ3 evidence.
+Categories describe extracted conclusions, not pooled
+causal effects.}
+
+\label{tab:rq3_outcome_direction}
+
+\begin{tabularx}{\textwidth}{@{}Xcc@{}}
+\toprule
+
+\textbf{Outcome-direction class} &
+\textbf{Publications ($n=53$)} &
+\textbf{Families ($n=44$)} \\
+
+\midrule
+
+Favourable, but conditional or simulated &
+24 (45.3\%) & 19 (43.2\%) \\
+
+Mixed, trade-off or scenario-dependent &
+21 (39.6\%) & 21 (47.7\%) \\
+
+Descriptive or feasibility; no directional conclusion &
+7 (13.2\%) & 6 (13.6\%) \\
+
+No directly evaluated agricultural outcome &
+1 (1.9\%) & 1 (2.3\%) \\
+
+\midrule
+
+\textbf{Total publications} &
+\textbf{53} & \textbf{--} \\
+
+\bottomrule
+\end{tabularx}
+
+\par\smallskip
+
+\begin{minipage}{\textwidth}
+\footnotesize
+
+\emph{Note:} Publication classes are mutually exclusive.
+Family counts indicate evidence from any member publication;
+a family may contain different outcome-direction classes.
+The family entries therefore total 47 class memberships,
+not 47 independent families. Favourable does not mean
+field-validated or universally beneficial.
+
+\end{minipage}
+
+\end{table}
+
+\subsubsection{Agricultural, Livestock and Resource Evidence}
+
+The results obtained in the corpus differ greatly based on
+applications. They include crop and yield cases, farm income, adoption
+of technology, water requirement and availability, allocation equity,
+electricity trading, and work performance. For example, some of the
+findings explain the importance of the comparator and the scenario. In a
+simulation of organic seeds and breeding policy, it was found that the gross
+margin was lower for farms in certain scenarios \parencite{winter_assessing_2023}. In a study for harvest coordination, the source-checked comparator finished the tasks faster, while staffing considerations also played an important role in interpretation \parencite{harman_challenges_2023}. A study involving model predictive control for irrigation models compared simulated outcomes with heuristics \parencite{cobbenhagen_optimal_2022,schoonen_optimal_2019}.
+Since both studies belong to \texttt{SF49}, they are one related evidence
+line rather than two independent studies. Likewise, studies on water-scarcity  show that conclusions about efficiency and equity depend on the allocation objective and the scenarios considered \parencite{hung_assessing_2021,mahmoudian_adaptive_2025}.
+
+
+
+Livestock uses should take special attention when defining
+the measures that have been used. Electricity trading in dairy farms,
+manure or resource exchange, and performance of advisory systems can be
+studied without measuring animal health, or biological improvement
+\parencite{shah_peer--peer_2024,shah_peer--peer_2026,
+catarino_fostering_2021,t_shanteer_cownet-ai_2026}. Other works study
+cases of water quality, soil, nutrients and pesticide management
+\parencite{ng_agent-based_2011,quang_ex-ante_2014,
+van_der_straeten_multi-agent_2010,grovermann_smart_2017}. Even if
+precision irrigation, nutrient management or energy exchange have been
+suggested as a means of mitigation, simulation results are not enough
+to conclude about any emission reduction or pollution control.
+
+\subsubsection{Trade-offs and RQ3 Synthesis}
+
+A few identified implications concern conflicting priorities: water savings
+could impact yields or access; environmental policies could lower
+farm profits; staffing could vary with time required for the tasks;
+efficient distribution could benefit different parties differently.
+These conflicts can be identified either qualitatively or scenario-specifically
+without necessarily being assessed as a Pareto surface. The
+direction of an implication should therefore be understood along with
+the assumptions, data, and comparisons made in the report.
+
+Overall, the evidence on RQ3 indicates that MAS can be used to
+analyze agricultural sustainability trade-offs, at times yielding
+positive results against some alternative. No clear causal improvement of productivity, animal welfare, efficiency or environmental performance can be shown in practice by the evidence. Most of the evidence is heterogeneous and simulation-based.
+
+
+
+% SECTION 3.5 — RQ4
+% Prose revised; existing headings, references and Table 9 retained.
+
+\subsection{RQ4: Evaluation Methods, Validation, Implementation Maturity and Limitations}
+
+\subsubsection{Evaluation and Comparator Strength}
+
+Model-based assessment dominates in studies of agricultural MAS.
+Simulation accounts for 46/53 publications (39/44 study families). The remaining seven comprise four prototypes, two field pilots and one controlled experiment(Table~\ref{tab:implementation_maturity}). Implementation maturity
+and deployment refer to different stages: a model may use real-world
+weather or agricultural data without being implemented on a farm.
+Settings discussed include policy and catchment scenarios,
+irrigation and resource allocation benchmarks, energy market, and
+workforce assignment for harvest \parencite{cobbenhagen_optimal_2022,
+quang_ex-ante_2014,harman_multi-agent_2022}.
+
+Comparator descriptions were recorded for 49/53 publications
+(41/44 families). The count above includes simulated scenarios,
+algorithms, calibration targets, and ambiguous/missing comparators.
+Table~\ref{tab:rq4_comparator_interpretation}
+illustrates how different references can be interpreted depending
+on the conclusions made in the paper. For instance, better results
+than an irrigation heuristic in simulations prove comparative
+performance in the described settings, but a model calibrated for
+real-world observations indicates plausibility. Neither proves
+effectiveness in dynamic agricultural environments
+\parencite{schoonen_optimal_2019,harman_challenges_2023}.
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+
+\caption{Comparator and validation types and the
+interpretations they can support in RQ4.}
+
+\label{tab:rq4_comparator_interpretation}
+
+\begin{tabularx}{\textwidth}{@{}XXX@{}}
+\toprule
+
+\textbf{Reference type} &
+\textbf{Supported interpretation} &
+\textbf{Important limitation} \\
+
+\midrule
+
+Competing algorithm or control policy &
+Relative performance in the reported experiment &
+Does not establish general superiority across farms \\
+
+Historical or practice comparator &
+Change relative to a documented practice &
+May be confounded; not automatically causal \\
+
+Scenario or policy counterfactual &
+Differences within the specified model &
+Not verified intervention impact in practice \\
+
+Observed-data calibration or validation &
+Plausibility or fit of model predictions &
+Not proof that the proposed management improves sustainability \\
+
+No clear comparator / not reported &
+Descriptive or feasibility assessment &
+Does not support a comparative-effectiveness claim \\
+
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection{Deployment, Reproducibility and Limitations}
+
+The individual \texttt{Real\_World\_Deployment} field is noted
+as \emph{No} for 51/53 studies, \emph{Yes} for \texttt{S02}, and
+\emph{Partial} for \texttt{S06}. The one noted \emph{Yes} study
+was not verified to represent sustained operation of the farm
+\parencite{skobelev_smart_2019}; \texttt{S06} involves both physical
+and virtual irrigation elements
+\parencite{jimenez_intelligent_2022}. These codes cannot be treated
+as verified long-term deployments.
+
+Code availability was noted in 8/53 studies (8/44 families), and availability of data in 14/53 (13/44 families). These numbers characterize the source-acknowledged disclosure, not the execution and verification of the artefacts by someone. Also, reproducibility depends on parameters, software dependencies,
+data provenance and scenario settings.
+
+Among those coded by reviewers limitations, the necessity of validation
+is present in 52/53 publications (43/44 families), uncertainty in 35/53,
+reproducibility/data and environmental models in 18/53 each,
+computational needs in 17/53, and scalability in 11/53.
+The latter codes overlap and are different from author-identified
+research gaps: 52/53 does not mean that 52 authors specifically wanted field trials.
+
+To summarise, RQ4 reveals that agricultural MAS are primarily
+evaluated using simulation, comparison of scenarios, and testing/calibration of algorithms. Such evaluations allow conclusions to be drawn on the basis of the assumptions made, but not evidence for transferable benefits under actual farm settings. High methodological clarity ratings and study family reconciliation facilitate evaluation of the literature. Neither can substitute for an independent field evaluation.
+
+
+
+
+% ==================================================
+% SECTION 4 — FORMAL MAS TAXONOMY AND EVIDENCE MAPPING
+% Prose revised; taxonomy and evidence tables retained.
+% ==================================================
+
+\section{Formal MAS Taxonomy and Evidence Mapping}
+\label{sec:taxonomy}
+
+\subsection{Taxonomy Development}
+
+This taxonomy was developed to allow a comparison of the included agricultural MAS without assuming that their application, internal structure and evaluation are of the same dimension. It is based on the frozen extraction of all 53 publications, organized into 44 study families, and includes the manual agent role (RQ1) and the coordination mechanism (RQ2) classifications. Each publication has one code for application domain, functional purpose and architecture. Role, decision paradigm and coordination mechanism may have multiple codes per publication.
+
+For family-level counts, the category is considered to be present if at least one publication from this family refers to it. The counts reflect the distribution of the evidence across the related publications, not individual replications. Implementation maturity, outcome direction, comparator type and research artefact availability are evaluated independently as overlays of evidence. The resulting six-axis taxonomy is a descriptive categorization of this collection; it has not been externally validated as a general MAS classification.
+
+\subsection{Formal MAS Taxonomy}
+
+Table~\ref{tab:mas_taxonomy_axes} sets out the six design axes and
+their coding rules. The corresponding publication and family
+frequencies are presented with RQ0--RQ2 in Section~3.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Six analytical axes of the evidence-grounded agricultural MAS taxonomy.}
+\label{tab:mas_taxonomy_axes}
+\begin{tabularx}{\textwidth}{@{}p{0.21\textwidth}Xp{0.22\textwidth}@{}}
+\toprule
+\textbf{Axis} & \textbf{What it describes} & \textbf{Publication coding} \\
+\midrule
+Application domain & Agricultural setting: irrigation, crops, livestock,
+workforce, energy or soil/environment & Single-label \\
+Functional purpose & Allocation/control, scenario assessment,
+trading/governance or decision support & Single-label \\
+Agent roles & Producers, supervisors, biophysical representations,
+operational actors, advisers and traders & Multi-label; adjudicated \\
+MAS architecture & Decentralised, hybrid, hierarchical, centralised
+or distributed decision authority & Single-label \\
+Decision paradigm & Rules, economic preferences, learning and
+other agent decision logics & Multi-label \\
+Coordination mechanism & Supervision, shared resources, scheduling,
+markets, peer exchange, learning or negotiation & Multi-label; adjudicated \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Each axis highlights one feature of the system, which includes the system's agricultural context, goal, roles of the agents involved, distribution of the authority of decision-making, decision-making rationale and mechanism of coordinating decisions. This distinction prevents the attribution of any feature on the basis of the name given to the system's architectural feature alone. Decentralization of decisions is not necessarily based on the exchange of messages directly, and agents controlled by one entity can still have their own decisions. The source-coded \emph{distributed} architecture is different from the \emph{decentralized}.
+
+\subsection{Cross-Classification of MAS Characteristics}
+
+The cross-classifications indicate which design options co-occur, not which designs work better. Of the 24 irrigation/water designs, 11 are operational, 8 deal with trading/governance, and 5 investigate policies/scenarios. 6 out of the 8 crop/farm designs study policy/scenario models; all 6 workforce/robotics
+designs are operational. The architectural classification also vary by field. Irrigation uses all 5 classes, with 8 designs being decentralized and 8 hierarchical. Workforce/robots are mainly centralized (5/6); energy/WEF designs are mostly hybrid (4/5). These are features of the collected papers, not proof that the frequent design option is the best one \parencite{harman_multi-agent_2022,shah_peer--peer_2024}.
+
+Within agent types and coordination methods, producer roles are accompanied by environment-mediated interaction in 20 papers, manager/regulator roles with supervisory coordination in 19, and trader roles with market coordination in 11 papers. Hierarchical architecture is also accompanied by supervisory coordination in 11 papers; decentralized architecture is accompanied by environment-mediated interaction in 9 papers. The codes are multi-valued, and thus these combinations do not imply causality. Papers within the same family can differ from each other as well: \texttt{SF42} includes both hybrid and hierarchical architecture codes. The complete cross-tabulation and family coding are stored in the Step 6H evidence map.
+
+\subsection{Evidence Coverage Matrix}
+
+The taxonomy provides an overview of where agricultural MAS design has been investigated; the evidence overlay provides details of how the studies were reviewed and what their outcome was. Table~\ref{tab:mas_domain_outcome} brings together the application domains along with implementation maturity and the adjudicated RQ3 outcome directions.
+
+Irrigation/water management has the widest architectural
+coverage, but 23 of its 24 publications are simulation-coded. Ten
+have a positive but conditional outcome direction, while eleven give
+mixed results. Not one of the 6 published papers on "Livestock/Integrated Farming" received a positive outcome direction.
+
+The table characterises the available evidence, not causal treatment
+effects. In particular, a favourable direction under a modeled
+scenario or comparator does not establish a benefit in sustained farm
+operation.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Evidence overlay by primary agricultural domain (publication counts, $n=53$).}
+\label{tab:mas_domain_outcome}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrrrrr@{}}
+\toprule
+\textbf{Domain} & \textbf{$n$} & \textbf{Sim.} & \textbf{Fav.} &
+\textbf{Mixed} & \textbf{Desc.} & \textbf{None} \\
+\midrule
+Irrigation / water & 24 & 23 & 10 & 11 & 3 & 0 \\
+Crop / farm & 8 & 7 & 3 & 4 & 1 & 0 \\
+Livestock / integrated & 6 & 4 & 0 & 2 & 3 & 1 \\
+Workforce / robotics & 6 & 3 & 5 & 1 & 0 & 0 \\
+Energy / WEF & 5 & 5 & 4 & 1 & 0 & 0 \\
+Soil / nutrient / environment & 4 & 4 & 2 & 2 & 0 & 0 \\
+\midrule
+\textbf{Total} & \textbf{53} & \textbf{46} & \textbf{24} &
+\textbf{21} & \textbf{7} & \textbf{1} \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\footnotesize\emph{Note:} Sim. = simulation maturity; Fav. = favourable
+but conditional/simulated; Mixed = mixed or scenario-dependent;
+Desc. = descriptive/feasibility; None = no directly evaluated
+agricultural outcome. Outcome-direction classes are mutually exclusive
+at publication level. Favourable does not mean field-validated.
+\end{table}
+
+\subsection{Evidence Map and Coverage Gaps}
+
+The Step 6H map at the family level shows the number of families supporting each design combination as \emph{absent} (zero), \emph{sparse} (one or two), \emph{moderate} (three to five) or \emph{dense} (six or more). This categorization is an indication of coverage; it does not reflect the study quality, utility or effectiveness.
+
+The irrigation/water management area has the most comprehensive coverage
+of MAS designs but is dominated by simulations. All the studies in
+energy/WEF and soil, nutrients and environment areas are also simulation-based.
+The absence or sparseness of cells alone cannot be the reason for doing
+further studies in the areas of negotiation, MARL, distributed architecture and LLM agents, as some of the mechanisms might not be needed for the particular agricultural problem. The common problem across all the domains is the lack of evidence on field implementation, relevancy and results from a sustainability point of view. These problems have guided the research gap synthesis in Section~5.
+
+
+
+% ==================================================
+% SECTION 5 — INTEGRATED SYNTHESIS AND CONSOLIDATED RESEARCH GAPS
+% Prose revised; original headings, citations, counts, and Table 12 preserved.
+% ==================================================
+
+\section{Integrated Synthesis and Consolidated Research Gaps}
+\label{sec:integrated_synthesis}
+
+\subsection{Cross-Research-Question Integration}
+
+Overall, RQ0-RQ2 captures the design and orchestration of MAS for agriculture, while RQ3-RQ4 demonstrate how little evidence there is for impacts beyond modeled contexts. Water allocation, market and socio-ecological modeling deal with distinct sets of decisions, and a comparative ranking of their processes would be inappropriate. Rather, it would be more pertinent to investigate if these capabilities translate into sustainable gains for farming activities, resource utilization, and the environment.
+
+\subsection{Publication-Level vs Study-Family Evidence}
+
+The 53 publications were combined into 44 study families to accommodate overlapping publications due to related research products; seven of these families include more than one publication. For instance, the publications related to irrigation predictive control model belong to \texttt{SF49} and have the same evaluation line and are not independent confirmations
+\parencite{cobbenhagen_optimal_2022,schoonen_optimal_2019}.
+Similarly, harvest-allocation studies, \texttt{SF25}, need comparison with the papers specific to them. In contrast, MAELIA applications were not clustered merely because they were based on the same platform since the underlying model or case had to coincide as well.
+
+Categories per family can also overlap. For example, \texttt{SF42} includes codes of hybrid and hierarchical architecture types within related publications. The main descriptive features remain after the reconciliation, yet family presence is only a sensitivity check, not an effect pool or 44 independent replicates of experiments.
+
+\subsection{Outcome Direction and Comparator-Strength Assessment}
+
+The adjudicated RQ3 findings comprise of 24 favorable but conditional or simulated articles, 21 mixed or scenario-dependent, seven descriptive or feasibility oriented, and one without a directly evaluated agricultural outcome (Table~\ref{tab:rq3_outcome_direction}). Categories are mutually exclusive; however, category presence for the family may overlap within relevant publications.
+
+Even though 49 out of 53 publications have populated comparator-description field, it may refer to a simulated alternative, calibrated target, or unclear comparisons. This does not constitute 49 rigorously controlled assessments. The claims made based on the comparisons used, will differ (Table~\ref{tab:rq4_comparator_interpretation}). For instance, water allocation rules might trade-off profitability against fairness \parencite{mahmoudian_adaptive_2025} and harvesting allocation involves staff and completion time trade-offs \parencite{harman_challenges_2023}. Testing livestock advisory system does not, without animal measures, prove better welfare \parencite{t_shanteer_cownet-ai_2026}. Such interpretations are based on frozen extractions and targeted sources examination.
+
+\subsection{Consolidated Research Gaps}
+
+The gap assessment includes manual coding of author-identified needs,
+Step 6H's coverage and maturity maps, and limitations identified
+via RQ0-RQ4. Substantive author-gap text existed in 49 out of 53 papers
+(four \texttt{NR}). The most common categories were those of uncertainty and
+transferability (29/53), field or longitudinal validation (28/53),
+stakeholder and behavioral validity (25/53), and biophysical or
+environmental realism (23/53). Other gap topics were adaptive or
+institutionally realistic coordination (19/53), scalability and sensing
+(14/53), multiple resource management (12/53), and comparative evaluation
+(9/53).
+
+This set of author-gap themes should not be confused with reviewer-coded
+limitations. In particular, the need for real-world validation was
+identified in 52/53 papers, while the corresponding author theme
+was identified in 28/53 papers. Code, data availability (8/53, 14/53)
+along with variability in comparators contributed to the reproduction of
+evaluation gaps. Empty taxonomy cells were not automatically coded as gaps.
+Frequencies and supporting evidence can be found in Step 6I files in the \href{https://github.com/ChayanTalukder/Multi-Agent-Systems-for-Sustainable-Smart-Farming} {repository}.
+
+\subsection{Prioritisation of Research Gaps}
+
+Table~\ref{tab:integrated_gap_priorities} shows how the integrated hierarchy classifies six general quality-of-evidence issues as Priority A, and three context-dependent extensions as Priority B. Such classification does not depend on frequency or importance scoring, but rather takes into account convergence across author-reported needs, corpus coverage and evidence-strength appraisal.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Frozen consolidated research-gap hierarchy (Step 6I).}
+\label{tab:integrated_gap_priorities}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}p{0.08\textwidth}p{0.11\textwidth}X@{}}
+\toprule
+\textbf{Gap ID} & \textbf{Priority} & \textbf{Research gap} \\
+\midrule
+RG1 & A & Field, operational and longitudinal validation \\
+RG2 & A & Robustness, uncertainty and transferability \\
+RG3 & A & Behavioural, stakeholder and social validity \\
+RG4 & A & Biophysical/environmental realism and long-horizon sustainability \\
+RG5 & A & Reproducibility and transparent research artefacts \\
+RG6 & A & Comparative evaluation and baseline quality \\
+\midrule
+RG7 & B & Scalability, sensing, computation and real-time operation \\
+RG8 & B & Cross-domain and multi-resource integration \\
+RG9 & B & Adaptive, distributed and institutionally realistic coordination \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Priority A emphasises field and longitudinal validation, robustness,
+credible stakeholder and environmental assumptions, reproducible
+artefacts where permissible, and defensible comparators. Priority B
+concerns operational scalability, integration of farm resources, and
+adaptive or distributed coordination where the decision problem
+justifies them. Additional agents, learning or negotiation should be
+tested against simpler alternatives, not assumed to be improvements.
+
+
+
+
+% ==================================================
+% SECTION 6 — DISCUSSION
+% Prose revised; original headings, citations and table reference retained.
+% ==================================================
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Interpretation of Principal Findings}
+
+From the existing literature two major applications of MAS in agriculture have been identified. The operational type of model, the type of analyses for coordination of irrigation, labour and other inputs, whereas socio-ecological models analyse decision-making of farmers and institutions under varying conditions of the environment and policies \parencite{chiewchan_improving_2020,berger_agent-based_2001,therond_integrated_2014}. As these applications have different objectives and outcome variables, to assess them using one performance criterion would be misleading. The citation search led to finding works on collective resource governance but was unable to identify any historical trend towards these applications.
+
+\subsection{Architectural and Coordination Trade-offs}
+
+The architectural choices influence which decisions are taken and how shared constraints are handled. A supervisory controller may be used for the common allocation; local agents may serve as representatives of the different owners, their preferences and information. Hybrid systems make use of the elements of both approaches, and impose integration needs. This is determined by the farm activity, sensing, communication reliability, institutional power and distribution effects. Coordination techniques also require accurate definitions: auctions may allocate resources according to the specified rules without bargaining, while water users may affect each other via the common resource without any communications \parencite{feuillette_sinuse_2003,becu_agent_2003,shah_peer--peer_2024}. No particular architecture or coordination technique is better than the others in all cases.
+
+\subsection{Sustainability Evidence and Practical Implications}
+
+For the interpretation of a sustainable outcome, it is necessary to understand whether something is different in relation to a certain comparative point based on specific assumptions. A good performance indicator does not necessarily mean increased productivity, equitable resource distribution, or better ecological condition. Articles discussing the predictive control of the related irrigation model \texttt{SF49} contrast simulation results with the
+performance of heuristic-based plans \parencite{cobbenhagen_optimal_2022,
+schoonen_optimal_2019}. However, they do not represent independent
+evidence that such solutions work in the real farm environment. In the
+same way, results about farm energy transactions, crop-livestock
+interchanges, and advisory system performance do not show lower emissions or enhanced animal welfare \parencite{catarino_fostering_2021,t_shanteer_cownet-ai_2026}.
+
+\subsection{Implications for Agricultural MAS Research}
+
+The priorities listed in Table~\ref{tab:integrated_gap_priorities} are based on
+the gap between model performance and demonstrated agricultural benefits. Evaluation should consider appropriate baselines, resource limitations, uncertain analyses, and consideration of gains and losses from resource allocation. Systems to be used on farms should have evaluations using working experience, preferably from multiple locations or seasons, documented through
+proper data sources, software code, modeling parameters and scenarios where possible. Real-time sensing, multi-resource integration and adaptive or distributed resource allocation should be considered if they are necessary for farm decision making, not simply because they increase system complexity. The following sections consider validity threats and future research opportunities.
+
+
+
+
+
+% ==================================================
+% SECTION 7 — LIMITATIONS AND THREATS TO VALIDITY
+% Prose revised; original subsection headings and evidence retained.
+% ==================================================
+
+\section{Limitations and Threats to Validity}
+
+\subsection{Review-Process Limitations}
+
+This systematic review process involved screening, extraction, and synthesis that was carried out by a single reviewer using a documented protocol and piloting criteria, as well as Rayyan software and manual coding to increase transparency. However, there was no independent verification, such as duplicate screening, checking for inter-reviewer agreement, or reviewing of all 53 articles in their full-text versions. Targeted searches may be affected by possible errors and by the reviewer's judgment.
+
+Search was restricted to five chosen databases, search terms, and field limitations. The inclusion criteria allowed for peer-reviewed journals and conference publications in English, published between 2010--2026, and five papers prior to 2010 through the documented exception procedure. Backward/forward citation search included one generation. Additionally, \textbf{17 studies} were unavailable (16 through databases and one through citation search).
+
+Protocols were maintained in a version-controlled way, although not registered elsewhere. An interpretation dated 12 October 2026 excludes irrigation of ornamental or public landscapes as it was not related to agriculture. The exact date of the Scopus V0.3c final run could not be traced back from the saved information.
+
+\subsection{Limitations of the Included Evidence}
+
+The majority of the studies were model-based: \textbf{46 out of 53
+publications} showed simulation implementation maturity. Deployment
+was reported separately as 51 \emph{No}, 1 \emph{Yes}
+(\texttt{S02}, without independent verification of sustained
+operations on farms) and 1 \emph{Partial} (\texttt{S06},
+comprising both physical and virtual environment). Observational
+data, calibration and prototypes must not be confused with validation
+of normal operations.
+
+Outcomes and comparators varied significantly. While the comparator
+column was filled by \textbf{49 out of 53} publications, including simulated counterfactuals, heuristic benchmarks, calibration targets, and missing comparisons, but not 49 controlled trials. Positive results under these conditions cannot prove causal transferable benefits in production, efficiency, livestock welfare or sustainability.
+
+The code and data availability was reported by \textbf{8 out of 53}
+and \textbf{14 out of 53} publications, respectively. The seven-criteria QA score is a measure of methodological clarity rather than risk of bias of the
+intervention. Thus, high methodological clarity scores cannot substitute rigorous comparators or field evidence.
+
+\subsection{Evidence Dependence and Generalisability}
+
+The \textbf{53 publications} were reduced to \textbf{44 study families}
+since there exist some related systems or evaluations. The presence
+checks at the family level keep the overall trends, but are not 44
+independent experimental studies. This involved some assessment, and
+related publications may have different categories assigned; the
+\texttt{SF42} family includes hybrid and hierarchical architectures.
+
+The coverage is highly variable in terms of farming environments,
+with irrigation and water management in \textbf{24 out of 53} publications, whereas climate, hydrology, farm size, institution, and stakeholder behavior are different for each environment. Thus, this review is better suited for the claims about MAS evaluation and design rather than for general sustainability
+benefits.
+
+
+
+% ==================================================
+% SECTION 8 — FUTURE RESEARCH DIRECTIONS
+% Original headings, priorities and citations retained.
+% ==================================================
+
+\section{Future Research Directions}
+
+These nine gaps identified in Table~\ref{tab:integrated_gap_priorities} will be the future research directions for agricultural MAS studies. Six Priority A gaps relate to issues of quality and generalisability, while three Priority B gaps relate to application-specific skills. The identified research directions are not benefits proven by the reviewed studies.
+
+\subsection{Integrated Farm-Level Decision-Making}
+
+In \textbf{RG8 (Priority B)}, research on integrated MAS is needed when there
+are interactions between farm resources. For example, irrigation can have an impact on electricity use, crop water requirements, and labour requirements. Jointly coordinated approaches should be compared to simpler separate controls. The applications of integrated MAS for crop--livestock interaction and dairy-energy studies do not establish the superiority of the latter approach \parencite{catarino_fostering_2021,shah_peer--peer_2024}.
+
+\textbf{RG3 (Priority A)} requires realistic farmer preferences, inequality of access, institutions, differences among stakeholders, and human involvement. These can be based on surveys, observed choices, or participatory research in places where this is possible; additional behavioural detail does not necessarily improve validity without empirical support. When property rights, local information, or institutional authority play a role in coordination, \textbf{RG9 (Priority B)} encourages comparing supervision, local rules, auctions, coordination, optimization, and learning approaches to implement simpler baselines.
+
+\textbf{RG7 (Priority B)} asks for experimental evaluation of sensing inaccuracies, communication failures, delays, computational costs, and scalability. Such constraints may render a design unfeasible on a real farm.
+
+\subsection{Robust Evaluation and Real-World Validation}
+
+\textbf{RG1 (Priority A)} calls for prospective trials on farms,
+preferably across different locations or seasons if possible. The
+evaluations should indicate which parts of the MAS were involved, for
+how long, and what agricultural variables were evaluated. Simulated inputs from farms should not be considered deployments.
+
+\textbf{RG6 (Priority A)} requires an appropriate comparator based on
+the claim: existing controllers or farm practices for operation
+decisions, other algorithms for computational efficiency and explicit
+assumptions of models for scenario counterfactuals
+(Table~\ref{tab:rq4_comparator_interpretation}).
+\textbf{RG2 (Priority A)} calls for sensitivity and transferability
+tests in relation to weather, soil, crop type, market, resource
+limitations, sensor uncertainty, behavior of stakeholders, including
+failures and distributional considerations.
+
+\textbf{RG5 (Priority A)} calls for documentation of software
+version, codes if available, data sources, parameters, seeds,
+baselines, and scenarios. Licensing or privacy constraints should be
+stated even if the artifacts cannot be shared. Availability does not
+guarantee independent reproducibility by itself.
+
+\subsection{Resource and Environmental Sustainability Integration}
+
+\textbf{RG4 (Priority A)} entails connections between agent choices,
+hydrology, agronomy, soils, nutrients, livestock, resources and other
+processes together with outcomes over an adequate time period. Less water
+extraction should, for instance, be evaluated with respect to yield,
+access to water and availability downstream. Energy-trading performance cannot stand in for measured emissions reductions, just as livestock advisory performance cannot establish improved animal welfare. Water allocation
+and agricultural policy case studies explain why outcomes and comparators are needed \parencite{mahmoudian_adaptive_2025,grovermann_smart_2017}.
+
+Long-horizon research should look at feedbacks, rebounds and conflicts
+between conservation, productivity, income generation and fairness. This makes
+\textbf{RG4} relevant to robustness (\textbf{RG2}), behavioural validity
+(\textbf{RG3}) and the justification of multi-resource integration
+(\textbf{RG8, Priority B}). Every model does not need all the subsystems of every farm.
+
+
+
+% ==================================================
+% SECTION 9 — CONCLUSION
+% Prose revised; original heading and scientific findings retained.
+% ==================================================
+
+\section{Conclusion}
+
+The current review analyzed 53 studies discovered via searches
+of five databases and supplementary citation searching, with relevant
+studies consolidated into 44 study groups. The agricultural MAS
+were used for resource-limited decisions and socio-ecological/policy
+scenarios. Irrigation and water management comprised the most
+frequent domain of the system application (24/53). The differences
+among the systems were in the agent roles, distribution of
+the decision-making authority, rules, and economic modeling/learning.
+The systems employed multiple types of coordination, including
+supervision, interactions of shared resources, scheduling, markets,
+exchange among peers, adaptive techniques and negotiation. The evidence did not establish any design as universally superior across agricultural settings.
+
+However, caution is necessary regarding the findings about
+the agricultural outcomes. Out of 53 studies, 24 showed favorable but
+conditional or simulated agricultural outcomes, 21 – mixed or scenario-
+specific, 7 – mostly descriptive or feasible studies, and 1 study
+did not address an agricultural outcome. Given that 46/53 studies
+are at maturity of simulation, there is still little independent evidence
+about sustainable advantages in working farms.
+
+The MAS taxonomic classification system based on its six axes, and the ranked RG1-RG9 research gaps helped to integrate these results. This is a foundation for future research into field validation, robustness, realism of the stakeholder and environmental systems, reproducibility, and enhanced comparison, without unnecessary system complexity.
+
+
+% ==================================================
+% DECLARATIONS AND SUPPLEMENTARY MATERIALS
+% ==================================================
+
+\section{Declarations and Supplementary Materials}
+
+\par\medskip
+\noindent\textbf{Funding and competing interests.}
+This systematic literature review received no external
+financial or non-financial support. The author declares
+no competing interests.
+
+\par\medskip
+\noindent\textbf{Supplementary materials.}
+The complete search strategies, extraction and quality-assessment
+documentation, study-family reconciliation, PRISMA reporting
+materials and supporting analyses are available in the
+\href{https://github.com/ChayanTalukder/Multi-Agent-Systems-for-Sustainable-Smart-Farming} {public GitHub repository}.
+
+
+\par\medskip
+\noindent\textbf{Use of generative AI.}
+OpenAI ChatGPT was used to support the organisation of project files, review workflows, consistency checks, academic revision, and LaTeX preparation. The assisted outputs were reviewed against the retained research records, with final responsibility for the methods, findings and conclusions remaining with the author.
+
+
+
+% ==================================================
+% REFERENCES
+% ==================================================
+
+\clearpage
+
+% Print only publications explicitly cited in the report
+\printbibliography[heading=bibintoc,title={References}]
+
+% ==================================================
+% APPENDICES (DISABLED FOR SHORT REPORT)
+% ==================================================
+
+% The complete appendices remain saved in appendices.tex.
+% They are excluded from the shortened report.
+
+% \clearpage
+% \appendix
+% \input{appendices}
+
+\end{document}
