@@ -62,7 +62,7 @@ PRISMA 2020 reporting                                Complete
 Zotero reference library + exports (Steps 8A–8H)     Complete
 Step 8I — Zotero / Overleaf integration              Complete
 SLR report — main sections and appendices            Draft complete
-SLR report — final technical and academic audit      In progress
+SLR report — final technical and academic audit      Complete
 Presentation                                         Pending
 ```
 
